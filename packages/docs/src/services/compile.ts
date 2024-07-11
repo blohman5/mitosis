@@ -15,6 +15,7 @@ export type OutputFramework =
   | 'solid'
   | 'preact'
   | 'stencil'
+  | 'django'
   | 'alpine';
 export const outputs: OutputFramework[] = [
   'react',
@@ -29,6 +30,7 @@ export const outputs: OutputFramework[] = [
   'solid',
   'preact',
   'stencil',
+  'django',
   'reactNative',
   'alpine',
 ];
@@ -49,6 +51,7 @@ export const languageByFramework: Record<OutputFramework, string> = {
   solid: 'typescript',
   preact: 'typescript',
   stencil: 'typescript',
+  django: 'typescript',
   reactNative: 'typescript',
   alpine: 'html',
 };
@@ -68,6 +71,7 @@ const getOutputGenerator = async ({ output }: { output: OutputFramework }) => {
     componentToReactNative,
     componentToSolid,
     componentToStencil,
+    componentToDjango,
   } = await import('@builder.io/mitosis');
 
   const options = {};
@@ -97,6 +101,8 @@ const getOutputGenerator = async ({ output }: { output: OutputFramework }) => {
       return componentToSolid();
     case 'stencil':
       return componentToStencil();
+    case 'django':
+      return componentToDjango();
     case 'json':
       return ({ component }: { component: MitosisComponent }) => JSON.stringify(component, null, 2);
     case 'vue':

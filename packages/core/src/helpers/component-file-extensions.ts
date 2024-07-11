@@ -151,6 +151,14 @@ export const getComponentFileExtensionForTarget = (args: Args): string => {
         case 'filename':
           return args.isTypescript ? '.tsx' : '.jsx';
       }
+      case 'django':
+        switch (args.type) {
+          case 'import':
+            // we can't have `.jsx`/`.tsx` extensions in the import paths, so we stick with implicit file extensions.
+            return args.explicitImportFileExtension ? '.js' : '';
+          case 'filename':
+            return args.isTypescript ? '.tsx' : '.jsx';
+        }
     case 'marko':
       return '.marko';
     default:
@@ -180,6 +188,7 @@ export const getFileExtensionForTarget = ({
     case 'rsc':
     case 'solid':
     case 'stencil':
+    case 'django':
     case 'marko':
     case 'preact':
     default:

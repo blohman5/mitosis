@@ -22,6 +22,7 @@ export default function UseTargetComponent() {
         rsc: 'rsc',
         solid: 'so',
         stencil: 'st',
+        django: 'dj',
         swift: 'sw',
         taro: 't',
         template: 'te',

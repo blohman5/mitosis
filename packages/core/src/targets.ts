@@ -1,6 +1,7 @@
 import { componentToAlpine as alpine } from './generators/alpine';
 import { componentToAngular as angular } from './generators/angular';
 import { componentToBuilder } from './generators/builder';
+import { componentToDjango as django } from './generators/django';
 import {
   componentToCustomElement as customElement,
   componentToHtml as html,
@@ -40,6 +41,7 @@ export const targets = {
   webcomponent,
   vue,
   stencil,
+  django,
   qwik,
   marko,
   preact,

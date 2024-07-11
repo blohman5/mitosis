@@ -18,6 +18,7 @@ const getOverrideFilenames = ({
     case 'marko':
     case 'mitosis':
     case 'stencil':
+    case 'django':
     case 'svelte':
     case 'swift':
     case 'template':

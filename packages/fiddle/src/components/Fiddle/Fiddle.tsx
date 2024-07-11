@@ -856,6 +856,7 @@ export default function Fiddle() {
                   value="solid"
                 />
                 <Tab label={<TabLabelWithIcon label="Stencil" />} value="stencil" />
+                <Tab label={<TabLabelWithIcon label="Django" />} value="django" />
                 <Tab label={<TabLabelWithIcon label="Marko" />} value="marko" />
                 <Tab label={<TabLabelWithIcon label="Preact" />} value="preact" />
                 <Tab label={<TabLabelWithIcon label="Lit" />} value="lit" />
@@ -1304,6 +1305,7 @@ export default function Fiddle() {
                         state.outputTab === 'webcomponents' ||
                         state.outputTab === 'qwik' ||
                         state.outputTab === 'stencil' ||
+                        state.outputTab === 'django' ||
                         state.outputTab === 'solid'
                       ? 'typescript'
                       : 'html'
