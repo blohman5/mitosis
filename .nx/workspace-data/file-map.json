@@ -24,64 +24,24 @@
   "fileMap": {
     "nonProjectFiles": [
       {
+        "file": ".changeset/README.md",
+        "hash": "4888845876018830777"
+      },
+      {
+        "file": ".changeset/config.json",
+        "hash": "15037667442395410604"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "11525873501642599925"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "2684127058940247745"
+      },
+      {
         "file": ".eslintrc.js",
         "hash": "5233402751485544792"
-      },
-      {
-        "file": "README.MD",
-        "hash": "2052031017487430488"
-      },
-      {
-        "file": ".yarn/versions/51d09e1d.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/ef410112.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".github/workflows/crawl-docs-site.yml",
-        "hash": "4462506895785790337"
-      },
-      {
-        "file": ".yarn/versions/56419efb.yml",
-        "hash": "10228539016035141286"
-      },
-      {
-        "file": ".yarn/versions/6bc94a3b.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/88302145.yml",
-        "hash": "17376803858329674090"
-      },
-      {
-        "file": ".yarn/versions/3cb89724.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/072aebc8.yml",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": ".yarn/versions/3ead9d18.yml",
-        "hash": "10228539016035141286"
-      },
-      {
-        "file": ".yarn/versions/7970dbd4.yml",
-        "hash": "10228539016035141286"
-      },
-      {
-        "file": ".yarn/versions/7a985e40.yml",
-        "hash": "12728259911116673723"
-      },
-      {
-        "file": "docs/components.md",
-        "hash": "13638568794175001529"
-      },
-      {
-        "file": ".yarn/versions/9513e6ed.yml",
-        "hash": "305026217682374333"
       },
       {
         "file": ".gitattributes",
@@ -92,315 +52,151 @@
         "hash": "10189109696764187836"
       },
       {
-        "file": ".vscode/settings.json",
-        "hash": "356120867202469874"
+        "file": ".github/ISSUE_TEMPLATE/bug_report.yaml",
+        "hash": "12100066018843923767"
       },
       {
-        "file": ".yarn/versions/7a76f789.yml",
-        "hash": "10228539016035141286"
+        "file": ".github/ISSUE_TEMPLATE/feature_request.yaml",
+        "hash": "2367873029327551504"
       },
       {
-        "file": "developer/generators.md",
-        "hash": "570859675350057386"
-      },
-      {
-        "file": "CODEOWNERS",
-        "hash": "18074561312932011335"
-      },
-      {
-        "file": ".yarn/versions/e0705211.yml",
-        "hash": "10228539016035141286"
-      },
-      {
-        "file": ".yarn/versions/173dde9b.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".prettierrc.js",
-        "hash": "15487186846901115652"
-      },
-      {
-        "file": ".yarn/versions/4c1ff198.yml",
-        "hash": "17376803858329674090"
-      },
-      {
-        "file": ".yarn/versions/44068586.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/c7ca329d.yml",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": ".yarn/versions/f1210054.yml",
-        "hash": "305026217682374333"
-      },
-      {
-        "file": ".yarn/versions/a7d5432d.yml",
-        "hash": "10228539016035141286"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "4224258109830740072"
-      },
-      {
-        "file": ".yarn/versions/77fd690d.yml",
-        "hash": "10228539016035141286"
-      },
-      {
-        "file": ".yarn/versions/b9512246.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/2e8dddaa.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/06e5749f.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/ac5e5b17.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/c0b2fa52.yml",
-        "hash": "17376803858329674090"
-      },
-      {
-        "file": ".yarn/versions/1ccf07c6.yml",
-        "hash": "17376803858329674090"
-      },
-      {
-        "file": ".yarn/versions/3b579a11.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/2ceb5677.yml",
-        "hash": "7230299140985961729"
-      },
-      {
-        "file": ".yarn/versions/d03a50ed.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/f34f5b8e.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/78525628.yml",
-        "hash": "10228539016035141286"
-      },
-      {
-        "file": ".yarn/versions/afee0844.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/b2276c4b.yml",
-        "hash": "17376803858329674090"
-      },
-      {
-        "file": ".yarn/versions/22e7ecc3.yml",
-        "hash": "10228539016035141286"
-      },
-      {
-        "file": ".yarn/versions/3777636b.yml",
-        "hash": "305026217682374333"
-      },
-      {
-        "file": ".yarn/versions/fb202c06.yml",
-        "hash": "5749940503583443017"
+        "file": ".github/actions/yarn-nm-install/action.yml",
+        "hash": "16851056659643306786"
       },
       {
         "file": ".github/pull_request_template.md",
         "hash": "9575692927230374685"
       },
       {
-        "file": ".yarn/versions/0a9221c4.yml",
-        "hash": "10228539016035141286"
-      },
-      {
-        "file": ".yarn/versions/6fbd3750.yml",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": ".yarn/patches/@sveltejs-package-npm-1.0.0-next.1-2fd015530b.patch",
-        "hash": "12170509943502084499"
-      },
-      {
-        "file": ".yarn/versions/411f782e.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/46f8ffda.yml",
-        "hash": "11884712848250299410"
-      },
-      {
-        "file": ".yarn/versions/c1093761.yml",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": ".yarn/versions/bf6edf5d.yml",
-        "hash": "10228539016035141286"
-      },
-      {
-        "file": ".yarn/versions/81d9e719.yml",
-        "hash": "10228539016035141286"
-      },
-      {
-        "file": "tsconfig.json",
-        "hash": "9436797597453109042"
-      },
-      {
-        "file": "LICENSE",
-        "hash": "8772128795911898636"
-      },
-      {
-        "file": ".yarn/versions/2a69f5af.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/72ea0816.yml",
-        "hash": "305026217682374333"
-      },
-      {
-        "file": ".yarn/versions/5bc0e0a1.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "669580577495119871"
-      },
-      {
-        "file": ".yarn/versions/1a44c65b.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/c6e4f64b.yml",
-        "hash": "6658940334392562866"
-      },
-      {
-        "file": "docs/configuration.md",
-        "hash": "6063782428517808845"
-      },
-      {
-        "file": ".yarn/versions/1aa27f56.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/42b588ef.yml",
-        "hash": "5749940503583443017"
-      },
-      {
         "file": ".github/workflows/checks.yml",
         "hash": "8268262863222587486"
       },
       {
-        "file": ".yarn/versions/c9e3ca8b.yml",
-        "hash": "305026217682374333"
+        "file": ".github/workflows/crawl-docs-site.yml",
+        "hash": "4462506895785790337"
       },
       {
-        "file": ".yarn/versions/c2d75ce2.yml",
-        "hash": "10228539016035141286"
+        "file": ".github/workflows/publish.yml",
+        "hash": "17088313766305904685"
       },
       {
-        "file": ".yarn/versions/5e0d43a5.yml",
-        "hash": "17376803858329674090"
+        "file": ".gitignore",
+        "hash": "4224258109830740072"
       },
       {
-        "file": "imgs/kudos-2.png",
-        "hash": "2272200413001832954"
+        "file": ".npmrc",
+        "hash": "16826263075418832769"
       },
       {
-        "file": ".yarn/versions/6ff24e83.yml",
-        "hash": "305026217682374333"
+        "file": ".nvmrc",
+        "hash": "15694807199290689687"
       },
       {
-        "file": ".yarn/versions/0726b528.yml",
-        "hash": "5749940503583443017"
+        "file": ".prettierignore",
+        "hash": "5694697444763296125"
       },
       {
-        "file": ".yarn/versions/735cc783.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": "package.json",
-        "hash": "14543106289944700907"
-      },
-      {
-        "file": "imgs/kudos-1.png",
-        "hash": "6593658396494560946"
-      },
-      {
-        "file": ".yarn/versions/e5d3ce94.yml",
-        "hash": "17376803858329674090"
-      },
-      {
-        "file": ".yarn/versions/105b2055.yml",
-        "hash": "305026217682374333"
-      },
-      {
-        "file": ".yarn/versions/fb17c565.yml",
-        "hash": "305026217682374333"
-      },
-      {
-        "file": ".yarn/versions/8afacd42.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/ab01aaa4.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".changeset/README.md",
-        "hash": "4888845876018830777"
-      },
-      {
-        "file": "nx.json",
-        "hash": "12048149571211613913"
-      },
-      {
-        "file": ".yarn/versions/07c322cc.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/25f00f22.yml",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": ".yarn/versions/0aafb6de.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/fb99b1b3.yml",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": ".yarn/versions/a727eb3e.yml",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": ".yarn/versions/c4fd8fbc.yml",
-        "hash": "3244421341483603138"
+        "file": ".prettierrc.js",
+        "hash": "15487186846901115652"
       },
       {
         "file": ".tool-versions",
         "hash": "17815236066095902755"
       },
       {
-        "file": ".yarn/versions/cc461ac8.yml",
-        "hash": "17376803858329674090"
+        "file": ".vscode/extensions.json",
+        "hash": "669580577495119871"
       },
       {
-        "file": ".yarn/versions/51fd1e43.yml",
+        "file": ".vscode/settings.json",
+        "hash": "356120867202469874"
+      },
+      {
+        "file": ".yarn/patches/@sveltejs-package-npm-1.0.0-next.1-2fd015530b.patch",
+        "hash": "12170509943502084499"
+      },
+      {
+        "file": ".yarn/versions/026177fe.yml",
         "hash": "5749940503583443017"
       },
       {
-        "file": "docs/context.md",
-        "hash": "1795152091968184325"
+        "file": ".yarn/versions/028828e2.yml",
+        "hash": "17376803858329674090"
       },
       {
-        "file": ".yarn/versions/b918a4e2.yml",
+        "file": ".yarn/versions/06e5749f.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/0726b528.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/072aebc8.yml",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".yarn/versions/07c322cc.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/09d6af27.yml",
+        "hash": "10228539016035141286"
+      },
+      {
+        "file": ".yarn/versions/0a9221c4.yml",
+        "hash": "10228539016035141286"
+      },
+      {
+        "file": ".yarn/versions/0aafb6de.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/105b2055.yml",
+        "hash": "305026217682374333"
+      },
+      {
+        "file": ".yarn/versions/12875928.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/1366a905.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/13ce8bab.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/144b1230.yml",
+        "hash": "10228539016035141286"
+      },
+      {
+        "file": ".yarn/versions/15c76034.yml",
+        "hash": "17376803858329674090"
+      },
+      {
+        "file": ".yarn/versions/173dde9b.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/1a44c65b.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/1aa27f56.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/1ccf07c6.yml",
+        "hash": "17376803858329674090"
+      },
+      {
+        "file": ".yarn/versions/1df68f61.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/1fad65fc.yml",
         "hash": "3244421341483603138"
       },
       {
@@ -408,27 +204,59 @@
         "hash": "5749940503583443017"
       },
       {
-        "file": ".yarn/versions/5d063d27.yml",
+        "file": ".yarn/versions/22e7ecc3.yml",
+        "hash": "10228539016035141286"
+      },
+      {
+        "file": ".yarn/versions/23758213.yml",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".yarn/versions/23da8025.yml",
         "hash": "5749940503583443017"
       },
       {
-        "file": "docs/README.md",
-        "hash": "6564691143634275726"
+        "file": ".yarn/versions/24584391.yml",
+        "hash": "3244421341483603138"
       },
       {
-        "file": ".changeset/config.json",
-        "hash": "15037667442395410604"
+        "file": ".yarn/versions/25f00f22.yml",
+        "hash": "3244421341483603138"
       },
       {
-        "file": "package-lock.json",
-        "hash": "2800330051890857114"
+        "file": ".yarn/versions/272ca396.yml",
+        "hash": "5749940503583443017"
       },
       {
-        "file": ".yarn/versions/515392f0.yml",
-        "hash": "17376803858329674090"
+        "file": ".yarn/versions/29fe0987.yml",
+        "hash": "3244421341483603138"
       },
       {
-        "file": ".yarn/versions/1fad65fc.yml",
+        "file": ".yarn/versions/2a247815.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/2a5c447d.yml",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".yarn/versions/2a69f5af.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/2ceb5677.yml",
+        "hash": "7230299140985961729"
+      },
+      {
+        "file": ".yarn/versions/2e8dddaa.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/329ad4cc.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/33308e54.yml",
         "hash": "3244421341483603138"
       },
       {
@@ -436,51 +264,67 @@
         "hash": "5749940503583443017"
       },
       {
-        "file": "yarn.lock",
-        "hash": "2323941821447853730"
+        "file": ".yarn/versions/371922cb.yml",
+        "hash": "10228539016035141286"
       },
       {
-        "file": ".eslintignore",
-        "hash": "2684127058940247745"
-      },
-      {
-        "file": ".yarn/versions/1366a905.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/a26ef46f.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".nvmrc",
-        "hash": "15694807199290689687"
-      },
-      {
-        "file": ".yarn/versions/9288f7b9.yml",
+        "file": ".yarn/versions/3777636b.yml",
         "hash": "305026217682374333"
       },
       {
-        "file": "docs/customizability.md",
-        "hash": "11383941680634218721"
+        "file": ".yarn/versions/389436a2.yml",
+        "hash": "10228539016035141286"
       },
       {
-        "file": ".editorconfig",
-        "hash": "11525873501642599925"
-      },
-      {
-        "file": "docs/gotchas.md",
-        "hash": "9912044309055984875"
-      },
-      {
-        "file": ".yarn/versions/e4749842.yml",
-        "hash": "305026217682374333"
-      },
-      {
-        "file": ".yarn/versions/72b07268.yml",
+        "file": ".yarn/versions/3a3f723c.yml",
         "hash": "3244421341483603138"
       },
       {
-        "file": ".yarn/versions/9a0abe50.yml",
+        "file": ".yarn/versions/3b579a11.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/3bb83c60.yml",
+        "hash": "305026217682374333"
+      },
+      {
+        "file": ".yarn/versions/3bff13d2.yml",
+        "hash": "10228539016035141286"
+      },
+      {
+        "file": ".yarn/versions/3cb89724.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/3ead9d18.yml",
+        "hash": "10228539016035141286"
+      },
+      {
+        "file": ".yarn/versions/4053ebae.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/411f782e.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/42b588ef.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/44068586.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/46f8ffda.yml",
+        "hash": "11884712848250299410"
+      },
+      {
+        "file": ".yarn/versions/47346a15.yml",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".yarn/versions/4c1ff198.yml",
         "hash": "17376803858329674090"
       },
       {
@@ -488,24 +332,160 @@
         "hash": "5749940503583443017"
       },
       {
-        "file": ".yarn/versions/b2be75f1.yml",
-        "hash": "5749940503583443017"
+        "file": ".yarn/versions/4e3bceb6.yml",
+        "hash": "305026217682374333"
       },
       {
-        "file": ".yarn/versions/cb259f51.yml",
+        "file": ".yarn/versions/4f99b94c.yml",
         "hash": "3244421341483603138"
       },
       {
-        "file": ".yarn/versions/c143ff23.yml",
+        "file": ".yarn/versions/515392f0.yml",
+        "hash": "17376803858329674090"
+      },
+      {
+        "file": ".yarn/versions/51d09e1d.yml",
         "hash": "5749940503583443017"
       },
       {
-        "file": ".yarn/versions/cf7ae630.yml",
+        "file": ".yarn/versions/51fd1e43.yml",
         "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/56419efb.yml",
+        "hash": "10228539016035141286"
+      },
+      {
+        "file": ".yarn/versions/57f03ec9.yml",
+        "hash": "10228539016035141286"
+      },
+      {
+        "file": ".yarn/versions/5a2242bb.yml",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".yarn/versions/5bc0e0a1.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/5d063d27.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/5e0d43a5.yml",
+        "hash": "17376803858329674090"
+      },
+      {
+        "file": ".yarn/versions/6157a043.yml",
+        "hash": "17376803858329674090"
+      },
+      {
+        "file": ".yarn/versions/61b56588.yml",
+        "hash": "3244421341483603138"
       },
       {
         "file": ".yarn/versions/62c5b924.yml",
         "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/63370d4e.yml",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".yarn/versions/6629957d.yml",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".yarn/versions/66376ce5.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/6bc94a3b.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/6f725cb4.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/6fbd3750.yml",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".yarn/versions/6ff24e83.yml",
+        "hash": "305026217682374333"
+      },
+      {
+        "file": ".yarn/versions/72b07268.yml",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".yarn/versions/72ea0816.yml",
+        "hash": "305026217682374333"
+      },
+      {
+        "file": ".yarn/versions/735cc783.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/73f711f2.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/760e996e.yml",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".yarn/versions/77fd690d.yml",
+        "hash": "10228539016035141286"
+      },
+      {
+        "file": ".yarn/versions/7802d627.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/78525628.yml",
+        "hash": "10228539016035141286"
+      },
+      {
+        "file": ".yarn/versions/7970dbd4.yml",
+        "hash": "10228539016035141286"
+      },
+      {
+        "file": ".yarn/versions/7a76f789.yml",
+        "hash": "10228539016035141286"
+      },
+      {
+        "file": ".yarn/versions/7a985e40.yml",
+        "hash": "12728259911116673723"
+      },
+      {
+        "file": ".yarn/versions/804757be.yml",
+        "hash": "17594873749011379670"
+      },
+      {
+        "file": ".yarn/versions/81d9e719.yml",
+        "hash": "10228539016035141286"
+      },
+      {
+        "file": ".yarn/versions/85f914ea.yml",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".yarn/versions/88302145.yml",
+        "hash": "17376803858329674090"
+      },
+      {
+        "file": ".yarn/versions/89184b6e.yml",
+        "hash": "305026217682374333"
+      },
+      {
+        "file": ".yarn/versions/8afacd42.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/9288f7b9.yml",
+        "hash": "305026217682374333"
       },
       {
         "file": ".yarn/versions/92f5ae87.yml",
@@ -516,27 +496,19 @@
         "hash": "5749940503583443017"
       },
       {
-        "file": ".yarn/versions/47346a15.yml",
-        "hash": "3244421341483603138"
+        "file": ".yarn/versions/9513e6ed.yml",
+        "hash": "305026217682374333"
       },
       {
-        "file": ".yarn/versions/73f711f2.yml",
+        "file": ".yarn/versions/9a0abe50.yml",
+        "hash": "17376803858329674090"
+      },
+      {
+        "file": ".yarn/versions/a26ef46f.yml",
         "hash": "5749940503583443017"
       },
       {
-        "file": ".yarn/versions/e89e1791.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/3a3f723c.yml",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": ".yarn/versions/c281843c.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/cc9ed5cd.yml",
+        "file": ".yarn/versions/a727eb3e.yml",
         "hash": "3244421341483603138"
       },
       {
@@ -544,23 +516,39 @@
         "hash": "5749940503583443017"
       },
       {
-        "file": ".yarn/versions/028828e2.yml",
+        "file": ".yarn/versions/a7d5432d.yml",
+        "hash": "10228539016035141286"
+      },
+      {
+        "file": ".yarn/versions/ab01aaa4.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/ac5e5b17.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/aee7c6a5.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/afee0844.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/b2276c4b.yml",
         "hash": "17376803858329674090"
       },
       {
-        "file": ".yarn/versions/2a247815.yml",
+        "file": ".yarn/versions/b2be75f1.yml",
         "hash": "5749940503583443017"
       },
       {
-        "file": ".yarn/versions/66376ce5.yml",
-        "hash": "5749940503583443017"
+        "file": ".yarn/versions/b918a4e2.yml",
+        "hash": "3244421341483603138"
       },
       {
-        "file": ".yarn/versions/13ce8bab.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/12875928.yml",
+        "file": ".yarn/versions/b9512246.yml",
         "hash": "5749940503583443017"
       },
       {
@@ -568,47 +556,79 @@
         "hash": "3244421341483603138"
       },
       {
-        "file": ".yarn/versions/23da8025.yml",
+        "file": ".yarn/versions/bf6edf5d.yml",
+        "hash": "10228539016035141286"
+      },
+      {
+        "file": ".yarn/versions/c0b2fa52.yml",
+        "hash": "17376803858329674090"
+      },
+      {
+        "file": ".yarn/versions/c1093761.yml",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".yarn/versions/c143ff23.yml",
         "hash": "5749940503583443017"
       },
       {
-        "file": ".github/ISSUE_TEMPLATE/feature_request.yaml",
-        "hash": "2367873029327551504"
+        "file": ".yarn/versions/c21adc6a.yml",
+        "hash": "5749940503583443017"
       },
       {
-        "file": "docs/cli.md",
-        "hash": "4788795500357658631"
+        "file": ".yarn/versions/c281843c.yml",
+        "hash": "5749940503583443017"
       },
       {
-        "file": ".yarn/versions/cf48d14d.yml",
-        "hash": "305026217682374333"
+        "file": ".yarn/versions/c2d75ce2.yml",
+        "hash": "10228539016035141286"
+      },
+      {
+        "file": ".yarn/versions/c4fd8fbc.yml",
+        "hash": "3244421341483603138"
       },
       {
         "file": ".yarn/versions/c62b27f7.yml",
         "hash": "5749940503583443017"
       },
       {
-        "file": ".yarn/versions/edc58eba.yml",
-        "hash": "5749940503583443017"
+        "file": ".yarn/versions/c6e4f64b.yml",
+        "hash": "6658940334392562866"
       },
       {
-        "file": ".yarn/versions/144b1230.yml",
-        "hash": "10228539016035141286"
-      },
-      {
-        "file": ".yarn/versions/23758213.yml",
+        "file": ".yarn/versions/c7ca329d.yml",
         "hash": "3244421341483603138"
       },
       {
-        "file": ".yarn/versions/6157a043.yml",
+        "file": ".yarn/versions/c9e3ca8b.yml",
+        "hash": "305026217682374333"
+      },
+      {
+        "file": ".yarn/versions/cb259f51.yml",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".yarn/versions/cc461ac8.yml",
         "hash": "17376803858329674090"
       },
       {
-        "file": ".yarn/versions/33308e54.yml",
+        "file": ".yarn/versions/cc9ed5cd.yml",
         "hash": "3244421341483603138"
       },
       {
-        "file": ".yarn/versions/6f725cb4.yml",
+        "file": ".yarn/versions/cf48d14d.yml",
+        "hash": "305026217682374333"
+      },
+      {
+        "file": ".yarn/versions/cf4b5981.yml",
+        "hash": "10228539016035141286"
+      },
+      {
+        "file": ".yarn/versions/cf7ae630.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/d03a50ed.yml",
         "hash": "5749940503583443017"
       },
       {
@@ -616,175 +636,35 @@
         "hash": "5749940503583443017"
       },
       {
-        "file": ".yarn/versions/3bb83c60.yml",
-        "hash": "305026217682374333"
-      },
-      {
-        "file": ".yarn/versions/15c76034.yml",
-        "hash": "17376803858329674090"
-      },
-      {
-        "file": ".yarn/versions/aee7c6a5.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".npmrc",
-        "hash": "16826263075418832769"
-      },
-      {
-        "file": ".yarn/versions/4e3bceb6.yml",
-        "hash": "305026217682374333"
-      },
-      {
-        "file": ".yarn/versions/2a5c447d.yml",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "docs/feature-matrix-draft.md",
-        "hash": "6955159865991918426"
-      },
-      {
-        "file": "docs/project-structure.md",
-        "hash": "1386011807875745181"
-      },
-      {
-        "file": ".yarn/versions/3bff13d2.yml",
+        "file": ".yarn/versions/e0705211.yml",
         "hash": "10228539016035141286"
-      },
-      {
-        "file": ".yarn/versions/f52489af.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/1df68f61.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/cf4b5981.yml",
-        "hash": "10228539016035141286"
-      },
-      {
-        "file": ".yarn/versions/4f99b94c.yml",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": ".yarn/versions/63370d4e.yml",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": ".yarn/versions/ed8e0a45.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/6629957d.yml",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "docs/test-status.md",
-        "hash": "3791062039344979996"
-      },
-      {
-        "file": ".yarn/versions/e9ce1193.yml",
-        "hash": "5749940503583443017"
       },
       {
         "file": ".yarn/versions/e0755694.yml",
         "hash": "5749940503583443017"
       },
       {
-        "file": ".yarn/versions/389436a2.yml",
-        "hash": "10228539016035141286"
-      },
-      {
-        "file": ".yarn/versions/4053ebae.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/760e996e.yml",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": ".yarn/versions/89184b6e.yml",
-        "hash": "305026217682374333"
-      },
-      {
-        "file": ".yarn/versions/57f03ec9.yml",
-        "hash": "10228539016035141286"
-      },
-      {
-        "file": ".yarn/versions/371922cb.yml",
-        "hash": "10228539016035141286"
-      },
-      {
-        "file": ".yarn/versions/804757be.yml",
-        "hash": "17594873749011379670"
-      },
-      {
         "file": ".yarn/versions/e11beb4b.yml",
         "hash": "17376803858329674090"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "5694697444763296125"
-      },
-      {
-        "file": ".yarn/versions/85f914ea.yml",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": ".github/workflows/publish.yml",
-        "hash": "17088313766305904685"
-      },
-      {
-        "file": ".yarn/versions/24584391.yml",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": ".yarn/versions/c21adc6a.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": "CONTRIBUTING.md",
-        "hash": "5706530793415689081"
-      },
-      {
-        "file": ".yarn/versions/026177fe.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/f75f1951.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/5a2242bb.yml",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": ".yarn/versions/29fe0987.yml",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": ".yarn/versions/09d6af27.yml",
-        "hash": "10228539016035141286"
-      },
-      {
-        "file": ".yarn/versions/61b56588.yml",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": ".yarn/versions/f8d96db9.yml",
-        "hash": "5749940503583443017"
-      },
-      {
-        "file": ".yarn/versions/7802d627.yml",
-        "hash": "5749940503583443017"
       },
       {
         "file": ".yarn/versions/e3ecba3b.yml",
         "hash": "17594873749011379670"
       },
       {
-        "file": ".yarn/versions/272ca396.yml",
+        "file": ".yarn/versions/e4749842.yml",
+        "hash": "305026217682374333"
+      },
+      {
+        "file": ".yarn/versions/e5d3ce94.yml",
+        "hash": "17376803858329674090"
+      },
+      {
+        "file": ".yarn/versions/e89e1791.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/e9ce1193.yml",
         "hash": "5749940503583443017"
       },
       {
@@ -792,23 +672,736 @@
         "hash": "3244421341483603138"
       },
       {
-        "file": ".yarn/versions/329ad4cc.yml",
+        "file": ".yarn/versions/ed8e0a45.yml",
         "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/edc58eba.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/ef410112.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/f1210054.yml",
+        "hash": "305026217682374333"
+      },
+      {
+        "file": ".yarn/versions/f34f5b8e.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/f52489af.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/f75f1951.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/f8d96db9.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/fb17c565.yml",
+        "hash": "305026217682374333"
+      },
+      {
+        "file": ".yarn/versions/fb202c06.yml",
+        "hash": "5749940503583443017"
+      },
+      {
+        "file": ".yarn/versions/fb99b1b3.yml",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "CODEOWNERS",
+        "hash": "18074561312932011335"
+      },
+      {
+        "file": "CONTRIBUTING.md",
+        "hash": "5706530793415689081"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "8772128795911898636"
+      },
+      {
+        "file": "README.MD",
+        "hash": "2052031017487430488"
+      },
+      {
+        "file": "developer/generators.md",
+        "hash": "570859675350057386"
+      },
+      {
+        "file": "docs/README.md",
+        "hash": "6564691143634275726"
+      },
+      {
+        "file": "docs/cli.md",
+        "hash": "4788795500357658631"
+      },
+      {
+        "file": "docs/components.md",
+        "hash": "13638568794175001529"
+      },
+      {
+        "file": "docs/configuration.md",
+        "hash": "6063782428517808845"
+      },
+      {
+        "file": "docs/context.md",
+        "hash": "1795152091968184325"
+      },
+      {
+        "file": "docs/customizability.md",
+        "hash": "11383941680634218721"
+      },
+      {
+        "file": "docs/feature-matrix-draft.md",
+        "hash": "6955159865991918426"
+      },
+      {
+        "file": "docs/gotchas.md",
+        "hash": "9912044309055984875"
       },
       {
         "file": "docs/hooks.md",
         "hash": "4528498954492474085"
       },
       {
-        "file": ".github/actions/yarn-nm-install/action.yml",
-        "hash": "16851056659643306786"
+        "file": "docs/project-structure.md",
+        "hash": "1386011807875745181"
       },
       {
-        "file": ".github/ISSUE_TEMPLATE/bug_report.yaml",
-        "hash": "12100066018843923767"
+        "file": "docs/test-status.md",
+        "hash": "3791062039344979996"
+      },
+      {
+        "file": "imgs/kudos-1.png",
+        "hash": "6593658396494560946"
+      },
+      {
+        "file": "imgs/kudos-2.png",
+        "hash": "2272200413001832954"
+      },
+      {
+        "file": "nx.json",
+        "hash": "12048149571211613913"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "2800330051890857114"
+      },
+      {
+        "file": "package.json",
+        "hash": "14543106289944700907"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "9436797597453109042"
+      },
+      {
+        "file": "yarn.lock",
+        "hash": "4282364577705428117"
       }
     ],
     "projectFileMap": {
+      "@builder.io/eslint-plugin-mitosis": [
+        {
+          "file": "packages/eslint-plugin/.npmrc",
+          "hash": "16826263075418832769"
+        },
+        {
+          "file": "packages/eslint-plugin/.yarnrc.yml",
+          "hash": "1451430381946270559"
+        },
+        {
+          "file": "packages/eslint-plugin/CHANGELOG.md",
+          "hash": "16171210647769285100"
+        },
+        {
+          "file": "packages/eslint-plugin/README.md",
+          "hash": "5018687944587935743"
+        },
+        {
+          "file": "packages/eslint-plugin/docs/rules/css-no-vars.md",
+          "hash": "16411971868658444430"
+        },
+        {
+          "file": "packages/eslint-plugin/docs/rules/jsx-callback-arg-name.md",
+          "hash": "13124983760665996051"
+        },
+        {
+          "file": "packages/eslint-plugin/docs/rules/jsx-callback-arrow-function.md",
+          "hash": "12768094630029054999"
+        },
+        {
+          "file": "packages/eslint-plugin/docs/rules/no-assign-props-to-state.md",
+          "hash": "9748803339254635837"
+        },
+        {
+          "file": "packages/eslint-plugin/docs/rules/no-async-methods-on-state.md",
+          "hash": "6750254238964507649"
+        },
+        {
+          "file": "packages/eslint-plugin/docs/rules/no-conditional-logic-in-component-render.md",
+          "hash": "9837734534342539905"
+        },
+        {
+          "file": "packages/eslint-plugin/docs/rules/no-state-destructuring.md",
+          "hash": "1628308956351256672"
+        },
+        {
+          "file": "packages/eslint-plugin/docs/rules/no-var-declaration-in-jsx.md",
+          "hash": "10075015477488235310"
+        },
+        {
+          "file": "packages/eslint-plugin/docs/rules/no-var-declaration-or-assignment-in-component.md",
+          "hash": "2570159774050802008"
+        },
+        {
+          "file": "packages/eslint-plugin/docs/rules/no-var-name-same-as-prop-name.md",
+          "hash": "15128046285163371777"
+        },
+        {
+          "file": "packages/eslint-plugin/docs/rules/no-var-name-same-as-state-property.md",
+          "hash": "5103374886859494762"
+        },
+        {
+          "file": "packages/eslint-plugin/docs/rules/only-default-function-and-imports.md",
+          "hash": "13218311710900114555"
+        },
+        {
+          "file": "packages/eslint-plugin/docs/rules/prefer-show-over-ternary-operator.md",
+          "hash": "17419049580898139465"
+        },
+        {
+          "file": "packages/eslint-plugin/docs/rules/ref-no-current.md",
+          "hash": "6094897234990666451"
+        },
+        {
+          "file": "packages/eslint-plugin/docs/rules/use-state-var-declarator.md",
+          "hash": "10134259983199782182"
+        },
+        {
+          "file": "packages/eslint-plugin/package.json",
+          "hash": "18147024364821576353",
+          "deps": [
+            "npm:eslint",
+            "npm:@types/eslint@7.29.0",
+            "npm:@typescript-eslint/parser",
+            "npm:nx",
+            "npm:nx-cloud",
+            "npm:typescript",
+            "npm:vite@4.5.0",
+            "npm:vitest@0.34.6",
+            "npm:@babel/types@7.12.6",
+            "npm:ts-pattern@3.3.5"
+          ]
+        },
+        {
+          "file": "packages/eslint-plugin/scripts/remove-stableVersion.sh",
+          "hash": "10019174696139868113"
+        },
+        {
+          "file": "packages/eslint-plugin/src/configs/recommended.ts",
+          "hash": "12483156406898095109"
+        },
+        {
+          "file": "packages/eslint-plugin/src/constants/hooks.ts",
+          "hash": "3300618126459307914"
+        },
+        {
+          "file": "packages/eslint-plugin/src/helpers/__tests__/isMitosisPath.ts",
+          "hash": "10114315281533845738"
+        },
+        {
+          "file": "packages/eslint-plugin/src/helpers/isMitosisPath.ts",
+          "hash": "12468807747416420769"
+        },
+        {
+          "file": "packages/eslint-plugin/src/helpers/noOp.ts",
+          "hash": "13765909154055208325"
+        },
+        {
+          "file": "packages/eslint-plugin/src/index.ts",
+          "hash": "4623116973920770845"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/__tests__/css-no-vars.test.ts",
+          "hash": "1257543337432006500"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/__tests__/jsx-callback-arg-name.test.ts",
+          "hash": "10397513351430194053"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/__tests__/jsx-callback-arrow-function.test.ts",
+          "hash": "5932625230796146858"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/__tests__/no-assign-props-to-state.test.ts",
+          "hash": "8899033808521908853"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/__tests__/no-async-methods-on-state.test.ts",
+          "hash": "15176850692072289123"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/__tests__/no-conditional-logic-in-component-render.test.ts",
+          "hash": "15896201451501839114"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/__tests__/no-map-function-in-jsx-return-body.test.ts",
+          "hash": "3215652187084730593"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/__tests__/no-setter-with-same-name-as-state-prop.test.ts",
+          "hash": "17761852619324211047"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/__tests__/no-state-destructuring.test.ts",
+          "hash": "11307834047516676389"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/__tests__/no-var-declaration-in-jsx.test.ts",
+          "hash": "12620573870781028821"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/__tests__/no-var-declaration-or-assignment-in-component.test.ts",
+          "hash": "7957637213404750849"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/__tests__/no-var-name-same-as-prop-name.test.ts",
+          "hash": "401177695008490470"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/__tests__/no-var-name-same-as-state-property.test.ts",
+          "hash": "2668321328833642985"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/__tests__/only-default-function-and-imports.test.ts",
+          "hash": "4284576981778230418"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/__tests__/prefer-show-over-ternary-operator.test.ts",
+          "hash": "13283075587248686287"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/__tests__/ref-no-current.test.ts",
+          "hash": "1501269775923742786"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/__tests__/static-control-flow.test.ts",
+          "hash": "16314901912958777473"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/__tests__/use-state-var-declarator.test.ts",
+          "hash": "4516530086550693725"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/css-no-vars.ts",
+          "hash": "17493098672605398234"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/index.ts",
+          "hash": "7334859775597240400"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/jsx-callback-arg-name.ts",
+          "hash": "16534430555892076027"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/jsx-callback-arrow-function.ts",
+          "hash": "1822714434539683285"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/no-assign-props-to-state.ts",
+          "hash": "14564475789678816762"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/no-async-methods-on-state.ts",
+          "hash": "1443308353987748806"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/no-conditional-logic-in-component-render.ts",
+          "hash": "7697961225490851517"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/no-map-function-in-jsx-return-body.ts",
+          "hash": "1091565700572713864"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/no-setter-with-same-name-as-state-prop.ts",
+          "hash": "4200032798069512795"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/no-state-destructuring.ts",
+          "hash": "1641761214445651060"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/no-var-declaration-in-jsx.ts",
+          "hash": "843790809117323279"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/no-var-declaration-or-assignment-in-component.ts",
+          "hash": "8185800982364734422"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/no-var-name-same-as-prop-name.ts",
+          "hash": "10448775667881394589"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/no-var-name-same-as-state-property.ts",
+          "hash": "17368065078971347214"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/only-default-function-and-imports.ts",
+          "hash": "6892239932114318995"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/prefer-show-over-ternary-operator.ts",
+          "hash": "4172428536555975368"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/ref-no-current.ts",
+          "hash": "6923852801123483238"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/static-control-flow.ts",
+          "hash": "1470557675369654337"
+        },
+        {
+          "file": "packages/eslint-plugin/src/rules/use-state-var-declarator.ts",
+          "hash": "10124841555089970552"
+        },
+        {
+          "file": "packages/eslint-plugin/src/types.ts",
+          "hash": "1529595584330284247"
+        },
+        {
+          "file": "packages/eslint-plugin/tsconfig.json",
+          "hash": "17736964941715238916"
+        },
+        {
+          "file": "packages/eslint-plugin/vite.config.ts",
+          "hash": "4286352644624340865"
+        }
+      ],
+      "@e2e-app/vue": [
+        {
+          "file": "e2e/e2e-app/output/vue/package.json",
+          "hash": "10304309897784164419",
+          "deps": [
+            "@builder.io/e2e-app",
+            "npm:@types/node@16.18.101",
+            "npm:@vitejs/plugin-vue@3.2.0",
+            "npm:@vue/tsconfig@0.1.3",
+            "npm:nx",
+            "npm:nx-cloud",
+            "npm:typescript",
+            "npm:vite@4.5.0",
+            "npm:vite-plugin-dts@1.7.3",
+            "npm:vue-tsc@0.39.5",
+            "npm:vue@3.4.31"
+          ]
+        },
+        {
+          "file": "e2e/e2e-app/output/vue/project.json",
+          "hash": "12642086119395837471"
+        },
+        {
+          "file": "e2e/e2e-app/output/vue/tsconfig.config.json",
+          "hash": "9221249381099999618"
+        },
+        {
+          "file": "e2e/e2e-app/output/vue/tsconfig.json",
+          "hash": "12839898935447079971"
+        },
+        {
+          "file": "e2e/e2e-app/output/vue/vite.config.ts",
+          "hash": "5154778181033306445"
+        }
+      ],
+      "@builder.io/e2e-app-qwik": [
+        {
+          "file": "e2e/e2e-app/output/qwik/.gitignore",
+          "hash": "2497259241514046030"
+        },
+        {
+          "file": "e2e/e2e-app/output/qwik/package.json",
+          "hash": "12215721105697114821",
+          "deps": [
+            "@builder.io/e2e-app",
+            "npm:@builder.io/qwik@1.7.1",
+            "npm:@types/node@20.14.10",
+            "npm:nx",
+            "npm:nx-cloud",
+            "npm:typescript",
+            "npm:undici@6.19.2",
+            "npm:vite@4.5.0"
+          ]
+        },
+        {
+          "file": "e2e/e2e-app/output/qwik/project.json",
+          "hash": "15733700244676519432"
+        },
+        {
+          "file": "e2e/e2e-app/output/qwik/tsconfig.json",
+          "hash": "10816385907401787596"
+        },
+        {
+          "file": "e2e/e2e-app/output/qwik/vite.config.ts",
+          "hash": "2501669118528427814"
+        }
+      ],
+      "@builder.io/e2e-react": [
+        {
+          "file": "e2e/e2e-react/.gitignore",
+          "hash": "457006341167198490"
+        },
+        {
+          "file": "e2e/e2e-react/README.md",
+          "hash": "85231756881654466"
+        },
+        {
+          "file": "e2e/e2e-react/index.html",
+          "hash": "11132259122015845910"
+        },
+        {
+          "file": "e2e/e2e-react/package.json",
+          "hash": "6172931193511001451",
+          "deps": [
+            "npm:@types/react@18.3.3",
+            "npm:@types/react-dom@18.3.0",
+            "npm:@vitejs/plugin-react@1.3.2",
+            "npm:nx",
+            "npm:nx-cloud",
+            "npm:rimraf@3.0.2",
+            "npm:typescript",
+            "npm:vite@4.5.0",
+            "@builder.io/e2e-app",
+            "npm:react@18.3.1",
+            "npm:react-dom@18.3.1"
+          ]
+        },
+        {
+          "file": "e2e/e2e-react/project.json",
+          "hash": "5915430011162078716"
+        },
+        {
+          "file": "e2e/e2e-react/src/App.tsx",
+          "hash": "6697892070013856823"
+        },
+        {
+          "file": "e2e/e2e-react/src/main.tsx",
+          "hash": "15154044738014056223"
+        },
+        {
+          "file": "e2e/e2e-react/src/vite-env.d.ts",
+          "hash": "12946363841406869089"
+        },
+        {
+          "file": "e2e/e2e-react/tsconfig.json",
+          "hash": "3197733200590959959"
+        },
+        {
+          "file": "e2e/e2e-react/tsconfig.node.json",
+          "hash": "2641887316940618802"
+        },
+        {
+          "file": "e2e/e2e-react/vite.config.ts",
+          "hash": "7890237328823880753"
+        }
+      ],
+      "@builder.io/todo-example": [
+        {
+          "file": "examples/todo/.eslintrc.js",
+          "hash": "85405213513141696"
+        },
+        {
+          "file": "examples/todo/.gitignore",
+          "hash": "10010190767946089055"
+        },
+        {
+          "file": "examples/todo/README.md",
+          "hash": "5787892386365075890"
+        },
+        {
+          "file": "examples/todo/mitosis.config.js",
+          "hash": "14656140311076280044"
+        },
+        {
+          "file": "examples/todo/package.json",
+          "hash": "11758432749219248229",
+          "deps": [
+            "npm:nx",
+            "npm:nx-cloud",
+            "@builder.io/mitosis",
+            "@builder.io/mitosis-cli",
+            "npm:eslint"
+          ]
+        },
+        {
+          "file": "examples/todo/src/components/header.svelte",
+          "hash": "12018952478468441702"
+        },
+        {
+          "file": "examples/todo/src/components/todo.lite.tsx",
+          "hash": "17843218900531340131"
+        },
+        {
+          "file": "examples/todo/src/components/todos.lite.tsx",
+          "hash": "6451911739285916282"
+        },
+        {
+          "file": "examples/todo/src/shared/todos-state.ts",
+          "hash": "13174412491864798215"
+        },
+        {
+          "file": "examples/todo/src/typings.d.ts",
+          "hash": "4202893417672152563"
+        },
+        {
+          "file": "examples/todo/tsconfig.json",
+          "hash": "6339536428494296651"
+        }
+      ],
+      "@builder.io/e2e-app": [
+        {
+          "file": "e2e/e2e-app/.gitignore",
+          "hash": "7988299662669754709"
+        },
+        {
+          "file": "e2e/e2e-app/README.md",
+          "hash": "14201891283975248674"
+        },
+        {
+          "file": "e2e/e2e-app/allow-failures.json",
+          "hash": "15064702314365362676"
+        },
+        {
+          "file": "e2e/e2e-app/e2e-output.ts",
+          "hash": "259163949379952923"
+        },
+        {
+          "file": "e2e/e2e-app/e2e.ts",
+          "hash": "1008727988316735140"
+        },
+        {
+          "file": "e2e/e2e-app/mitosis.config.cjs",
+          "hash": "17862246865934980074"
+        },
+        {
+          "file": "e2e/e2e-app/package.json",
+          "hash": "7841017349723736694",
+          "deps": [
+            "npm:@types/node@20.14.10",
+            "npm:concurrently@7.6.0",
+            "npm:nx",
+            "npm:nx-cloud",
+            "npm:react@18.3.1",
+            "npm:react-dom@18.3.1",
+            "npm:solid-js@1.8.18",
+            "npm:solid-styled-components@0.28.5",
+            "npm:sync-directory@5.1.9",
+            "npm:ts-node@10.9.2",
+            "npm:typescript",
+            "npm:vue@2.6.14",
+            "@builder.io/mitosis",
+            "@builder.io/mitosis-cli",
+            "npm:@playwright/test@1.45.1",
+            "npm:watch@1.0.2"
+          ]
+        },
+        {
+          "file": "e2e/e2e-app/playwright.config.ts",
+          "hash": "14439226965077437188"
+        },
+        {
+          "file": "e2e/e2e-app/project.json",
+          "hash": "10078266839530390371"
+        },
+        {
+          "file": "e2e/e2e-app/results.json",
+          "hash": "15832156960813223"
+        },
+        {
+          "file": "e2e/e2e-app/src/component-paths.ts",
+          "hash": "1790575141277982753"
+        },
+        {
+          "file": "e2e/e2e-app/src/components/component-with-types.lite.tsx",
+          "hash": "6677110795968408191"
+        },
+        {
+          "file": "e2e/e2e-app/src/components/disabled-input/disabled-input.lite.tsx",
+          "hash": "12049187696882214516"
+        },
+        {
+          "file": "e2e/e2e-app/src/components/disabled-input/native-input.lite.tsx",
+          "hash": "17709608140486105071"
+        },
+        {
+          "file": "e2e/e2e-app/src/components/disabled-input/simple-input.lite.tsx",
+          "hash": "4021094450059366188"
+        },
+        {
+          "file": "e2e/e2e-app/src/components/nested/item-list.lite.tsx",
+          "hash": "7177818688044190428"
+        },
+        {
+          "file": "e2e/e2e-app/src/components/nested/nested-parent.lite.tsx",
+          "hash": "919838426253841879"
+        },
+        {
+          "file": "e2e/e2e-app/src/components/one-component.lite.tsx",
+          "hash": "5125608770043000828"
+        },
+        {
+          "file": "e2e/e2e-app/src/components/show-for-component.lite.tsx",
+          "hash": "9877604740646210037"
+        },
+        {
+          "file": "e2e/e2e-app/src/components/signals/signal-item-list.lite.tsx",
+          "hash": "7308519499970283429"
+        },
+        {
+          "file": "e2e/e2e-app/src/components/signals/signal-parent.lite.tsx",
+          "hash": "6609043438396129973"
+        },
+        {
+          "file": "e2e/e2e-app/src/components/special-tags.lite.tsx",
+          "hash": "10310779925320691984"
+        },
+        {
+          "file": "e2e/e2e-app/src/homepage.lite.tsx",
+          "hash": "11261114372116286992"
+        },
+        {
+          "file": "e2e/e2e-app/src/index.ts",
+          "hash": "10619366197880051889"
+        },
+        {
+          "file": "e2e/e2e-app/src/testConfig.ts",
+          "hash": "3340347093378802367"
+        },
+        {
+          "file": "e2e/e2e-app/tests/main.spec.ts",
+          "hash": "8949233708954037350"
+        },
+        {
+          "file": "e2e/e2e-app/tsconfig.json",
+          "hash": "15974641847240983557"
+        },
+        {
+          "file": "e2e/e2e-app/tsconfig.node.json",
+          "hash": "2215983208747495176"
+        }
+      ],
       "@builder.io/mitosis-cli": [
         {
           "file": "packages/cli/.gitignore",
@@ -964,92 +1557,1213 @@
           "hash": "4286352644624340865"
         }
       ],
-      "@builder.io/todo-example": [
+      "@builder.io/mitosis-site": [
         {
-          "file": "examples/todo/.eslintrc.js",
-          "hash": "85405213513141696"
+          "file": "packages/docs/.eslintignore",
+          "hash": "8788580605553967678"
         },
         {
-          "file": "examples/todo/.gitignore",
-          "hash": "10010190767946089055"
+          "file": "packages/docs/.gitignore",
+          "hash": "1127604440674906372"
         },
         {
-          "file": "examples/todo/README.md",
-          "hash": "5787892386365075890"
+          "file": "packages/docs/.nvmrc",
+          "hash": "16110363446162608667"
         },
         {
-          "file": "examples/todo/mitosis.config.js",
-          "hash": "14656140311076280044"
+          "file": "packages/docs/.prettierignore",
+          "hash": "18026352017748956344"
         },
         {
-          "file": "examples/todo/package.json",
-          "hash": "11758432749219248229",
+          "file": "packages/docs/.tool-versions",
+          "hash": "17815236066095902755"
+        },
+        {
+          "file": "packages/docs/.vscode/launch.json",
+          "hash": "2125652616757145198"
+        },
+        {
+          "file": "packages/docs/.vscode/qwik-city.code-snippets",
+          "hash": "3641156675166213027"
+        },
+        {
+          "file": "packages/docs/.vscode/qwik.code-snippets",
+          "hash": "14647880614697408240"
+        },
+        {
+          "file": "packages/docs/README.md",
+          "hash": "8935292415945170793"
+        },
+        {
+          "file": "packages/docs/adapters/cloudflare-pages/vite.config.ts",
+          "hash": "4077482453524973156"
+        },
+        {
+          "file": "packages/docs/package.json",
+          "hash": "7019860621747498137",
           "deps": [
+            "@builder.io/mitosis",
+            "npm:@builder.io/partytown@0.8.2",
+            "npm:@builder.io/qwik@1.7.1",
+            "npm:@builder.io/qwik-labs-canary@0.0.1",
+            "npm:@originjs/vite-plugin-commonjs@1.0.3",
+            "npm:@qwik-ui/headless@0.3.8",
+            "npm:@qwikest/icons@0.0.13",
+            "npm:@tailwindcss/typography@0.5.13",
+            "npm:@types/eslint@8.56.10",
+            "npm:@types/lodash-es@4.17.12",
+            "npm:@types/node@20.14.10",
+            "npm:@types/react@18.3.3",
+            "npm:@types/react-dom@18.3.0",
+            "npm:@typescript-eslint/eslint-plugin@7.16.1",
+            "npm:@typescript-eslint/parser@7.16.1",
+            "npm:autoprefixer@10.4.19",
+            "npm:eslint@8.57.0",
+            "npm:eslint-plugin-qwik@1.7.1",
+            "npm:lodash-es@4.17.21",
+            "npm:lz-string@1.5.0",
+            "npm:meilisearch-docsearch@0.6.0",
+            "npm:monaco-editor@0.48.0",
             "npm:nx",
             "npm:nx-cloud",
-            "@builder.io/mitosis",
-            "@builder.io/mitosis-cli",
-            "npm:eslint"
+            "npm:postcss@8.4.39",
+            "npm:prettier",
+            "npm:prettier-plugin-tailwindcss@0.5.14",
+            "npm:prismjs@1.29.0",
+            "npm:qwik-content-loader@0.0.4",
+            "npm:react@18.3.1",
+            "npm:react-dom@18.3.1",
+            "npm:react-loading-skeleton@3.4.0",
+            "npm:refractor@4.8.1",
+            "npm:tailwindcss@3.3.3",
+            "npm:typescript@5.3.3",
+            "npm:undici@6.19.2",
+            "npm:vite@4.5.0",
+            "npm:vite-plugin-commonjs@0.10.1",
+            "npm:vite-plugin-node-polyfills@0.21.0",
+            "npm:vite-plugin-replace@0.1.1",
+            "npm:vite-tsconfig-paths@4.3.2",
+            "npm:wrangler@3.64.0"
           ]
         },
         {
-          "file": "examples/todo/src/components/header.svelte",
-          "hash": "12018952478468441702"
+          "file": "packages/docs/postcss.config.cjs",
+          "hash": "8474707661995296558"
         },
         {
-          "file": "examples/todo/src/components/todo.lite.tsx",
-          "hash": "17843218900531340131"
+          "file": "packages/docs/project.json",
+          "hash": "15813944881355515027"
         },
         {
-          "file": "examples/todo/src/components/todos.lite.tsx",
-          "hash": "6451911739285916282"
+          "file": "packages/docs/public/_headers",
+          "hash": "9305388039929309654"
         },
         {
-          "file": "examples/todo/src/shared/todos-state.ts",
-          "hash": "13174412491864798215"
+          "file": "packages/docs/public/_redirects",
+          "hash": "13975889273791189387"
         },
         {
-          "file": "examples/todo/src/typings.d.ts",
-          "hash": "4202893417672152563"
+          "file": "packages/docs/public/fonts/poppins-400.woff2",
+          "hash": "6447715655068198684"
         },
         {
-          "file": "examples/todo/tsconfig.json",
-          "hash": "6339536428494296651"
+          "file": "packages/docs/public/fonts/poppins-500.woff2",
+          "hash": "4442121965380647356"
+        },
+        {
+          "file": "packages/docs/public/fonts/poppins-700.woff2",
+          "hash": "11693702883479235856"
+        },
+        {
+          "file": "packages/docs/public/github-logo.png",
+          "hash": "17101495406216706584"
+        },
+        {
+          "file": "packages/docs/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "packages/docs/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "packages/docs/scripts/fix-node-modules.js",
+          "hash": "6020232116791836122"
+        },
+        {
+          "file": "packages/docs/src/components/code-editor.tsx",
+          "hash": "4403946654018217404"
+        },
+        {
+          "file": "packages/docs/src/components/code-rotator.tsx",
+          "hash": "3176874252551701800"
+        },
+        {
+          "file": "packages/docs/src/components/footer.tsx",
+          "hash": "11440804262643889035"
+        },
+        {
+          "file": "packages/docs/src/components/header.tsx",
+          "hash": "266347423039861136"
+        },
+        {
+          "file": "packages/docs/src/components/partytown/partytown.tsx",
+          "hash": "7299458137691723700"
+        },
+        {
+          "file": "packages/docs/src/components/router-head.tsx",
+          "hash": "9754831391481187660"
+        },
+        {
+          "file": "packages/docs/src/components/search.tsx",
+          "hash": "2057156174943892822"
+        },
+        {
+          "file": "packages/docs/src/components/select.tsx",
+          "hash": "13849190039475104256"
+        },
+        {
+          "file": "packages/docs/src/entry.cloudflare-pages.tsx",
+          "hash": "11521926312295436017"
+        },
+        {
+          "file": "packages/docs/src/entry.dev.tsx",
+          "hash": "15263945111847313822"
+        },
+        {
+          "file": "packages/docs/src/entry.preview.tsx",
+          "hash": "12523607060466884099"
+        },
+        {
+          "file": "packages/docs/src/entry.ssr.tsx",
+          "hash": "1624436070683442878"
+        },
+        {
+          "file": "packages/docs/src/global.css",
+          "hash": "13305598050168039786"
+        },
+        {
+          "file": "packages/docs/src/media/thunder.png",
+          "hash": "1386018888671603473"
+        },
+        {
+          "file": "packages/docs/src/root.tsx",
+          "hash": "6116957532482174049"
+        },
+        {
+          "file": "packages/docs/src/routes/docs/cli/index.mdx",
+          "hash": "18002931200178013801"
+        },
+        {
+          "file": "packages/docs/src/routes/docs/components/index.mdx",
+          "hash": "8150816031093477655"
+        },
+        {
+          "file": "packages/docs/src/routes/docs/configuration/index.mdx",
+          "hash": "9182744468846637912"
+        },
+        {
+          "file": "packages/docs/src/routes/docs/context/index.mdx",
+          "hash": "3576599533785006583"
+        },
+        {
+          "file": "packages/docs/src/routes/docs/customizability/index.mdx",
+          "hash": "5264352487502190000"
+        },
+        {
+          "file": "packages/docs/src/routes/docs/figma/index.mdx",
+          "hash": "5662506677421511642"
+        },
+        {
+          "file": "packages/docs/src/routes/docs/gotchas/index.mdx",
+          "hash": "11432630397673963506"
+        },
+        {
+          "file": "packages/docs/src/routes/docs/hooks/index.mdx",
+          "hash": "15418364745940506619"
+        },
+        {
+          "file": "packages/docs/src/routes/docs/index.tsx",
+          "hash": "13366451211125214620"
+        },
+        {
+          "file": "packages/docs/src/routes/docs/layout.tsx",
+          "hash": "13116218452227401226"
+        },
+        {
+          "file": "packages/docs/src/routes/docs/overview/index.mdx",
+          "hash": "9903065163747498771"
+        },
+        {
+          "file": "packages/docs/src/routes/docs/project-structure/index.mdx",
+          "hash": "6242971918226106188"
+        },
+        {
+          "file": "packages/docs/src/routes/docs/quickstart/index.mdx",
+          "hash": "9426519841397897950"
+        },
+        {
+          "file": "packages/docs/src/routes/docs/right-sidebar.tsx",
+          "hash": "2785552323427155900"
+        },
+        {
+          "file": "packages/docs/src/routes/docs/sidebar.tsx",
+          "hash": "3850660620089985310"
+        },
+        {
+          "file": "packages/docs/src/routes/docs/using-libraries/index.mdx",
+          "hash": "2026727901993177402"
+        },
+        {
+          "file": "packages/docs/src/routes/index.tsx",
+          "hash": "1619895902088568276"
+        },
+        {
+          "file": "packages/docs/src/routes/layout.tsx",
+          "hash": "17444207794835452265"
+        },
+        {
+          "file": "packages/docs/src/routes/playground-old/index.tsx",
+          "hash": "10627551491200939259"
+        },
+        {
+          "file": "packages/docs/src/routes/playground/index.tsx",
+          "hash": "10041293268092061991"
+        },
+        {
+          "file": "packages/docs/src/routes/service-worker.ts",
+          "hash": "16930089838877651112"
+        },
+        {
+          "file": "packages/docs/src/services/compile.ts",
+          "hash": "4786681919797049101"
+        },
+        {
+          "file": "packages/docs/tailwind.config.js",
+          "hash": "18301236264825251398"
+        },
+        {
+          "file": "packages/docs/tsconfig.json",
+          "hash": "9752205702872351922"
+        },
+        {
+          "file": "packages/docs/vite.config.ts",
+          "hash": "4596428810862984296"
+        },
+        {
+          "file": "packages/docs/wrangler.toml",
+          "hash": "5188378448962702878"
         }
       ],
-      "@e2e-app/vue": [
+      "@builder.io/mitosis-fiddle": [
         {
-          "file": "e2e/e2e-app/output/vue/package.json",
-          "hash": "10304309897784164419",
+          "file": "packages/fiddle/.gitignore",
+          "hash": "13637581552673481531"
+        },
+        {
+          "file": "packages/fiddle/.npmrc",
+          "hash": "16826263075418832769"
+        },
+        {
+          "file": "packages/fiddle/next-env.d.ts",
+          "hash": "5909181270615354023"
+        },
+        {
+          "file": "packages/fiddle/next.config.js",
+          "hash": "2382149826096991359"
+        },
+        {
+          "file": "packages/fiddle/package.json",
+          "hash": "4454651485541758794",
           "deps": [
-            "@builder.io/e2e-app",
-            "npm:@types/node@16.18.101",
-            "npm:@vitejs/plugin-vue@3.2.0",
-            "npm:@vue/tsconfig@0.1.3",
+            "npm:@types/lz-string@1.3.34",
+            "npm:@types/node@18.19.39",
+            "npm:@typescript-eslint/typescript-estree@5.62.0",
+            "npm:eslint@9.7.0",
+            "npm:nx",
+            "npm:nx-cloud",
+            "@builder.io/eslint-plugin-mitosis",
+            "@builder.io/mitosis",
+            "npm:@builder.io/sdk@1.3.1",
+            "npm:@emotion/react@11.11.4",
+            "npm:@material-ui/core@4.12.4",
+            "npm:@material-ui/lab@4.0.0-alpha.61",
+            "npm:@monaco-editor/react@4.6.0",
+            "npm:@types/dedent@0.7.2",
+            "npm:@types/eslint@8.56.10",
+            "npm:@types/prettier@2.7.3",
+            "npm:@types/react-dom@18.3.0",
+            "npm:dedent@0.7.0",
+            "npm:lz-string@1.5.0",
+            "npm:mobx@6.13.0",
+            "npm:mobx-react-lite@3.4.3",
+            "npm:monaco-editor@0.34.1",
+            "npm:next@14.2.5",
+            "npm:prettier",
+            "npm:prettier-plugin-svelte@3.2.5",
+            "npm:raw-loader@4.0.2",
+            "npm:react@18.3.1",
+            "npm:react-dom@18.3.1",
+            "npm:react-use@17.5.0",
+            "npm:svelte@4.2.18",
+            "npm:tsconfig-paths-webpack-plugin@3.5.2",
+            "npm:web-vitals@2.1.4",
+            "npm:webcomponents-in-react@1.0.1"
+          ]
+        },
+        {
+          "file": "packages/fiddle/pages/index.tsx",
+          "hash": "3831763118741046517"
+        },
+        {
+          "file": "packages/fiddle/public/favicon-dark.ico",
+          "hash": "17098335684726911842"
+        },
+        {
+          "file": "packages/fiddle/public/favicon.ico",
+          "hash": "16845407740223711153"
+        },
+        {
+          "file": "packages/fiddle/public/github-logo.png",
+          "hash": "17101495406216706584"
+        },
+        {
+          "file": "packages/fiddle/public/mitosis-logo-white.png",
+          "hash": "18192384798381339560"
+        },
+        {
+          "file": "packages/fiddle/public/robots.txt",
+          "hash": "2790380794362165217"
+        },
+        {
+          "file": "packages/fiddle/src/components/App.tsx",
+          "hash": "9136018898276120218"
+        },
+        {
+          "file": "packages/fiddle/src/components/Fiddle/Fiddle.tsx",
+          "hash": "2200446533267715145"
+        },
+        {
+          "file": "packages/fiddle/src/components/Fiddle/Linter.ts",
+          "hash": "1167630725893635299"
+        },
+        {
+          "file": "packages/fiddle/src/components/Fiddle/generate.ts",
+          "hash": "3367082361955139465"
+        },
+        {
+          "file": "packages/fiddle/src/components/Fiddle/index.ts",
+          "hash": "787724065567024896"
+        },
+        {
+          "file": "packages/fiddle/src/components/JsxCodeEditor.tsx",
+          "hash": "15576881327645914410"
+        },
+        {
+          "file": "packages/fiddle/src/components/Show.tsx",
+          "hash": "11521445562228810065"
+        },
+        {
+          "file": "packages/fiddle/src/components/SvelteCodeEditor.tsx",
+          "hash": "1886360330578873140"
+        },
+        {
+          "file": "packages/fiddle/src/components/Talk.tsx",
+          "hash": "2811714435295925246"
+        },
+        {
+          "file": "packages/fiddle/src/components/TextLink.tsx",
+          "hash": "721877254243582901"
+        },
+        {
+          "file": "packages/fiddle/src/constants/breakpoints.ts",
+          "hash": "15918422254667677972"
+        },
+        {
+          "file": "packages/fiddle/src/constants/colors.ts",
+          "hash": "12518083205673020141"
+        },
+        {
+          "file": "packages/fiddle/src/constants/device.ts",
+          "hash": "11492147878633183766"
+        },
+        {
+          "file": "packages/fiddle/src/constants/templates/jsx-templates.ts",
+          "hash": "10180142245072916352"
+        },
+        {
+          "file": "packages/fiddle/src/constants/templates/svelte-templates.ts",
+          "hash": "3633777254772181208"
+        },
+        {
+          "file": "packages/fiddle/src/constants/theme.ts",
+          "hash": "8670754054640267875"
+        },
+        {
+          "file": "packages/fiddle/src/functions/delete-query-param.ts",
+          "hash": "7717747721685905923"
+        },
+        {
+          "file": "packages/fiddle/src/functions/get-query-param.ts",
+          "hash": "10069464755247229002"
+        },
+        {
+          "file": "packages/fiddle/src/functions/local-storage-get.ts",
+          "hash": "12137457378800531319"
+        },
+        {
+          "file": "packages/fiddle/src/functions/local-storage-set.ts",
+          "hash": "8683337226369252629"
+        },
+        {
+          "file": "packages/fiddle/src/functions/prompt-upload-figma-file.ts",
+          "hash": "2262861071412616882"
+        },
+        {
+          "file": "packages/fiddle/src/functions/set-query-param.ts",
+          "hash": "7508964074145591169"
+        },
+        {
+          "file": "packages/fiddle/src/hooks/use-event-listener.ts",
+          "hash": "3853083260844375479"
+        },
+        {
+          "file": "packages/fiddle/src/hooks/use-reaction.ts",
+          "hash": "2173140997732034118"
+        },
+        {
+          "file": "packages/fiddle/src/index.css",
+          "hash": "17237273854754878271"
+        },
+        {
+          "file": "packages/fiddle/src/react-app-env.d.ts",
+          "hash": "4236955471702209130"
+        },
+        {
+          "file": "packages/fiddle/tsconfig.json",
+          "hash": "2240166869822177894"
+        }
+      ],
+      "@builder.io/basic-example": [
+        {
+          "file": "examples/basic/.eslintignore",
+          "hash": "7601973869715788285"
+        },
+        {
+          "file": "examples/basic/.eslintrc.js",
+          "hash": "16937904355488624045"
+        },
+        {
+          "file": "examples/basic/.gitignore",
+          "hash": "10010190767946089055"
+        },
+        {
+          "file": "examples/basic/.prettierignore",
+          "hash": "8730569658026971551"
+        },
+        {
+          "file": "examples/basic/.prettierrc",
+          "hash": "5767386889685389681"
+        },
+        {
+          "file": "examples/basic/README.md",
+          "hash": "5384179845335470602"
+        },
+        {
+          "file": "examples/basic/mitosis.config.js",
+          "hash": "14539969613794165873"
+        },
+        {
+          "file": "examples/basic/overrides/react-native/src/blocks/image.tsx",
+          "hash": "4091644047043077828"
+        },
+        {
+          "file": "examples/basic/overrides/react-native/src/components/error-boundary.tsx",
+          "hash": "18393264009842988973"
+        },
+        {
+          "file": "examples/basic/overrides/react-native/src/functions/is-react-native.ts",
+          "hash": "14969621386436937857"
+        },
+        {
+          "file": "examples/basic/overrides/react-native/src/index-helpers/top-of-file.ts",
+          "hash": "9745024558810911745"
+        },
+        {
+          "file": "examples/basic/overrides/vue/src/components/error-boundary.vue",
+          "hash": "18163568999765371118"
+        },
+        {
+          "file": "examples/basic/package.json",
+          "hash": "8529490494849421708",
+          "deps": [
+            "@builder.io/eslint-plugin-mitosis",
+            "npm:@types/node-fetch@2.6.11",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:eslint@8.57.0",
+            "npm:nx",
+            "npm:nx-cloud",
+            "npm:prettier",
+            "npm:typescript",
+            "npm:watch@1.0.2",
+            "@builder.io/mitosis",
+            "@builder.io/mitosis-cli",
+            "npm:node-fetch@2.7.0",
+            "npm:seedrandom@3.0.5"
+          ]
+        },
+        {
+          "file": "examples/basic/src/blocks/button.lite.tsx",
+          "hash": "5141009073750732852"
+        },
+        {
+          "file": "examples/basic/src/blocks/image.lite.tsx",
+          "hash": "3081403049330837066"
+        },
+        {
+          "file": "examples/basic/src/components/error-boundary.lite.tsx",
+          "hash": "13605276755348421682"
+        },
+        {
+          "file": "examples/basic/src/functions/is-browser.ts",
+          "hash": "17644002964715501001"
+        },
+        {
+          "file": "examples/basic/src/functions/is-react-native.ts",
+          "hash": "1883417980034436448"
+        },
+        {
+          "file": "examples/basic/src/functions/track.ts",
+          "hash": "15211031133614750925"
+        },
+        {
+          "file": "examples/basic/src/index-helpers/blocks-exports.ts",
+          "hash": "7298822144553939168"
+        },
+        {
+          "file": "examples/basic/src/index-helpers/top-of-file.ts",
+          "hash": "16551904918380133146"
+        },
+        {
+          "file": "examples/basic/src/index.ts",
+          "hash": "1964736526143410873"
+        },
+        {
+          "file": "examples/basic/tsconfig.json",
+          "hash": "17091155970111805407"
+        }
+      ],
+      "@builder.io/e2e-vue3": [
+        {
+          "file": "e2e/e2e-vue3/.gitignore",
+          "hash": "6311463200283436441"
+        },
+        {
+          "file": "e2e/e2e-vue3/README.md",
+          "hash": "13649627999626365739"
+        },
+        {
+          "file": "e2e/e2e-vue3/index.html",
+          "hash": "2764409597847029975"
+        },
+        {
+          "file": "e2e/e2e-vue3/package.json",
+          "hash": "9511227769743308942",
+          "deps": [
+            "npm:@vitejs/plugin-vue@2.3.4",
+            "npm:@vue/devtools@6.6.3",
             "npm:nx",
             "npm:nx-cloud",
             "npm:typescript",
             "npm:vite@4.5.0",
-            "npm:vite-plugin-dts@1.7.3",
-            "npm:vue-tsc@0.39.5",
+            "npm:vue-tsc@1.8.27",
+            "@e2e-app/vue",
             "npm:vue@3.4.31"
           ]
         },
         {
-          "file": "e2e/e2e-app/output/vue/project.json",
-          "hash": "12642086119395837471"
+          "file": "e2e/e2e-vue3/src/App.vue",
+          "hash": "10176375520045751416"
         },
         {
-          "file": "e2e/e2e-app/output/vue/tsconfig.config.json",
-          "hash": "9221249381099999618"
+          "file": "e2e/e2e-vue3/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
         },
         {
-          "file": "e2e/e2e-app/output/vue/tsconfig.json",
-          "hash": "12839898935447079971"
+          "file": "e2e/e2e-vue3/src/env.d.ts",
+          "hash": "1691197428849636078"
         },
         {
-          "file": "e2e/e2e-app/output/vue/vite.config.ts",
-          "hash": "5154778181033306445"
+          "file": "e2e/e2e-vue3/src/main.ts",
+          "hash": "7061388890574151967"
+        },
+        {
+          "file": "e2e/e2e-vue3/tsconfig.json",
+          "hash": "5235629422958852471"
+        },
+        {
+          "file": "e2e/e2e-vue3/tsconfig.node.json",
+          "hash": "2641887316940618802"
+        },
+        {
+          "file": "e2e/e2e-vue3/vite.config.ts",
+          "hash": "3523906533468400916"
+        }
+      ],
+      "@builder.io/create-mitosis": [
+        {
+          "file": "packages/starter/.gitignore",
+          "hash": "10950024526729759001"
+        },
+        {
+          "file": "packages/starter/.npmignore",
+          "hash": "14316421005380273598"
+        },
+        {
+          "file": "packages/starter/CHANGELOG.md",
+          "hash": "5368900012280647470"
+        },
+        {
+          "file": "packages/starter/jsconfig.json",
+          "hash": "4605954014414661840"
+        },
+        {
+          "file": "packages/starter/package.json",
+          "hash": "3380936376141674534",
+          "deps": [
+            "npm:@types/node@20.14.10",
+            "npm:nx",
+            "npm:nx-cloud",
+            "npm:@clack/prompts@0.7.0",
+            "npm:cross-spawn@7.0.3"
+          ]
+        },
+        {
+          "file": "packages/starter/package.tgz",
+          "hash": "13963224697961535321"
+        },
+        {
+          "file": "packages/starter/script.cjs",
+          "hash": "2558583381823690827"
+        },
+        {
+          "file": "packages/starter/template/README.md",
+          "hash": "16766678821683714427"
+        },
+        {
+          "file": "packages/starter/template/library/.eslintrc.cjs",
+          "hash": "1726072775227379835"
+        },
+        {
+          "file": "packages/starter/template/library/.gitignore",
+          "hash": "1029230439175295425"
+        },
+        {
+          "file": "packages/starter/template/library/mitosis.config.cjs",
+          "hash": "7992642097030692056"
+        },
+        {
+          "file": "packages/starter/template/library/package.json",
+          "hash": "5945860696063039261"
+        },
+        {
+          "file": "packages/starter/template/library/packages/qwik/.eslintignore",
+          "hash": "16460292053574400053"
+        },
+        {
+          "file": "packages/starter/template/library/packages/qwik/.eslintrc.cjs",
+          "hash": "16666637102903757906"
+        },
+        {
+          "file": "packages/starter/template/library/packages/qwik/.gitignore",
+          "hash": "8432013445865941944"
+        },
+        {
+          "file": "packages/starter/template/library/packages/qwik/.prettierignore",
+          "hash": "4191589933618347592"
+        },
+        {
+          "file": "packages/starter/template/library/packages/qwik/package.json",
+          "hash": "6336680668980234922"
+        },
+        {
+          "file": "packages/starter/template/library/packages/qwik/tsconfig.json",
+          "hash": "5157752851451751034"
+        },
+        {
+          "file": "packages/starter/template/library/packages/qwik/vite.config.ts",
+          "hash": "14918094233892691460"
+        },
+        {
+          "file": "packages/starter/template/library/packages/react/package.json",
+          "hash": "2978254233196104938"
+        },
+        {
+          "file": "packages/starter/template/library/packages/svelte/.gitignore",
+          "hash": "11568849941268464997"
+        },
+        {
+          "file": "packages/starter/template/library/packages/svelte/package.json",
+          "hash": "16541825632433876748"
+        },
+        {
+          "file": "packages/starter/template/library/packages/svelte/routes/index/+page.svelte",
+          "hash": "11518360682739565711"
+        },
+        {
+          "file": "packages/starter/template/library/packages/svelte/svelte.config.js",
+          "hash": "13782333101043172343"
+        },
+        {
+          "file": "packages/starter/template/library/packages/svelte/tsconfig.json",
+          "hash": "11222854705894579026"
+        },
+        {
+          "file": "packages/starter/template/library/packages/svelte/vite.config.ts",
+          "hash": "2628694102171437856"
+        },
+        {
+          "file": "packages/starter/template/library/src/autocomplete/autocomplete.lite.tsx",
+          "hash": "18285756774461824415"
+        },
+        {
+          "file": "packages/starter/template/library/src/index.ts",
+          "hash": "2648342051382014532"
+        },
+        {
+          "file": "packages/starter/template/library/src/todo-app/todo-app.lite.tsx",
+          "hash": "4470650460695731236"
+        },
+        {
+          "file": "packages/starter/template/library/tsconfig.json",
+          "hash": "8114873903757674066"
+        },
+        {
+          "file": "packages/starter/template/package.json",
+          "hash": "12120017497422955250"
+        },
+        {
+          "file": "packages/starter/template/test-apps/qwik/.eslintignore",
+          "hash": "8788580605553967678"
+        },
+        {
+          "file": "packages/starter/template/test-apps/qwik/.eslintrc.cjs",
+          "hash": "16659622349671536439"
+        },
+        {
+          "file": "packages/starter/template/test-apps/qwik/.gitignore",
+          "hash": "3464072517076082233"
+        },
+        {
+          "file": "packages/starter/template/test-apps/qwik/.prettierignore",
+          "hash": "8788580605553967678"
+        },
+        {
+          "file": "packages/starter/template/test-apps/qwik/package.json",
+          "hash": "8485093254775906318"
+        },
+        {
+          "file": "packages/starter/template/test-apps/qwik/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "packages/starter/template/test-apps/qwik/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "packages/starter/template/test-apps/qwik/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "packages/starter/template/test-apps/qwik/src/entry.dev.tsx",
+          "hash": "15263945111847313822"
+        },
+        {
+          "file": "packages/starter/template/test-apps/qwik/src/entry.preview.tsx",
+          "hash": "12523607060466884099"
+        },
+        {
+          "file": "packages/starter/template/test-apps/qwik/src/entry.ssr.tsx",
+          "hash": "1624436070683442878"
+        },
+        {
+          "file": "packages/starter/template/test-apps/qwik/src/root.tsx",
+          "hash": "16458470715291624764"
+        },
+        {
+          "file": "packages/starter/template/test-apps/qwik/src/routes/index.tsx",
+          "hash": "2784093439437442452"
+        },
+        {
+          "file": "packages/starter/template/test-apps/qwik/src/routes/layout.tsx",
+          "hash": "17239252894848769627"
+        },
+        {
+          "file": "packages/starter/template/test-apps/qwik/src/routes/service-worker.ts",
+          "hash": "6519991492550831346"
+        },
+        {
+          "file": "packages/starter/template/test-apps/qwik/tsconfig.json",
+          "hash": "13910477524058988059"
+        },
+        {
+          "file": "packages/starter/template/test-apps/qwik/vite.config.ts",
+          "hash": "1881393006743271698"
+        },
+        {
+          "file": "packages/starter/template/test-apps/react/.gitignore",
+          "hash": "457006341167198490"
+        },
+        {
+          "file": "packages/starter/template/test-apps/react/index.html",
+          "hash": "11132259122015845910"
+        },
+        {
+          "file": "packages/starter/template/test-apps/react/package.json",
+          "hash": "2828715428210745580"
+        },
+        {
+          "file": "packages/starter/template/test-apps/react/src/App.jsx",
+          "hash": "10295512820881872615"
+        },
+        {
+          "file": "packages/starter/template/test-apps/react/src/main.tsx",
+          "hash": "911191287311163781"
+        },
+        {
+          "file": "packages/starter/template/test-apps/react/src/vite-env.d.ts",
+          "hash": "12946363841406869089"
+        },
+        {
+          "file": "packages/starter/template/test-apps/react/tsconfig.json",
+          "hash": "3197733200590959959"
+        },
+        {
+          "file": "packages/starter/template/test-apps/react/tsconfig.node.json",
+          "hash": "2641887316940618802"
+        },
+        {
+          "file": "packages/starter/template/test-apps/react/vite.config.ts",
+          "hash": "9718426994227816747"
+        },
+        {
+          "file": "packages/starter/template/test-apps/svelte/.gitignore",
+          "hash": "7598953665689540419"
+        },
+        {
+          "file": "packages/starter/template/test-apps/svelte/package.json",
+          "hash": "13930814326788548579"
+        },
+        {
+          "file": "packages/starter/template/test-apps/svelte/src/app.html",
+          "hash": "16873520989378015237"
+        },
+        {
+          "file": "packages/starter/template/test-apps/svelte/src/routes/+page.svelte",
+          "hash": "12898391437602720503"
+        },
+        {
+          "file": "packages/starter/template/test-apps/svelte/svelte.config.js",
+          "hash": "11595356662296008876"
+        },
+        {
+          "file": "packages/starter/template/test-apps/svelte/vite.config.js",
+          "hash": "2628694102171437856"
+        }
+      ],
+      "@builder.io/e2e-angular": [
+        {
+          "file": "e2e/e2e-angular/.browserslistrc",
+          "hash": "17600754102500844387"
+        },
+        {
+          "file": "e2e/e2e-angular/.gitignore",
+          "hash": "5356630726981675216"
+        },
+        {
+          "file": "e2e/e2e-angular/README.md",
+          "hash": "11711973480719797011"
+        },
+        {
+          "file": "e2e/e2e-angular/angular.json",
+          "hash": "16456562331505900874"
+        },
+        {
+          "file": "e2e/e2e-angular/angular_src/app/app.component.html",
+          "hash": "2092931734164238505"
+        },
+        {
+          "file": "e2e/e2e-angular/angular_src/app/app.component.ts",
+          "hash": "2452288925001993208"
+        },
+        {
+          "file": "e2e/e2e-angular/angular_src/app/app.module.ts",
+          "hash": "6166670075054920061"
+        },
+        {
+          "file": "e2e/e2e-angular/angular_src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "e2e/e2e-angular/angular_src/environments/environment.prod.ts",
+          "hash": "10220522844224226756"
+        },
+        {
+          "file": "e2e/e2e-angular/angular_src/environments/environment.ts",
+          "hash": "15801694716951284069"
+        },
+        {
+          "file": "e2e/e2e-angular/angular_src/favicon.ico",
+          "hash": "3464744996580215640"
+        },
+        {
+          "file": "e2e/e2e-angular/angular_src/index.html",
+          "hash": "6083592974331884476"
+        },
+        {
+          "file": "e2e/e2e-angular/angular_src/main.ts",
+          "hash": "14896519517424602606"
+        },
+        {
+          "file": "e2e/e2e-angular/angular_src/polyfills.ts",
+          "hash": "8359130279103648610"
+        },
+        {
+          "file": "e2e/e2e-angular/angular_src/styles.css",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "e2e/e2e-angular/package.json",
+          "hash": "4935525479845598019",
+          "deps": [
+            "npm:@angular-devkit/build-angular@15.2.11",
+            "npm:@angular/cli@15.2.11",
+            "npm:@angular/compiler-cli@15.2.10",
+            "npm:cpy-cli@5.0.0",
+            "npm:nx",
+            "npm:nx-cloud",
+            "npm:rimraf@3.0.2",
+            "npm:typescript@4.9.5",
+            "npm:@angular/animations@15.2.10",
+            "npm:@angular/common@15.2.10",
+            "npm:@angular/compiler@15.2.10",
+            "npm:@angular/core@15.2.10",
+            "npm:@angular/forms@15.2.10",
+            "npm:@angular/platform-browser@15.2.10",
+            "npm:@angular/platform-browser-dynamic@15.2.10",
+            "@builder.io/e2e-app",
+            "@builder.io/mitosis-cli",
+            "npm:http-server@14.1.1",
+            "npm:rxjs@7.5.7",
+            "npm:tslib@2.6.3",
+            "npm:zone.js@0.11.8"
+          ]
+        },
+        {
+          "file": "e2e/e2e-angular/tsconfig.app.json",
+          "hash": "16884648740959577628"
+        },
+        {
+          "file": "e2e/e2e-angular/tsconfig.json",
+          "hash": "17548475962156980463"
+        }
+      ],
+      "@builder.io/e2e-qwik": [
+        {
+          "file": "e2e/e2e-qwikcity/.eslintignore",
+          "hash": "8788580605553967678"
+        },
+        {
+          "file": "e2e/e2e-qwikcity/.eslintrc.cjs",
+          "hash": "12713353314846145337"
+        },
+        {
+          "file": "e2e/e2e-qwikcity/.gitignore",
+          "hash": "17960024034956059903"
+        },
+        {
+          "file": "e2e/e2e-qwikcity/.prettierignore",
+          "hash": "8788580605553967678"
+        },
+        {
+          "file": "e2e/e2e-qwikcity/.vscode/extensions.json",
+          "hash": "14092172138873811528"
+        },
+        {
+          "file": "e2e/e2e-qwikcity/README.md",
+          "hash": "9681847395185485948"
+        },
+        {
+          "file": "e2e/e2e-qwikcity/package.json",
+          "hash": "4855361267731968048",
+          "deps": [
+            "npm:@builder.io/qwik@1.7.1",
+            "npm:@types/eslint@8.21.1",
+            "npm:@types/node@18.19.39",
+            "npm:@types/node-fetch@2.6.11",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:eslint@8.35.0",
+            "npm:eslint-plugin-qwik@0.21.0",
+            "npm:node-fetch@3.3.0",
+            "npm:nx",
+            "npm:nx-cloud",
+            "npm:prettier",
+            "npm:typescript",
+            "npm:undici@5.20.0",
+            "npm:vite@4.5.0",
+            "npm:vite-tsconfig-paths@3.5.0",
+            "@builder.io/e2e-app-qwik"
+          ]
+        },
+        {
+          "file": "e2e/e2e-qwikcity/project.json",
+          "hash": "9007156706248293900"
+        },
+        {
+          "file": "e2e/e2e-qwikcity/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "e2e/e2e-qwikcity/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "e2e/e2e-qwikcity/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "e2e/e2e-qwikcity/src/components/header/header.css",
+          "hash": "3644838235687874347"
+        },
+        {
+          "file": "e2e/e2e-qwikcity/src/components/header/header.tsx",
+          "hash": "10078867332872214599"
+        },
+        {
+          "file": "e2e/e2e-qwikcity/src/components/icons/qwik.tsx",
+          "hash": "12244103485330884735"
+        },
+        {
+          "file": "e2e/e2e-qwikcity/src/components/router-head/router-head.tsx",
+          "hash": "13746360095956267150"
+        },
+        {
+          "file": "e2e/e2e-qwikcity/src/entry.dev.tsx",
+          "hash": "15263945111847313822"
+        },
+        {
+          "file": "e2e/e2e-qwikcity/src/entry.preview.tsx",
+          "hash": "12523607060466884099"
+        },
+        {
+          "file": "e2e/e2e-qwikcity/src/entry.ssr.tsx",
+          "hash": "5043917835333820131"
+        },
+        {
+          "file": "e2e/e2e-qwikcity/src/global.css",
+          "hash": "12694838070604250549"
+        },
+        {
+          "file": "e2e/e2e-qwikcity/src/root.tsx",
+          "hash": "15615098957747009956"
+        },
+        {
+          "file": "e2e/e2e-qwikcity/src/routes/[...index]/index.tsx",
+          "hash": "2014384343541073883"
+        },
+        {
+          "file": "e2e/e2e-qwikcity/src/routes/layout.tsx",
+          "hash": "8572016078014699812"
+        },
+        {
+          "file": "e2e/e2e-qwikcity/src/routes/service-worker.ts",
+          "hash": "6519991492550831346"
+        },
+        {
+          "file": "e2e/e2e-qwikcity/tsconfig.json",
+          "hash": "14757371674851134553"
+        },
+        {
+          "file": "e2e/e2e-qwikcity/vite.config.ts",
+          "hash": "10070457071396890636"
+        }
+      ],
+      "@builder.io/e2e-solid": [
+        {
+          "file": "e2e/e2e-solid/.gitignore",
+          "hash": "336589621833127008"
+        },
+        {
+          "file": "e2e/e2e-solid/README.md",
+          "hash": "16281593473728131225"
+        },
+        {
+          "file": "e2e/e2e-solid/index.html",
+          "hash": "12991144495272562089"
+        },
+        {
+          "file": "e2e/e2e-solid/package.json",
+          "hash": "15312977110355940350",
+          "deps": [
+            "npm:nx",
+            "npm:nx-cloud",
+            "npm:rimraf@3.0.2",
+            "npm:typescript",
+            "npm:vite@4.5.0",
+            "npm:vite-plugin-solid@2.10.2",
+            "@builder.io/e2e-app",
+            "npm:solid-js@1.8.18",
+            "npm:solid-styled-components@0.28.5"
+          ]
+        },
+        {
+          "file": "e2e/e2e-solid/src/App.tsx",
+          "hash": "3898056627307787909"
+        },
+        {
+          "file": "e2e/e2e-solid/src/index.tsx",
+          "hash": "15767127142061216516"
+        },
+        {
+          "file": "e2e/e2e-solid/tsconfig.json",
+          "hash": "12807035313515210407"
+        },
+        {
+          "file": "e2e/e2e-solid/vite.config.ts",
+          "hash": "4301567796664964114"
+        }
+      ],
+      "@builder.io/e2e-alpine": [
+        {
+          "file": "e2e/e2e-alpine/README.md",
+          "hash": "7324973125250886990"
+        },
+        {
+          "file": "e2e/e2e-alpine/index.html",
+          "hash": "4003881085808494751"
+        },
+        {
+          "file": "e2e/e2e-alpine/package.json",
+          "hash": "10042594956757147503",
+          "deps": [
+            "npm:alpinejs@3.14.1",
+            "npm:nx",
+            "npm:nx-cloud",
+            "npm:rimraf@3.0.2",
+            "npm:vite@4.5.0",
+            "npm:vite-plugin-handlebars@1.6.0",
+            "@builder.io/e2e-app"
+          ]
+        },
+        {
+          "file": "e2e/e2e-alpine/src/main.ts",
+          "hash": "14905717186101784235"
+        },
+        {
+          "file": "e2e/e2e-alpine/vite.config.ts",
+          "hash": "13828801491984896806"
         }
       ],
       "@builder.io/mitosis": [
@@ -1084,6 +2798,14 @@
         {
           "file": "packages/core/README.md",
           "hash": "7832565796971501200"
+        },
+        {
+          "file": "packages/core/dist/tsconfig.build.tsbuildinfo",
+          "hash": "17854709157249139126"
+        },
+        {
+          "file": "packages/core/input/greet.lite.tsx",
+          "hash": "13581099986406281281"
         },
         {
           "file": "packages/core/jsx-runtime.d.ts",
@@ -3064,941 +4786,6 @@
         {
           "file": "packages/core/vite.config.ts",
           "hash": "13429487257620577368"
-        },
-        {
-          "file": "packages/core/input/greet.lite.tsx",
-          "hash": "13581099986406281281"
-        }
-      ],
-      "@builder.io/e2e-alpine": [
-        {
-          "file": "e2e/e2e-alpine/README.md",
-          "hash": "7324973125250886990"
-        },
-        {
-          "file": "e2e/e2e-alpine/index.html",
-          "hash": "4003881085808494751"
-        },
-        {
-          "file": "e2e/e2e-alpine/package.json",
-          "hash": "10042594956757147503",
-          "deps": [
-            "npm:alpinejs@3.14.1",
-            "npm:nx",
-            "npm:nx-cloud",
-            "npm:rimraf@3.0.2",
-            "npm:vite@4.5.0",
-            "npm:vite-plugin-handlebars@1.6.0",
-            "@builder.io/e2e-app"
-          ]
-        },
-        {
-          "file": "e2e/e2e-alpine/src/main.ts",
-          "hash": "14905717186101784235"
-        },
-        {
-          "file": "e2e/e2e-alpine/vite.config.ts",
-          "hash": "13828801491984896806"
-        }
-      ],
-      "@builder.io/e2e-solid": [
-        {
-          "file": "e2e/e2e-solid/.gitignore",
-          "hash": "336589621833127008"
-        },
-        {
-          "file": "e2e/e2e-solid/README.md",
-          "hash": "16281593473728131225"
-        },
-        {
-          "file": "e2e/e2e-solid/index.html",
-          "hash": "12991144495272562089"
-        },
-        {
-          "file": "e2e/e2e-solid/package.json",
-          "hash": "15312977110355940350",
-          "deps": [
-            "npm:nx",
-            "npm:nx-cloud",
-            "npm:rimraf@3.0.2",
-            "npm:typescript",
-            "npm:vite@4.5.0",
-            "npm:vite-plugin-solid@2.10.2",
-            "@builder.io/e2e-app",
-            "npm:solid-js@1.8.18",
-            "npm:solid-styled-components@0.28.5"
-          ]
-        },
-        {
-          "file": "e2e/e2e-solid/src/App.tsx",
-          "hash": "3898056627307787909"
-        },
-        {
-          "file": "e2e/e2e-solid/src/index.tsx",
-          "hash": "15767127142061216516"
-        },
-        {
-          "file": "e2e/e2e-solid/tsconfig.json",
-          "hash": "12807035313515210407"
-        },
-        {
-          "file": "e2e/e2e-solid/vite.config.ts",
-          "hash": "4301567796664964114"
-        }
-      ],
-      "@builder.io/e2e-vue3": [
-        {
-          "file": "e2e/e2e-vue3/.gitignore",
-          "hash": "6311463200283436441"
-        },
-        {
-          "file": "e2e/e2e-vue3/README.md",
-          "hash": "13649627999626365739"
-        },
-        {
-          "file": "e2e/e2e-vue3/index.html",
-          "hash": "2764409597847029975"
-        },
-        {
-          "file": "e2e/e2e-vue3/package.json",
-          "hash": "9511227769743308942",
-          "deps": [
-            "npm:@vitejs/plugin-vue@2.3.4",
-            "npm:@vue/devtools@6.6.3",
-            "npm:nx",
-            "npm:nx-cloud",
-            "npm:typescript",
-            "npm:vite@4.5.0",
-            "npm:vue-tsc@1.8.27",
-            "@e2e-app/vue",
-            "npm:vue@3.4.31"
-          ]
-        },
-        {
-          "file": "e2e/e2e-vue3/src/App.vue",
-          "hash": "10176375520045751416"
-        },
-        {
-          "file": "e2e/e2e-vue3/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "e2e/e2e-vue3/src/env.d.ts",
-          "hash": "1691197428849636078"
-        },
-        {
-          "file": "e2e/e2e-vue3/src/main.ts",
-          "hash": "7061388890574151967"
-        },
-        {
-          "file": "e2e/e2e-vue3/tsconfig.json",
-          "hash": "5235629422958852471"
-        },
-        {
-          "file": "e2e/e2e-vue3/tsconfig.node.json",
-          "hash": "2641887316940618802"
-        },
-        {
-          "file": "e2e/e2e-vue3/vite.config.ts",
-          "hash": "3523906533468400916"
-        }
-      ],
-      "@builder.io/basic-example": [
-        {
-          "file": "examples/basic/.eslintignore",
-          "hash": "7601973869715788285"
-        },
-        {
-          "file": "examples/basic/.eslintrc.js",
-          "hash": "16937904355488624045"
-        },
-        {
-          "file": "examples/basic/.gitignore",
-          "hash": "10010190767946089055"
-        },
-        {
-          "file": "examples/basic/.prettierignore",
-          "hash": "8730569658026971551"
-        },
-        {
-          "file": "examples/basic/.prettierrc",
-          "hash": "5767386889685389681"
-        },
-        {
-          "file": "examples/basic/README.md",
-          "hash": "5384179845335470602"
-        },
-        {
-          "file": "examples/basic/mitosis.config.js",
-          "hash": "14539969613794165873"
-        },
-        {
-          "file": "examples/basic/overrides/react-native/src/blocks/image.tsx",
-          "hash": "4091644047043077828"
-        },
-        {
-          "file": "examples/basic/overrides/react-native/src/components/error-boundary.tsx",
-          "hash": "18393264009842988973"
-        },
-        {
-          "file": "examples/basic/overrides/react-native/src/functions/is-react-native.ts",
-          "hash": "14969621386436937857"
-        },
-        {
-          "file": "examples/basic/overrides/react-native/src/index-helpers/top-of-file.ts",
-          "hash": "9745024558810911745"
-        },
-        {
-          "file": "examples/basic/overrides/vue/src/components/error-boundary.vue",
-          "hash": "18163568999765371118"
-        },
-        {
-          "file": "examples/basic/package.json",
-          "hash": "8529490494849421708",
-          "deps": [
-            "@builder.io/eslint-plugin-mitosis",
-            "npm:@types/node-fetch@2.6.11",
-            "npm:@typescript-eslint/eslint-plugin",
-            "npm:@typescript-eslint/parser",
-            "npm:eslint@8.57.0",
-            "npm:nx",
-            "npm:nx-cloud",
-            "npm:prettier",
-            "npm:typescript",
-            "npm:watch@1.0.2",
-            "@builder.io/mitosis",
-            "@builder.io/mitosis-cli",
-            "npm:node-fetch@2.7.0",
-            "npm:seedrandom@3.0.5"
-          ]
-        },
-        {
-          "file": "examples/basic/src/blocks/button.lite.tsx",
-          "hash": "5141009073750732852"
-        },
-        {
-          "file": "examples/basic/src/blocks/image.lite.tsx",
-          "hash": "3081403049330837066"
-        },
-        {
-          "file": "examples/basic/src/components/error-boundary.lite.tsx",
-          "hash": "13605276755348421682"
-        },
-        {
-          "file": "examples/basic/src/functions/is-browser.ts",
-          "hash": "17644002964715501001"
-        },
-        {
-          "file": "examples/basic/src/functions/is-react-native.ts",
-          "hash": "1883417980034436448"
-        },
-        {
-          "file": "examples/basic/src/functions/track.ts",
-          "hash": "15211031133614750925"
-        },
-        {
-          "file": "examples/basic/src/index-helpers/blocks-exports.ts",
-          "hash": "7298822144553939168"
-        },
-        {
-          "file": "examples/basic/src/index-helpers/top-of-file.ts",
-          "hash": "16551904918380133146"
-        },
-        {
-          "file": "examples/basic/src/index.ts",
-          "hash": "1964736526143410873"
-        },
-        {
-          "file": "examples/basic/tsconfig.json",
-          "hash": "17091155970111805407"
-        }
-      ],
-      "@builder.io/e2e-angular": [
-        {
-          "file": "e2e/e2e-angular/.browserslistrc",
-          "hash": "17600754102500844387"
-        },
-        {
-          "file": "e2e/e2e-angular/.gitignore",
-          "hash": "5356630726981675216"
-        },
-        {
-          "file": "e2e/e2e-angular/README.md",
-          "hash": "11711973480719797011"
-        },
-        {
-          "file": "e2e/e2e-angular/angular.json",
-          "hash": "16456562331505900874"
-        },
-        {
-          "file": "e2e/e2e-angular/angular_src/app/app.component.html",
-          "hash": "2092931734164238505"
-        },
-        {
-          "file": "e2e/e2e-angular/angular_src/app/app.component.ts",
-          "hash": "2452288925001993208"
-        },
-        {
-          "file": "e2e/e2e-angular/angular_src/app/app.module.ts",
-          "hash": "6166670075054920061"
-        },
-        {
-          "file": "e2e/e2e-angular/angular_src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "e2e/e2e-angular/angular_src/environments/environment.prod.ts",
-          "hash": "10220522844224226756"
-        },
-        {
-          "file": "e2e/e2e-angular/angular_src/environments/environment.ts",
-          "hash": "15801694716951284069"
-        },
-        {
-          "file": "e2e/e2e-angular/angular_src/favicon.ico",
-          "hash": "3464744996580215640"
-        },
-        {
-          "file": "e2e/e2e-angular/angular_src/index.html",
-          "hash": "6083592974331884476"
-        },
-        {
-          "file": "e2e/e2e-angular/angular_src/main.ts",
-          "hash": "14896519517424602606"
-        },
-        {
-          "file": "e2e/e2e-angular/angular_src/polyfills.ts",
-          "hash": "8359130279103648610"
-        },
-        {
-          "file": "e2e/e2e-angular/angular_src/styles.css",
-          "hash": "5195668842064076916"
-        },
-        {
-          "file": "e2e/e2e-angular/package.json",
-          "hash": "4935525479845598019",
-          "deps": [
-            "npm:@angular-devkit/build-angular@15.2.11",
-            "npm:@angular/cli@15.2.11",
-            "npm:@angular/compiler-cli@15.2.10",
-            "npm:cpy-cli@5.0.0",
-            "npm:nx",
-            "npm:nx-cloud",
-            "npm:rimraf@3.0.2",
-            "npm:typescript@4.9.5",
-            "npm:@angular/animations@15.2.10",
-            "npm:@angular/common@15.2.10",
-            "npm:@angular/compiler@15.2.10",
-            "npm:@angular/core@15.2.10",
-            "npm:@angular/forms@15.2.10",
-            "npm:@angular/platform-browser@15.2.10",
-            "npm:@angular/platform-browser-dynamic@15.2.10",
-            "@builder.io/e2e-app",
-            "@builder.io/mitosis-cli",
-            "npm:http-server@14.1.1",
-            "npm:rxjs@7.5.7",
-            "npm:tslib@2.6.3",
-            "npm:zone.js@0.11.8"
-          ]
-        },
-        {
-          "file": "e2e/e2e-angular/tsconfig.app.json",
-          "hash": "16884648740959577628"
-        },
-        {
-          "file": "e2e/e2e-angular/tsconfig.json",
-          "hash": "17548475962156980463"
-        }
-      ],
-      "@builder.io/eslint-plugin-mitosis": [
-        {
-          "file": "packages/eslint-plugin/.npmrc",
-          "hash": "16826263075418832769"
-        },
-        {
-          "file": "packages/eslint-plugin/.yarnrc.yml",
-          "hash": "1451430381946270559"
-        },
-        {
-          "file": "packages/eslint-plugin/CHANGELOG.md",
-          "hash": "16171210647769285100"
-        },
-        {
-          "file": "packages/eslint-plugin/README.md",
-          "hash": "5018687944587935743"
-        },
-        {
-          "file": "packages/eslint-plugin/docs/rules/css-no-vars.md",
-          "hash": "16411971868658444430"
-        },
-        {
-          "file": "packages/eslint-plugin/docs/rules/jsx-callback-arg-name.md",
-          "hash": "13124983760665996051"
-        },
-        {
-          "file": "packages/eslint-plugin/docs/rules/jsx-callback-arrow-function.md",
-          "hash": "12768094630029054999"
-        },
-        {
-          "file": "packages/eslint-plugin/docs/rules/no-assign-props-to-state.md",
-          "hash": "9748803339254635837"
-        },
-        {
-          "file": "packages/eslint-plugin/docs/rules/no-async-methods-on-state.md",
-          "hash": "6750254238964507649"
-        },
-        {
-          "file": "packages/eslint-plugin/docs/rules/no-conditional-logic-in-component-render.md",
-          "hash": "9837734534342539905"
-        },
-        {
-          "file": "packages/eslint-plugin/docs/rules/no-state-destructuring.md",
-          "hash": "1628308956351256672"
-        },
-        {
-          "file": "packages/eslint-plugin/docs/rules/no-var-declaration-in-jsx.md",
-          "hash": "10075015477488235310"
-        },
-        {
-          "file": "packages/eslint-plugin/docs/rules/no-var-declaration-or-assignment-in-component.md",
-          "hash": "2570159774050802008"
-        },
-        {
-          "file": "packages/eslint-plugin/docs/rules/no-var-name-same-as-prop-name.md",
-          "hash": "15128046285163371777"
-        },
-        {
-          "file": "packages/eslint-plugin/docs/rules/no-var-name-same-as-state-property.md",
-          "hash": "5103374886859494762"
-        },
-        {
-          "file": "packages/eslint-plugin/docs/rules/only-default-function-and-imports.md",
-          "hash": "13218311710900114555"
-        },
-        {
-          "file": "packages/eslint-plugin/docs/rules/prefer-show-over-ternary-operator.md",
-          "hash": "17419049580898139465"
-        },
-        {
-          "file": "packages/eslint-plugin/docs/rules/ref-no-current.md",
-          "hash": "6094897234990666451"
-        },
-        {
-          "file": "packages/eslint-plugin/docs/rules/use-state-var-declarator.md",
-          "hash": "10134259983199782182"
-        },
-        {
-          "file": "packages/eslint-plugin/package.json",
-          "hash": "18147024364821576353",
-          "deps": [
-            "npm:eslint",
-            "npm:@types/eslint@7.29.0",
-            "npm:@typescript-eslint/parser",
-            "npm:nx",
-            "npm:nx-cloud",
-            "npm:typescript",
-            "npm:vite@4.5.0",
-            "npm:vitest@0.34.6",
-            "npm:@babel/types@7.12.6",
-            "npm:ts-pattern@3.3.5"
-          ]
-        },
-        {
-          "file": "packages/eslint-plugin/scripts/remove-stableVersion.sh",
-          "hash": "10019174696139868113"
-        },
-        {
-          "file": "packages/eslint-plugin/src/configs/recommended.ts",
-          "hash": "12483156406898095109"
-        },
-        {
-          "file": "packages/eslint-plugin/src/constants/hooks.ts",
-          "hash": "3300618126459307914"
-        },
-        {
-          "file": "packages/eslint-plugin/src/helpers/__tests__/isMitosisPath.ts",
-          "hash": "10114315281533845738"
-        },
-        {
-          "file": "packages/eslint-plugin/src/helpers/isMitosisPath.ts",
-          "hash": "12468807747416420769"
-        },
-        {
-          "file": "packages/eslint-plugin/src/helpers/noOp.ts",
-          "hash": "13765909154055208325"
-        },
-        {
-          "file": "packages/eslint-plugin/src/index.ts",
-          "hash": "4623116973920770845"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/__tests__/css-no-vars.test.ts",
-          "hash": "1257543337432006500"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/__tests__/jsx-callback-arg-name.test.ts",
-          "hash": "10397513351430194053"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/__tests__/jsx-callback-arrow-function.test.ts",
-          "hash": "5932625230796146858"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/__tests__/no-assign-props-to-state.test.ts",
-          "hash": "8899033808521908853"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/__tests__/no-async-methods-on-state.test.ts",
-          "hash": "15176850692072289123"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/__tests__/no-conditional-logic-in-component-render.test.ts",
-          "hash": "15896201451501839114"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/__tests__/no-map-function-in-jsx-return-body.test.ts",
-          "hash": "3215652187084730593"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/__tests__/no-setter-with-same-name-as-state-prop.test.ts",
-          "hash": "17761852619324211047"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/__tests__/no-state-destructuring.test.ts",
-          "hash": "11307834047516676389"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/__tests__/no-var-declaration-in-jsx.test.ts",
-          "hash": "12620573870781028821"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/__tests__/no-var-declaration-or-assignment-in-component.test.ts",
-          "hash": "7957637213404750849"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/__tests__/no-var-name-same-as-prop-name.test.ts",
-          "hash": "401177695008490470"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/__tests__/no-var-name-same-as-state-property.test.ts",
-          "hash": "2668321328833642985"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/__tests__/only-default-function-and-imports.test.ts",
-          "hash": "4284576981778230418"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/__tests__/prefer-show-over-ternary-operator.test.ts",
-          "hash": "13283075587248686287"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/__tests__/ref-no-current.test.ts",
-          "hash": "1501269775923742786"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/__tests__/static-control-flow.test.ts",
-          "hash": "16314901912958777473"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/__tests__/use-state-var-declarator.test.ts",
-          "hash": "4516530086550693725"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/css-no-vars.ts",
-          "hash": "17493098672605398234"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/index.ts",
-          "hash": "7334859775597240400"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/jsx-callback-arg-name.ts",
-          "hash": "16534430555892076027"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/jsx-callback-arrow-function.ts",
-          "hash": "1822714434539683285"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/no-assign-props-to-state.ts",
-          "hash": "14564475789678816762"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/no-async-methods-on-state.ts",
-          "hash": "1443308353987748806"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/no-conditional-logic-in-component-render.ts",
-          "hash": "7697961225490851517"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/no-map-function-in-jsx-return-body.ts",
-          "hash": "1091565700572713864"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/no-setter-with-same-name-as-state-prop.ts",
-          "hash": "4200032798069512795"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/no-state-destructuring.ts",
-          "hash": "1641761214445651060"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/no-var-declaration-in-jsx.ts",
-          "hash": "843790809117323279"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/no-var-declaration-or-assignment-in-component.ts",
-          "hash": "8185800982364734422"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/no-var-name-same-as-prop-name.ts",
-          "hash": "10448775667881394589"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/no-var-name-same-as-state-property.ts",
-          "hash": "17368065078971347214"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/only-default-function-and-imports.ts",
-          "hash": "6892239932114318995"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/prefer-show-over-ternary-operator.ts",
-          "hash": "4172428536555975368"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/ref-no-current.ts",
-          "hash": "6923852801123483238"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/static-control-flow.ts",
-          "hash": "1470557675369654337"
-        },
-        {
-          "file": "packages/eslint-plugin/src/rules/use-state-var-declarator.ts",
-          "hash": "10124841555089970552"
-        },
-        {
-          "file": "packages/eslint-plugin/src/types.ts",
-          "hash": "1529595584330284247"
-        },
-        {
-          "file": "packages/eslint-plugin/tsconfig.json",
-          "hash": "17736964941715238916"
-        },
-        {
-          "file": "packages/eslint-plugin/vite.config.ts",
-          "hash": "4286352644624340865"
-        }
-      ],
-      "@builder.io/e2e-qwik": [
-        {
-          "file": "e2e/e2e-qwikcity/.eslintignore",
-          "hash": "8788580605553967678"
-        },
-        {
-          "file": "e2e/e2e-qwikcity/.eslintrc.cjs",
-          "hash": "12713353314846145337"
-        },
-        {
-          "file": "e2e/e2e-qwikcity/.gitignore",
-          "hash": "17960024034956059903"
-        },
-        {
-          "file": "e2e/e2e-qwikcity/.prettierignore",
-          "hash": "8788580605553967678"
-        },
-        {
-          "file": "e2e/e2e-qwikcity/.vscode/extensions.json",
-          "hash": "14092172138873811528"
-        },
-        {
-          "file": "e2e/e2e-qwikcity/README.md",
-          "hash": "9681847395185485948"
-        },
-        {
-          "file": "e2e/e2e-qwikcity/package.json",
-          "hash": "4855361267731968048",
-          "deps": [
-            "npm:@builder.io/qwik@1.7.1",
-            "npm:@types/eslint@8.21.1",
-            "npm:@types/node@18.19.39",
-            "npm:@types/node-fetch@2.6.11",
-            "npm:@typescript-eslint/eslint-plugin",
-            "npm:@typescript-eslint/parser",
-            "npm:eslint@8.35.0",
-            "npm:eslint-plugin-qwik@0.21.0",
-            "npm:node-fetch@3.3.0",
-            "npm:nx",
-            "npm:nx-cloud",
-            "npm:prettier",
-            "npm:typescript",
-            "npm:undici@5.20.0",
-            "npm:vite@4.5.0",
-            "npm:vite-tsconfig-paths@3.5.0",
-            "@builder.io/e2e-app-qwik"
-          ]
-        },
-        {
-          "file": "e2e/e2e-qwikcity/project.json",
-          "hash": "9007156706248293900"
-        },
-        {
-          "file": "e2e/e2e-qwikcity/public/favicon.svg",
-          "hash": "446107399934622830"
-        },
-        {
-          "file": "e2e/e2e-qwikcity/public/manifest.json",
-          "hash": "12573047294351719872"
-        },
-        {
-          "file": "e2e/e2e-qwikcity/public/robots.txt",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "e2e/e2e-qwikcity/src/components/header/header.css",
-          "hash": "3644838235687874347"
-        },
-        {
-          "file": "e2e/e2e-qwikcity/src/components/header/header.tsx",
-          "hash": "10078867332872214599"
-        },
-        {
-          "file": "e2e/e2e-qwikcity/src/components/icons/qwik.tsx",
-          "hash": "12244103485330884735"
-        },
-        {
-          "file": "e2e/e2e-qwikcity/src/components/router-head/router-head.tsx",
-          "hash": "13746360095956267150"
-        },
-        {
-          "file": "e2e/e2e-qwikcity/src/entry.dev.tsx",
-          "hash": "15263945111847313822"
-        },
-        {
-          "file": "e2e/e2e-qwikcity/src/entry.preview.tsx",
-          "hash": "12523607060466884099"
-        },
-        {
-          "file": "e2e/e2e-qwikcity/src/entry.ssr.tsx",
-          "hash": "5043917835333820131"
-        },
-        {
-          "file": "e2e/e2e-qwikcity/src/global.css",
-          "hash": "12694838070604250549"
-        },
-        {
-          "file": "e2e/e2e-qwikcity/src/root.tsx",
-          "hash": "15615098957747009956"
-        },
-        {
-          "file": "e2e/e2e-qwikcity/src/routes/[...index]/index.tsx",
-          "hash": "2014384343541073883"
-        },
-        {
-          "file": "e2e/e2e-qwikcity/src/routes/layout.tsx",
-          "hash": "8572016078014699812"
-        },
-        {
-          "file": "e2e/e2e-qwikcity/src/routes/service-worker.ts",
-          "hash": "6519991492550831346"
-        },
-        {
-          "file": "e2e/e2e-qwikcity/tsconfig.json",
-          "hash": "14757371674851134553"
-        },
-        {
-          "file": "e2e/e2e-qwikcity/vite.config.ts",
-          "hash": "10070457071396890636"
-        }
-      ],
-      "@builder.io/mitosis-fiddle": [
-        {
-          "file": "packages/fiddle/.gitignore",
-          "hash": "13637581552673481531"
-        },
-        {
-          "file": "packages/fiddle/.npmrc",
-          "hash": "16826263075418832769"
-        },
-        {
-          "file": "packages/fiddle/next-env.d.ts",
-          "hash": "5909181270615354023"
-        },
-        {
-          "file": "packages/fiddle/next.config.js",
-          "hash": "2382149826096991359"
-        },
-        {
-          "file": "packages/fiddle/package.json",
-          "hash": "14814829010877249464",
-          "deps": [
-            "npm:@types/lz-string@1.3.34",
-            "npm:@types/node@18.19.39",
-            "npm:@typescript-eslint/typescript-estree@5.62.0",
-            "npm:nx",
-            "npm:nx-cloud",
-            "@builder.io/eslint-plugin-mitosis",
-            "@builder.io/mitosis",
-            "npm:@builder.io/sdk@1.3.1",
-            "npm:@emotion/react@11.11.4",
-            "npm:@material-ui/core@4.12.4",
-            "npm:@material-ui/lab@4.0.0-alpha.61",
-            "npm:@monaco-editor/react@4.6.0",
-            "npm:@types/dedent@0.7.2",
-            "npm:@types/eslint@8.56.10",
-            "npm:@types/prettier@2.7.3",
-            "npm:@types/react-dom@18.3.0",
-            "npm:dedent@0.7.0",
-            "npm:lz-string@1.5.0",
-            "npm:mobx@6.13.0",
-            "npm:mobx-react-lite@3.4.3",
-            "npm:monaco-editor@0.34.1",
-            "npm:next@14.2.5",
-            "npm:prettier",
-            "npm:prettier-plugin-svelte@3.2.5",
-            "npm:raw-loader@4.0.2",
-            "npm:react@18.3.1",
-            "npm:react-dom@18.3.1",
-            "npm:react-use@17.5.0",
-            "npm:svelte@4.2.18",
-            "npm:tsconfig-paths-webpack-plugin@3.5.2",
-            "npm:web-vitals@2.1.4",
-            "npm:webcomponents-in-react@1.0.1"
-          ]
-        },
-        {
-          "file": "packages/fiddle/pages/index.tsx",
-          "hash": "3831763118741046517"
-        },
-        {
-          "file": "packages/fiddle/public/favicon-dark.ico",
-          "hash": "17098335684726911842"
-        },
-        {
-          "file": "packages/fiddle/public/favicon.ico",
-          "hash": "16845407740223711153"
-        },
-        {
-          "file": "packages/fiddle/public/github-logo.png",
-          "hash": "17101495406216706584"
-        },
-        {
-          "file": "packages/fiddle/public/mitosis-logo-white.png",
-          "hash": "18192384798381339560"
-        },
-        {
-          "file": "packages/fiddle/public/robots.txt",
-          "hash": "2790380794362165217"
-        },
-        {
-          "file": "packages/fiddle/src/components/App.tsx",
-          "hash": "9136018898276120218"
-        },
-        {
-          "file": "packages/fiddle/src/components/Fiddle/Fiddle.tsx",
-          "hash": "2200446533267715145"
-        },
-        {
-          "file": "packages/fiddle/src/components/Fiddle/Linter.ts",
-          "hash": "1167630725893635299"
-        },
-        {
-          "file": "packages/fiddle/src/components/Fiddle/generate.ts",
-          "hash": "3367082361955139465"
-        },
-        {
-          "file": "packages/fiddle/src/components/Fiddle/index.ts",
-          "hash": "787724065567024896"
-        },
-        {
-          "file": "packages/fiddle/src/components/JsxCodeEditor.tsx",
-          "hash": "15576881327645914410"
-        },
-        {
-          "file": "packages/fiddle/src/components/Show.tsx",
-          "hash": "11521445562228810065"
-        },
-        {
-          "file": "packages/fiddle/src/components/SvelteCodeEditor.tsx",
-          "hash": "1886360330578873140"
-        },
-        {
-          "file": "packages/fiddle/src/components/Talk.tsx",
-          "hash": "2811714435295925246"
-        },
-        {
-          "file": "packages/fiddle/src/components/TextLink.tsx",
-          "hash": "721877254243582901"
-        },
-        {
-          "file": "packages/fiddle/src/constants/breakpoints.ts",
-          "hash": "15918422254667677972"
-        },
-        {
-          "file": "packages/fiddle/src/constants/colors.ts",
-          "hash": "12518083205673020141"
-        },
-        {
-          "file": "packages/fiddle/src/constants/device.ts",
-          "hash": "11492147878633183766"
-        },
-        {
-          "file": "packages/fiddle/src/constants/templates/jsx-templates.ts",
-          "hash": "10180142245072916352"
-        },
-        {
-          "file": "packages/fiddle/src/constants/templates/svelte-templates.ts",
-          "hash": "3633777254772181208"
-        },
-        {
-          "file": "packages/fiddle/src/constants/theme.ts",
-          "hash": "8670754054640267875"
-        },
-        {
-          "file": "packages/fiddle/src/functions/delete-query-param.ts",
-          "hash": "7717747721685905923"
-        },
-        {
-          "file": "packages/fiddle/src/functions/get-query-param.ts",
-          "hash": "10069464755247229002"
-        },
-        {
-          "file": "packages/fiddle/src/functions/local-storage-get.ts",
-          "hash": "12137457378800531319"
-        },
-        {
-          "file": "packages/fiddle/src/functions/local-storage-set.ts",
-          "hash": "8683337226369252629"
-        },
-        {
-          "file": "packages/fiddle/src/functions/prompt-upload-figma-file.ts",
-          "hash": "2262861071412616882"
-        },
-        {
-          "file": "packages/fiddle/src/functions/set-query-param.ts",
-          "hash": "7508964074145591169"
-        },
-        {
-          "file": "packages/fiddle/src/hooks/use-event-listener.ts",
-          "hash": "3853083260844375479"
-        },
-        {
-          "file": "packages/fiddle/src/hooks/use-reaction.ts",
-          "hash": "2173140997732034118"
-        },
-        {
-          "file": "packages/fiddle/src/index.css",
-          "hash": "17237273854754878271"
-        },
-        {
-          "file": "packages/fiddle/src/react-app-env.d.ts",
-          "hash": "4236955471702209130"
-        },
-        {
-          "file": "packages/fiddle/tsconfig.json",
-          "hash": "2240166869822177894"
         }
       ],
       "@builder.io/e2e-svelte": [
@@ -4059,788 +4846,6 @@
         {
           "file": "e2e/e2e-svelte/vite.config.ts",
           "hash": "2039823141190508523"
-        }
-      ],
-      "@builder.io/e2e-react": [
-        {
-          "file": "e2e/e2e-react/.gitignore",
-          "hash": "457006341167198490"
-        },
-        {
-          "file": "e2e/e2e-react/README.md",
-          "hash": "85231756881654466"
-        },
-        {
-          "file": "e2e/e2e-react/index.html",
-          "hash": "11132259122015845910"
-        },
-        {
-          "file": "e2e/e2e-react/package.json",
-          "hash": "6172931193511001451",
-          "deps": [
-            "npm:@types/react@18.3.3",
-            "npm:@types/react-dom@18.3.0",
-            "npm:@vitejs/plugin-react@1.3.2",
-            "npm:nx",
-            "npm:nx-cloud",
-            "npm:rimraf@3.0.2",
-            "npm:typescript",
-            "npm:vite@4.5.0",
-            "@builder.io/e2e-app",
-            "npm:react@18.3.1",
-            "npm:react-dom@18.3.1"
-          ]
-        },
-        {
-          "file": "e2e/e2e-react/project.json",
-          "hash": "5915430011162078716"
-        },
-        {
-          "file": "e2e/e2e-react/src/App.tsx",
-          "hash": "6697892070013856823"
-        },
-        {
-          "file": "e2e/e2e-react/src/main.tsx",
-          "hash": "15154044738014056223"
-        },
-        {
-          "file": "e2e/e2e-react/src/vite-env.d.ts",
-          "hash": "12946363841406869089"
-        },
-        {
-          "file": "e2e/e2e-react/tsconfig.json",
-          "hash": "3197733200590959959"
-        },
-        {
-          "file": "e2e/e2e-react/tsconfig.node.json",
-          "hash": "2641887316940618802"
-        },
-        {
-          "file": "e2e/e2e-react/vite.config.ts",
-          "hash": "7890237328823880753"
-        }
-      ],
-      "@builder.io/e2e-app": [
-        {
-          "file": "e2e/e2e-app/.gitignore",
-          "hash": "7988299662669754709"
-        },
-        {
-          "file": "e2e/e2e-app/README.md",
-          "hash": "14201891283975248674"
-        },
-        {
-          "file": "e2e/e2e-app/allow-failures.json",
-          "hash": "15064702314365362676"
-        },
-        {
-          "file": "e2e/e2e-app/e2e-output.ts",
-          "hash": "259163949379952923"
-        },
-        {
-          "file": "e2e/e2e-app/e2e.ts",
-          "hash": "1008727988316735140"
-        },
-        {
-          "file": "e2e/e2e-app/mitosis.config.cjs",
-          "hash": "17862246865934980074"
-        },
-        {
-          "file": "e2e/e2e-app/package.json",
-          "hash": "7841017349723736694",
-          "deps": [
-            "npm:@types/node@20.14.10",
-            "npm:concurrently@7.6.0",
-            "npm:nx",
-            "npm:nx-cloud",
-            "npm:react@18.3.1",
-            "npm:react-dom@18.3.1",
-            "npm:solid-js@1.8.18",
-            "npm:solid-styled-components@0.28.5",
-            "npm:sync-directory@5.1.9",
-            "npm:ts-node@10.9.2",
-            "npm:typescript",
-            "npm:vue@2.6.14",
-            "@builder.io/mitosis",
-            "@builder.io/mitosis-cli",
-            "npm:@playwright/test@1.45.1",
-            "npm:watch@1.0.2"
-          ]
-        },
-        {
-          "file": "e2e/e2e-app/playwright.config.ts",
-          "hash": "14439226965077437188"
-        },
-        {
-          "file": "e2e/e2e-app/project.json",
-          "hash": "10078266839530390371"
-        },
-        {
-          "file": "e2e/e2e-app/results.json",
-          "hash": "15832156960813223"
-        },
-        {
-          "file": "e2e/e2e-app/src/component-paths.ts",
-          "hash": "1790575141277982753"
-        },
-        {
-          "file": "e2e/e2e-app/src/components/component-with-types.lite.tsx",
-          "hash": "6677110795968408191"
-        },
-        {
-          "file": "e2e/e2e-app/src/components/disabled-input/disabled-input.lite.tsx",
-          "hash": "12049187696882214516"
-        },
-        {
-          "file": "e2e/e2e-app/src/components/disabled-input/native-input.lite.tsx",
-          "hash": "17709608140486105071"
-        },
-        {
-          "file": "e2e/e2e-app/src/components/disabled-input/simple-input.lite.tsx",
-          "hash": "4021094450059366188"
-        },
-        {
-          "file": "e2e/e2e-app/src/components/nested/item-list.lite.tsx",
-          "hash": "7177818688044190428"
-        },
-        {
-          "file": "e2e/e2e-app/src/components/nested/nested-parent.lite.tsx",
-          "hash": "919838426253841879"
-        },
-        {
-          "file": "e2e/e2e-app/src/components/one-component.lite.tsx",
-          "hash": "5125608770043000828"
-        },
-        {
-          "file": "e2e/e2e-app/src/components/show-for-component.lite.tsx",
-          "hash": "9877604740646210037"
-        },
-        {
-          "file": "e2e/e2e-app/src/components/signals/signal-item-list.lite.tsx",
-          "hash": "7308519499970283429"
-        },
-        {
-          "file": "e2e/e2e-app/src/components/signals/signal-parent.lite.tsx",
-          "hash": "6609043438396129973"
-        },
-        {
-          "file": "e2e/e2e-app/src/components/special-tags.lite.tsx",
-          "hash": "10310779925320691984"
-        },
-        {
-          "file": "e2e/e2e-app/src/homepage.lite.tsx",
-          "hash": "11261114372116286992"
-        },
-        {
-          "file": "e2e/e2e-app/src/index.ts",
-          "hash": "10619366197880051889"
-        },
-        {
-          "file": "e2e/e2e-app/src/testConfig.ts",
-          "hash": "3340347093378802367"
-        },
-        {
-          "file": "e2e/e2e-app/tests/main.spec.ts",
-          "hash": "8949233708954037350"
-        },
-        {
-          "file": "e2e/e2e-app/tsconfig.json",
-          "hash": "15974641847240983557"
-        },
-        {
-          "file": "e2e/e2e-app/tsconfig.node.json",
-          "hash": "2215983208747495176"
-        }
-      ],
-      "@builder.io/e2e-app-qwik": [
-        {
-          "file": "e2e/e2e-app/output/qwik/.gitignore",
-          "hash": "2497259241514046030"
-        },
-        {
-          "file": "e2e/e2e-app/output/qwik/package.json",
-          "hash": "12215721105697114821",
-          "deps": [
-            "@builder.io/e2e-app",
-            "npm:@builder.io/qwik@1.7.1",
-            "npm:@types/node@20.14.10",
-            "npm:nx",
-            "npm:nx-cloud",
-            "npm:typescript",
-            "npm:undici@6.19.2",
-            "npm:vite@4.5.0"
-          ]
-        },
-        {
-          "file": "e2e/e2e-app/output/qwik/project.json",
-          "hash": "15733700244676519432"
-        },
-        {
-          "file": "e2e/e2e-app/output/qwik/tsconfig.json",
-          "hash": "10816385907401787596"
-        },
-        {
-          "file": "e2e/e2e-app/output/qwik/vite.config.ts",
-          "hash": "2501669118528427814"
-        }
-      ],
-      "@builder.io/create-mitosis": [
-        {
-          "file": "packages/starter/.gitignore",
-          "hash": "10950024526729759001"
-        },
-        {
-          "file": "packages/starter/.npmignore",
-          "hash": "14316421005380273598"
-        },
-        {
-          "file": "packages/starter/CHANGELOG.md",
-          "hash": "5368900012280647470"
-        },
-        {
-          "file": "packages/starter/jsconfig.json",
-          "hash": "4605954014414661840"
-        },
-        {
-          "file": "packages/starter/package.json",
-          "hash": "3380936376141674534",
-          "deps": [
-            "npm:@types/node@20.14.10",
-            "npm:nx",
-            "npm:nx-cloud",
-            "npm:@clack/prompts@0.7.0",
-            "npm:cross-spawn@7.0.3"
-          ]
-        },
-        {
-          "file": "packages/starter/package.tgz",
-          "hash": "13963224697961535321"
-        },
-        {
-          "file": "packages/starter/script.cjs",
-          "hash": "2558583381823690827"
-        },
-        {
-          "file": "packages/starter/template/README.md",
-          "hash": "16766678821683714427"
-        },
-        {
-          "file": "packages/starter/template/library/.eslintrc.cjs",
-          "hash": "1726072775227379835"
-        },
-        {
-          "file": "packages/starter/template/library/.gitignore",
-          "hash": "1029230439175295425"
-        },
-        {
-          "file": "packages/starter/template/library/mitosis.config.cjs",
-          "hash": "7992642097030692056"
-        },
-        {
-          "file": "packages/starter/template/library/package.json",
-          "hash": "5945860696063039261"
-        },
-        {
-          "file": "packages/starter/template/library/packages/qwik/.eslintignore",
-          "hash": "16460292053574400053"
-        },
-        {
-          "file": "packages/starter/template/library/packages/qwik/.eslintrc.cjs",
-          "hash": "16666637102903757906"
-        },
-        {
-          "file": "packages/starter/template/library/packages/qwik/.gitignore",
-          "hash": "8432013445865941944"
-        },
-        {
-          "file": "packages/starter/template/library/packages/qwik/.prettierignore",
-          "hash": "4191589933618347592"
-        },
-        {
-          "file": "packages/starter/template/library/packages/qwik/package.json",
-          "hash": "6336680668980234922"
-        },
-        {
-          "file": "packages/starter/template/library/packages/qwik/tsconfig.json",
-          "hash": "5157752851451751034"
-        },
-        {
-          "file": "packages/starter/template/library/packages/qwik/vite.config.ts",
-          "hash": "14918094233892691460"
-        },
-        {
-          "file": "packages/starter/template/library/packages/react/package.json",
-          "hash": "2978254233196104938"
-        },
-        {
-          "file": "packages/starter/template/library/packages/svelte/.gitignore",
-          "hash": "11568849941268464997"
-        },
-        {
-          "file": "packages/starter/template/library/packages/svelte/package.json",
-          "hash": "16541825632433876748"
-        },
-        {
-          "file": "packages/starter/template/library/packages/svelte/routes/index/+page.svelte",
-          "hash": "11518360682739565711"
-        },
-        {
-          "file": "packages/starter/template/library/packages/svelte/svelte.config.js",
-          "hash": "13782333101043172343"
-        },
-        {
-          "file": "packages/starter/template/library/packages/svelte/tsconfig.json",
-          "hash": "11222854705894579026"
-        },
-        {
-          "file": "packages/starter/template/library/packages/svelte/vite.config.ts",
-          "hash": "2628694102171437856"
-        },
-        {
-          "file": "packages/starter/template/library/src/autocomplete/autocomplete.lite.tsx",
-          "hash": "18285756774461824415"
-        },
-        {
-          "file": "packages/starter/template/library/src/index.ts",
-          "hash": "2648342051382014532"
-        },
-        {
-          "file": "packages/starter/template/library/src/todo-app/todo-app.lite.tsx",
-          "hash": "4470650460695731236"
-        },
-        {
-          "file": "packages/starter/template/library/tsconfig.json",
-          "hash": "8114873903757674066"
-        },
-        {
-          "file": "packages/starter/template/package.json",
-          "hash": "12120017497422955250"
-        },
-        {
-          "file": "packages/starter/template/test-apps/qwik/.eslintignore",
-          "hash": "8788580605553967678"
-        },
-        {
-          "file": "packages/starter/template/test-apps/qwik/.eslintrc.cjs",
-          "hash": "16659622349671536439"
-        },
-        {
-          "file": "packages/starter/template/test-apps/qwik/.gitignore",
-          "hash": "3464072517076082233"
-        },
-        {
-          "file": "packages/starter/template/test-apps/qwik/.prettierignore",
-          "hash": "8788580605553967678"
-        },
-        {
-          "file": "packages/starter/template/test-apps/qwik/package.json",
-          "hash": "8485093254775906318"
-        },
-        {
-          "file": "packages/starter/template/test-apps/qwik/public/favicon.svg",
-          "hash": "446107399934622830"
-        },
-        {
-          "file": "packages/starter/template/test-apps/qwik/public/manifest.json",
-          "hash": "12573047294351719872"
-        },
-        {
-          "file": "packages/starter/template/test-apps/qwik/public/robots.txt",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "packages/starter/template/test-apps/qwik/src/entry.dev.tsx",
-          "hash": "15263945111847313822"
-        },
-        {
-          "file": "packages/starter/template/test-apps/qwik/src/entry.preview.tsx",
-          "hash": "12523607060466884099"
-        },
-        {
-          "file": "packages/starter/template/test-apps/qwik/src/entry.ssr.tsx",
-          "hash": "1624436070683442878"
-        },
-        {
-          "file": "packages/starter/template/test-apps/qwik/src/root.tsx",
-          "hash": "16458470715291624764"
-        },
-        {
-          "file": "packages/starter/template/test-apps/qwik/src/routes/index.tsx",
-          "hash": "2784093439437442452"
-        },
-        {
-          "file": "packages/starter/template/test-apps/qwik/src/routes/layout.tsx",
-          "hash": "17239252894848769627"
-        },
-        {
-          "file": "packages/starter/template/test-apps/qwik/src/routes/service-worker.ts",
-          "hash": "6519991492550831346"
-        },
-        {
-          "file": "packages/starter/template/test-apps/qwik/tsconfig.json",
-          "hash": "13910477524058988059"
-        },
-        {
-          "file": "packages/starter/template/test-apps/qwik/vite.config.ts",
-          "hash": "1881393006743271698"
-        },
-        {
-          "file": "packages/starter/template/test-apps/react/.gitignore",
-          "hash": "457006341167198490"
-        },
-        {
-          "file": "packages/starter/template/test-apps/react/index.html",
-          "hash": "11132259122015845910"
-        },
-        {
-          "file": "packages/starter/template/test-apps/react/package.json",
-          "hash": "2828715428210745580"
-        },
-        {
-          "file": "packages/starter/template/test-apps/react/src/App.jsx",
-          "hash": "10295512820881872615"
-        },
-        {
-          "file": "packages/starter/template/test-apps/react/src/main.tsx",
-          "hash": "911191287311163781"
-        },
-        {
-          "file": "packages/starter/template/test-apps/react/src/vite-env.d.ts",
-          "hash": "12946363841406869089"
-        },
-        {
-          "file": "packages/starter/template/test-apps/react/tsconfig.json",
-          "hash": "3197733200590959959"
-        },
-        {
-          "file": "packages/starter/template/test-apps/react/tsconfig.node.json",
-          "hash": "2641887316940618802"
-        },
-        {
-          "file": "packages/starter/template/test-apps/react/vite.config.ts",
-          "hash": "9718426994227816747"
-        },
-        {
-          "file": "packages/starter/template/test-apps/svelte/.gitignore",
-          "hash": "7598953665689540419"
-        },
-        {
-          "file": "packages/starter/template/test-apps/svelte/package.json",
-          "hash": "13930814326788548579"
-        },
-        {
-          "file": "packages/starter/template/test-apps/svelte/src/app.html",
-          "hash": "16873520989378015237"
-        },
-        {
-          "file": "packages/starter/template/test-apps/svelte/src/routes/+page.svelte",
-          "hash": "12898391437602720503"
-        },
-        {
-          "file": "packages/starter/template/test-apps/svelte/svelte.config.js",
-          "hash": "11595356662296008876"
-        },
-        {
-          "file": "packages/starter/template/test-apps/svelte/vite.config.js",
-          "hash": "2628694102171437856"
-        }
-      ],
-      "@builder.io/mitosis-site": [
-        {
-          "file": "packages/docs/.eslintignore",
-          "hash": "8788580605553967678"
-        },
-        {
-          "file": "packages/docs/.gitignore",
-          "hash": "1127604440674906372"
-        },
-        {
-          "file": "packages/docs/.nvmrc",
-          "hash": "16110363446162608667"
-        },
-        {
-          "file": "packages/docs/.prettierignore",
-          "hash": "18026352017748956344"
-        },
-        {
-          "file": "packages/docs/.tool-versions",
-          "hash": "17815236066095902755"
-        },
-        {
-          "file": "packages/docs/.vscode/launch.json",
-          "hash": "2125652616757145198"
-        },
-        {
-          "file": "packages/docs/.vscode/qwik-city.code-snippets",
-          "hash": "3641156675166213027"
-        },
-        {
-          "file": "packages/docs/.vscode/qwik.code-snippets",
-          "hash": "14647880614697408240"
-        },
-        {
-          "file": "packages/docs/README.md",
-          "hash": "8935292415945170793"
-        },
-        {
-          "file": "packages/docs/adapters/cloudflare-pages/vite.config.ts",
-          "hash": "4077482453524973156"
-        },
-        {
-          "file": "packages/docs/package.json",
-          "hash": "7019860621747498137",
-          "deps": [
-            "@builder.io/mitosis",
-            "npm:@builder.io/partytown@0.8.2",
-            "npm:@builder.io/qwik@1.7.1",
-            "npm:@builder.io/qwik-labs-canary@0.0.1",
-            "npm:@originjs/vite-plugin-commonjs@1.0.3",
-            "npm:@qwik-ui/headless@0.3.8",
-            "npm:@qwikest/icons@0.0.13",
-            "npm:@tailwindcss/typography@0.5.13",
-            "npm:@types/eslint@8.56.10",
-            "npm:@types/lodash-es@4.17.12",
-            "npm:@types/node@20.14.10",
-            "npm:@types/react@18.3.3",
-            "npm:@types/react-dom@18.3.0",
-            "npm:@typescript-eslint/eslint-plugin@7.16.1",
-            "npm:@typescript-eslint/parser@7.16.1",
-            "npm:autoprefixer@10.4.19",
-            "npm:eslint@8.57.0",
-            "npm:eslint-plugin-qwik@1.7.1",
-            "npm:lodash-es@4.17.21",
-            "npm:lz-string@1.5.0",
-            "npm:meilisearch-docsearch@0.6.0",
-            "npm:monaco-editor@0.48.0",
-            "npm:nx",
-            "npm:nx-cloud",
-            "npm:postcss@8.4.39",
-            "npm:prettier",
-            "npm:prettier-plugin-tailwindcss@0.5.14",
-            "npm:prismjs@1.29.0",
-            "npm:qwik-content-loader@0.0.4",
-            "npm:react@18.3.1",
-            "npm:react-dom@18.3.1",
-            "npm:react-loading-skeleton@3.4.0",
-            "npm:refractor@4.8.1",
-            "npm:tailwindcss@3.3.3",
-            "npm:typescript@5.3.3",
-            "npm:undici@6.19.2",
-            "npm:vite@4.5.0",
-            "npm:vite-plugin-commonjs@0.10.1",
-            "npm:vite-plugin-node-polyfills@0.21.0",
-            "npm:vite-plugin-replace@0.1.1",
-            "npm:vite-tsconfig-paths@4.3.2",
-            "npm:wrangler@3.64.0"
-          ]
-        },
-        {
-          "file": "packages/docs/postcss.config.cjs",
-          "hash": "8474707661995296558"
-        },
-        {
-          "file": "packages/docs/project.json",
-          "hash": "15813944881355515027"
-        },
-        {
-          "file": "packages/docs/public/_headers",
-          "hash": "9305388039929309654"
-        },
-        {
-          "file": "packages/docs/public/_redirects",
-          "hash": "13975889273791189387"
-        },
-        {
-          "file": "packages/docs/public/fonts/poppins-400.woff2",
-          "hash": "6447715655068198684"
-        },
-        {
-          "file": "packages/docs/public/fonts/poppins-500.woff2",
-          "hash": "4442121965380647356"
-        },
-        {
-          "file": "packages/docs/public/fonts/poppins-700.woff2",
-          "hash": "11693702883479235856"
-        },
-        {
-          "file": "packages/docs/public/github-logo.png",
-          "hash": "17101495406216706584"
-        },
-        {
-          "file": "packages/docs/public/manifest.json",
-          "hash": "12573047294351719872"
-        },
-        {
-          "file": "packages/docs/public/robots.txt",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "packages/docs/scripts/fix-node-modules.js",
-          "hash": "6020232116791836122"
-        },
-        {
-          "file": "packages/docs/src/components/code-editor.tsx",
-          "hash": "4403946654018217404"
-        },
-        {
-          "file": "packages/docs/src/components/code-rotator.tsx",
-          "hash": "3176874252551701800"
-        },
-        {
-          "file": "packages/docs/src/components/footer.tsx",
-          "hash": "11440804262643889035"
-        },
-        {
-          "file": "packages/docs/src/components/header.tsx",
-          "hash": "266347423039861136"
-        },
-        {
-          "file": "packages/docs/src/components/partytown/partytown.tsx",
-          "hash": "7299458137691723700"
-        },
-        {
-          "file": "packages/docs/src/components/router-head.tsx",
-          "hash": "9754831391481187660"
-        },
-        {
-          "file": "packages/docs/src/components/search.tsx",
-          "hash": "2057156174943892822"
-        },
-        {
-          "file": "packages/docs/src/components/select.tsx",
-          "hash": "13849190039475104256"
-        },
-        {
-          "file": "packages/docs/src/entry.cloudflare-pages.tsx",
-          "hash": "11521926312295436017"
-        },
-        {
-          "file": "packages/docs/src/entry.dev.tsx",
-          "hash": "15263945111847313822"
-        },
-        {
-          "file": "packages/docs/src/entry.preview.tsx",
-          "hash": "12523607060466884099"
-        },
-        {
-          "file": "packages/docs/src/entry.ssr.tsx",
-          "hash": "1624436070683442878"
-        },
-        {
-          "file": "packages/docs/src/global.css",
-          "hash": "13305598050168039786"
-        },
-        {
-          "file": "packages/docs/src/media/thunder.png",
-          "hash": "1386018888671603473"
-        },
-        {
-          "file": "packages/docs/src/root.tsx",
-          "hash": "6116957532482174049"
-        },
-        {
-          "file": "packages/docs/src/routes/docs/cli/index.mdx",
-          "hash": "18002931200178013801"
-        },
-        {
-          "file": "packages/docs/src/routes/docs/components/index.mdx",
-          "hash": "8150816031093477655"
-        },
-        {
-          "file": "packages/docs/src/routes/docs/configuration/index.mdx",
-          "hash": "9182744468846637912"
-        },
-        {
-          "file": "packages/docs/src/routes/docs/context/index.mdx",
-          "hash": "3576599533785006583"
-        },
-        {
-          "file": "packages/docs/src/routes/docs/customizability/index.mdx",
-          "hash": "5264352487502190000"
-        },
-        {
-          "file": "packages/docs/src/routes/docs/figma/index.mdx",
-          "hash": "5662506677421511642"
-        },
-        {
-          "file": "packages/docs/src/routes/docs/gotchas/index.mdx",
-          "hash": "11432630397673963506"
-        },
-        {
-          "file": "packages/docs/src/routes/docs/hooks/index.mdx",
-          "hash": "15418364745940506619"
-        },
-        {
-          "file": "packages/docs/src/routes/docs/index.tsx",
-          "hash": "13366451211125214620"
-        },
-        {
-          "file": "packages/docs/src/routes/docs/layout.tsx",
-          "hash": "13116218452227401226"
-        },
-        {
-          "file": "packages/docs/src/routes/docs/overview/index.mdx",
-          "hash": "9903065163747498771"
-        },
-        {
-          "file": "packages/docs/src/routes/docs/project-structure/index.mdx",
-          "hash": "6242971918226106188"
-        },
-        {
-          "file": "packages/docs/src/routes/docs/quickstart/index.mdx",
-          "hash": "9426519841397897950"
-        },
-        {
-          "file": "packages/docs/src/routes/docs/right-sidebar.tsx",
-          "hash": "2785552323427155900"
-        },
-        {
-          "file": "packages/docs/src/routes/docs/sidebar.tsx",
-          "hash": "3850660620089985310"
-        },
-        {
-          "file": "packages/docs/src/routes/docs/using-libraries/index.mdx",
-          "hash": "2026727901993177402"
-        },
-        {
-          "file": "packages/docs/src/routes/index.tsx",
-          "hash": "1619895902088568276"
-        },
-        {
-          "file": "packages/docs/src/routes/layout.tsx",
-          "hash": "17444207794835452265"
-        },
-        {
-          "file": "packages/docs/src/routes/playground-old/index.tsx",
-          "hash": "10627551491200939259"
-        },
-        {
-          "file": "packages/docs/src/routes/playground/index.tsx",
-          "hash": "10041293268092061991"
-        },
-        {
-          "file": "packages/docs/src/routes/service-worker.ts",
-          "hash": "16930089838877651112"
-        },
-        {
-          "file": "packages/docs/src/services/compile.ts",
-          "hash": "4786681919797049101"
-        },
-        {
-          "file": "packages/docs/tailwind.config.js",
-          "hash": "18301236264825251398"
-        },
-        {
-          "file": "packages/docs/tsconfig.json",
-          "hash": "9752205702872351922"
-        },
-        {
-          "file": "packages/docs/vite.config.ts",
-          "hash": "4596428810862984296"
-        },
-        {
-          "file": "packages/docs/wrangler.toml",
-          "hash": "5188378448962702878"
         }
       ]
     }

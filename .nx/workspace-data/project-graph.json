@@ -4817,6 +4817,15 @@
         "hash": "10c0/0f6328869b2741e2794da4ad80beac55cba7de2d3b44f796a60955b0586212ec75e6b0253291fd4aad2100ad471d1480d8895f2b54f1605439ba4c875e05e523"
       }
     },
+    "npm:@eslint/config-array@0.17.0": {
+      "type": "npm",
+      "name": "npm:@eslint/config-array@0.17.0",
+      "data": {
+        "version": "0.17.0",
+        "packageName": "@eslint/config-array",
+        "hash": "10c0/97eb23ef0948dbc5f24884a3b75c537ca37ee2b1f27a864cd0d9189c089bc1a724dc6e1a4d9b7dd304d9f732ca02aa7916243a7715d6f1f17159d8a8c83f0c9e"
+      }
+    },
     "npm:@eslint/eslintrc@0.4.3": {
       "type": "npm",
       "name": "npm:@eslint/eslintrc@0.4.3",
@@ -4835,6 +4844,15 @@
         "hash": "10c0/32f67052b81768ae876c84569ffd562491ec5a5091b0c1e1ca1e0f3c24fb42f804952fdd0a137873bc64303ba368a71ba079a6f691cee25beee9722d94cc8573"
       }
     },
+    "npm:@eslint/eslintrc@3.1.0": {
+      "type": "npm",
+      "name": "npm:@eslint/eslintrc@3.1.0",
+      "data": {
+        "version": "3.1.0",
+        "packageName": "@eslint/eslintrc",
+        "hash": "10c0/5b7332ed781edcfc98caa8dedbbb843abfb9bda2e86538529c843473f580e40c69eb894410eddc6702f487e9ee8f8cfa8df83213d43a8fdb549f23ce06699167"
+      }
+    },
     "npm:@eslint/js@8.35.0": {
       "type": "npm",
       "name": "npm:@eslint/js@8.35.0",
@@ -4851,6 +4869,24 @@
         "version": "8.57.0",
         "packageName": "@eslint/js",
         "hash": "10c0/9a518bb8625ba3350613903a6d8c622352ab0c6557a59fe6ff6178bf882bf57123f9d92aa826ee8ac3ee74b9c6203fe630e9ee00efb03d753962dcf65ee4bd94"
+      }
+    },
+    "npm:@eslint/js@9.7.0": {
+      "type": "npm",
+      "name": "npm:@eslint/js@9.7.0",
+      "data": {
+        "version": "9.7.0",
+        "packageName": "@eslint/js",
+        "hash": "10c0/73fc10666f6f4aed6f58e407e09f42ceb0d42fa60c52701c64ea9f59a81a6a8ad5caecdfd423d03088481515fe7ec17eb461acb4ef1ad70b649b6eae465b3164"
+      }
+    },
+    "npm:@eslint/object-schema@2.1.4": {
+      "type": "npm",
+      "name": "npm:@eslint/object-schema@2.1.4",
+      "data": {
+        "version": "2.1.4",
+        "packageName": "@eslint/object-schema",
+        "hash": "10c0/e9885532ea70e483fb007bf1275968b05bb15ebaa506d98560c41a41220d33d342e19023d5f2939fed6eb59676c1bda5c847c284b4b55fce521d282004da4dda"
       }
     },
     "npm:@fastify/busboy@2.1.1": {
@@ -4914,6 +4950,15 @@
         "version": "2.0.3",
         "packageName": "@humanwhocodes/object-schema",
         "hash": "10c0/80520eabbfc2d32fe195a93557cef50dfe8c8905de447f022675aaf66abc33ae54098f5ea78548d925aa671cd4ab7c7daa5ad704fe42358c9b5e7db60f80696c"
+      }
+    },
+    "npm:@humanwhocodes/retry@0.3.0": {
+      "type": "npm",
+      "name": "npm:@humanwhocodes/retry@0.3.0",
+      "data": {
+        "version": "0.3.0",
+        "packageName": "@humanwhocodes/retry",
+        "hash": "10c0/7111ec4e098b1a428459b4e3be5a5d2a13b02905f805a2468f4fa628d072f0de2da26a27d04f65ea2846f73ba51f4204661709f05bfccff645e3cedef8781bb6"
       }
     },
     "npm:@img/sharp-darwin-arm64@0.33.4": {
@@ -10793,6 +10838,15 @@
         "hash": "10c0/613c267aea34b5a6d6c00514e8545ef1f1433108097e857225fed40d397dd6b1809dffd11c2fde23b37ca53d7bf935fe04d2a18e6fc932b31837b6ad67e1c116"
       }
     },
+    "npm:eslint-scope@8.0.2": {
+      "type": "npm",
+      "name": "npm:eslint-scope@8.0.2",
+      "data": {
+        "version": "8.0.2",
+        "packageName": "eslint-scope",
+        "hash": "10c0/477f820647c8755229da913025b4567347fd1f0bf7cbdf3a256efff26a7e2e130433df052bd9e3d014025423dc00489bea47eb341002b15553673379c1a7dc36"
+      }
+    },
     "npm:eslint-utils@2.1.0": {
       "type": "npm",
       "name": "npm:eslint-utils@2.1.0",
@@ -10838,6 +10892,15 @@
         "hash": "10c0/92708e882c0a5ffd88c23c0b404ac1628cf20104a108c745f240a13c332a11aac54f49a22d5762efbffc18ecbc9a580d1b7ad034bf5f3cc3307e5cbff2ec9820"
       }
     },
+    "npm:eslint-visitor-keys@4.0.0": {
+      "type": "npm",
+      "name": "npm:eslint-visitor-keys@4.0.0",
+      "data": {
+        "version": "4.0.0",
+        "packageName": "eslint-visitor-keys",
+        "hash": "10c0/76619f42cf162705a1515a6868e6fc7567e185c7063a05621a8ac4c3b850d022661262c21d9f1fc1d144ecf0d5d64d70a3f43c15c3fc969a61ace0fb25698cf5"
+      }
+    },
     "npm:eslint@8.35.0": {
       "type": "npm",
       "name": "npm:eslint@8.35.0",
@@ -10863,6 +10926,24 @@
         "version": "8.57.0",
         "packageName": "eslint",
         "hash": "10c0/00bb96fd2471039a312435a6776fe1fd557c056755eaa2b96093ef3a8508c92c8775d5f754768be6b1dddd09fdd3379ddb231eeb9b6c579ee17ea7d68000a529"
+      }
+    },
+    "npm:eslint@9.7.0": {
+      "type": "npm",
+      "name": "npm:eslint@9.7.0",
+      "data": {
+        "version": "9.7.0",
+        "packageName": "eslint",
+        "hash": "10c0/e2369a9534404f62f37ee5560e56fb84e0776a9c8f084550170017992772e7034d73571bdf4060e2fe9b836f136d45b07d50407d4b9361de720ee77794259274"
+      }
+    },
+    "npm:espree@10.1.0": {
+      "type": "npm",
+      "name": "npm:espree@10.1.0",
+      "data": {
+        "version": "10.1.0",
+        "packageName": "espree",
+        "hash": "10c0/52e6feaa77a31a6038f0c0e3fce93010a4625701925b0715cd54a2ae190b3275053a0717db698697b32653788ac04845e489d6773b508d6c2e8752f3c57470a0"
       }
     },
     "npm:espree@7.3.1": {
@@ -11270,6 +11351,15 @@
         "hash": "10c0/58473e8a82794d01b38e5e435f6feaf648e3f36fdb3a56e98f417f4efae71ad1c0d4ebd8a9a7c50c3ad085820a93fc7494ad721e0e4ebc1da3573f4e1c3c7cdd"
       }
     },
+    "npm:file-entry-cache@8.0.0": {
+      "type": "npm",
+      "name": "npm:file-entry-cache@8.0.0",
+      "data": {
+        "version": "8.0.0",
+        "packageName": "file-entry-cache",
+        "hash": "10c0/9e2b5938b1cd9b6d7e3612bdc533afd4ac17b2fc646569e9a8abbf2eb48e5eb8e316bc38815a3ef6a1b456f4107f0d0f055a614ca613e75db6bf9ff4d72c1638"
+      }
+    },
     "npm:filelist@1.0.4": {
       "type": "npm",
       "name": "npm:filelist@1.0.4",
@@ -11349,6 +11439,15 @@
         "version": "3.2.0",
         "packageName": "flat-cache",
         "hash": "10c0/b76f611bd5f5d68f7ae632e3ae503e678d205cf97a17c6ab5b12f6ca61188b5f1f7464503efae6dc18683ed8f0b41460beb48ac4b9ac63fe6201296a91ba2f75"
+      }
+    },
+    "npm:flat-cache@4.0.1": {
+      "type": "npm",
+      "name": "npm:flat-cache@4.0.1",
+      "data": {
+        "version": "4.0.1",
+        "packageName": "flat-cache",
+        "hash": "10c0/2c59d93e9faa2523e4fda6b4ada749bed432cfa28c8e251f33b25795e426a1c6dbada777afb1f74fcfff33934fdbdea921ee738fcc33e71adc9d6eca984a1cfc"
       }
     },
     "npm:flat@5.0.2": {
@@ -11835,6 +11934,15 @@
         "version": "13.24.0",
         "packageName": "globals",
         "hash": "10c0/d3c11aeea898eb83d5ec7a99508600fbe8f83d2cf00cbb77f873dbf2bcb39428eff1b538e4915c993d8a3b3473fa71eeebfe22c9bb3a3003d1e26b1f2c8a42cd"
+      }
+    },
+    "npm:globals@14.0.0": {
+      "type": "npm",
+      "name": "npm:globals@14.0.0",
+      "data": {
+        "version": "14.0.0",
+        "packageName": "globals",
+        "hash": "10c0/b96ff42620c9231ad468d4c58ff42afee7777ee1c963013ff8aabe095a451d0ceeb8dcd8ef4cbd64d2538cef45f787a78ba3a9574f4a634438963e334471302d"
       }
     },
     "npm:globalthis@1.0.4": {
@@ -21037,6 +21145,11 @@
       },
       {
         "source": "@builder.io/mitosis-fiddle",
+        "target": "npm:eslint@9.7.0",
+        "type": "static"
+      },
+      {
+        "source": "@builder.io/mitosis-fiddle",
         "target": "npm:nx",
         "type": "static"
       },
@@ -26701,6 +26814,23 @@
         "type": "static"
       }
     ],
+    "npm:@eslint/config-array@0.17.0": [
+      {
+        "source": "npm:@eslint/config-array@0.17.0",
+        "target": "npm:@eslint/object-schema@2.1.4",
+        "type": "static"
+      },
+      {
+        "source": "npm:@eslint/config-array@0.17.0",
+        "target": "npm:debug@4.3.5",
+        "type": "static"
+      },
+      {
+        "source": "npm:@eslint/config-array@0.17.0",
+        "target": "npm:minimatch@3.1.2",
+        "type": "static"
+      }
+    ],
     "npm:@eslint/eslintrc@0.4.3": [
       {
         "source": "npm:@eslint/eslintrc@0.4.3",
@@ -26791,6 +26921,53 @@
       },
       {
         "source": "npm:@eslint/eslintrc@2.1.4",
+        "target": "npm:strip-json-comments@3.1.1",
+        "type": "static"
+      }
+    ],
+    "npm:@eslint/eslintrc@3.1.0": [
+      {
+        "source": "npm:@eslint/eslintrc@3.1.0",
+        "target": "npm:ajv@6.12.6",
+        "type": "static"
+      },
+      {
+        "source": "npm:@eslint/eslintrc@3.1.0",
+        "target": "npm:debug@4.3.5",
+        "type": "static"
+      },
+      {
+        "source": "npm:@eslint/eslintrc@3.1.0",
+        "target": "npm:espree@10.1.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:@eslint/eslintrc@3.1.0",
+        "target": "npm:globals@14.0.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:@eslint/eslintrc@3.1.0",
+        "target": "npm:ignore@5.3.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@eslint/eslintrc@3.1.0",
+        "target": "npm:import-fresh@3.3.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:@eslint/eslintrc@3.1.0",
+        "target": "npm:js-yaml@4.1.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:@eslint/eslintrc@3.1.0",
+        "target": "npm:minimatch@3.1.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@eslint/eslintrc@3.1.0",
         "target": "npm:strip-json-comments@3.1.1",
         "type": "static"
       }
@@ -33609,6 +33786,18 @@
         "type": "static"
       }
     ],
+    "npm:eslint-scope@8.0.2": [
+      {
+        "source": "npm:eslint-scope@8.0.2",
+        "target": "npm:esrecurse@4.3.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint-scope@8.0.2",
+        "target": "npm:estraverse@5.3.0",
+        "type": "static"
+      }
+    ],
     "npm:eslint-utils@2.1.0": [
       {
         "source": "npm:eslint-utils@2.1.0",
@@ -34219,6 +34408,195 @@
         "type": "static"
       }
     ],
+    "npm:eslint@9.7.0": [
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:@eslint-community/eslint-utils@4.4.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:@eslint-community/regexpp@4.11.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:@eslint/config-array@0.17.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:@eslint/eslintrc@3.1.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:@eslint/js@9.7.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:@humanwhocodes/module-importer@1.0.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:@humanwhocodes/retry@0.3.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:@nodelib/fs.walk@1.2.8",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:ajv@6.12.6",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:chalk@4.1.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:cross-spawn@7.0.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:debug@4.3.5",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:escape-string-regexp@4.0.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:eslint-scope@8.0.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:eslint-visitor-keys@4.0.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:espree@10.1.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:esquery@1.6.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:esutils@2.0.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:fast-deep-equal@3.1.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:file-entry-cache@8.0.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:find-up@5.0.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:glob-parent@6.0.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:ignore@5.3.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:imurmurhash@0.1.4",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:is-glob@4.0.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:is-path-inside@3.0.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:json-stable-stringify-without-jsonify@1.0.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:levn@0.4.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:lodash.merge@4.6.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:minimatch@3.1.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:natural-compare@1.4.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:optionator@0.9.4",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:strip-ansi@6.0.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:eslint@9.7.0",
+        "target": "npm:text-table@0.2.0",
+        "type": "static"
+      }
+    ],
+    "npm:espree@10.1.0": [
+      {
+        "source": "npm:espree@10.1.0",
+        "target": "npm:acorn@8.12.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:espree@10.1.0",
+        "target": "npm:acorn-jsx@5.3.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:espree@10.1.0",
+        "target": "npm:eslint-visitor-keys@4.0.0",
+        "type": "static"
+      }
+    ],
     "npm:espree@7.3.1": [
       {
         "source": "npm:espree@7.3.1",
@@ -34720,6 +35098,13 @@
         "type": "static"
       }
     ],
+    "npm:file-entry-cache@8.0.0": [
+      {
+        "source": "npm:file-entry-cache@8.0.0",
+        "target": "npm:flat-cache@4.0.1",
+        "type": "static"
+      }
+    ],
     "npm:filelist@1.0.4": [
       {
         "source": "npm:filelist@1.0.4",
@@ -34838,6 +35223,18 @@
       {
         "source": "npm:flat-cache@3.2.0",
         "target": "npm:rimraf@3.0.2",
+        "type": "static"
+      }
+    ],
+    "npm:flat-cache@4.0.1": [
+      {
+        "source": "npm:flat-cache@4.0.1",
+        "target": "npm:flatted@3.3.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:flat-cache@4.0.1",
+        "target": "npm:keyv@4.5.4",
         "type": "static"
       }
     ],
