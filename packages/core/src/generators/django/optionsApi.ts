@@ -8,7 +8,7 @@ import json5 from 'json5';
 import { kebabCase, size, uniq } from 'lodash';
 import { stringifySingleScopeOnMount } from '../helpers/on-mount';
 import { encodeQuotes, getContextKey, getContextValue, getOnUpdateHookName } from './helpers';
-import { DefaultProps, PropsDefinition, ToDjangoOptions } from './types';
+import { DjangoDefaultProps, DjangoPropsDefinition, ToDjangoOptions } from './types';
 
 const getContextProvideString = (json: MitosisComponent, options: ToDjangoOptions) => {
   return `{
@@ -158,7 +158,7 @@ export function generateOptionsApiScript(
     component: MitosisComponent;
     props: string[];
   }) => {
-    const propsDefinition: PropsDefinition<DefaultProps> = Array.from(props).filter(
+    const propsDefinition: DjangoPropsDefinition<DjangoDefaultProps> = Array.from(props).filter(
       (prop) => prop !== 'children' && prop !== 'class',
     );
     let str = 'props: ';
