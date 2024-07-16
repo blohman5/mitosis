@@ -13,7 +13,7 @@ export * from './generators/context/rsc';
 export * from './generators/context/solid';
 export * from './generators/context/svelte';
 export * from './generators/context/vue';
-export * from './generators/django';
+// export * from './generators/django';
 export * from './generators/html';
 export * from './generators/liquid';
 export * from './generators/lit';
@@ -37,7 +37,7 @@ export {
   getComponentFileExtensionForTarget,
   renameComponentFile,
   renameComponentImport,
-  renameImport
+  renameImport,
 } from './helpers/component-file-extensions';
 export { createMitosisNode } from './helpers/create-mitosis-node';
 export * from './helpers/is-mitosis-node';
