@@ -13,6 +13,7 @@ module.exports = {
     'reactNative',
     'solid',
     'svelte',
+    'django',
     'vue',
     'webcomponent',
   ],
@@ -40,6 +41,11 @@ module.exports = {
     react: { transpiler: { format: 'esm', languages: ['ts'] } },
     solid: { transpiler: { languages: ['ts'] } },
     vue: {
+      transpiler: { format: 'esm' },
+      asyncComponentImports: true,
+      api: 'composition',
+    },
+    django: {
       transpiler: { format: 'esm' },
       asyncComponentImports: true,
       api: 'composition',

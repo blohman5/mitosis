@@ -25,6 +25,7 @@ const packages = [
   '@builder.io/e2e-qwik',
   '@builder.io/e2e-react',
   '@builder.io/e2e-solid',
+  '@builder.io/e2e-django',
   '@builder.io/e2e-svelte',
   '@builder.io/e2e-vue2',
   '@builder.io/e2e-vue3',
