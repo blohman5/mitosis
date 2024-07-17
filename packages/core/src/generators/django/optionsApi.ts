@@ -181,24 +181,26 @@ export function generateOptionsApiScript(
   };
 
   return `
-        export default ${options.defineComponent ? 'defineComponent(' : ''} {
-        ${
-          !component.name
-            ? ''
-            : `name: '${
-                path && options.namePrefix?.(path) ? options.namePrefix?.(path) + '-' : ''
-              }${kebabCase(component.name)}',`
-        }
-        ${generateComponents(componentsUsed, options)}
-        ${props.length ? getPropDefinition({ component, props }) : ''}
-        ${
-          dataString.length < 4
-            ? ''
-            : `
-        data() {
-          return ${dataString}
-        },
-        `
+  @component.register("${
+    !component.name
+      ? ''
+      : `${path && options.namePrefix?.(path) ? options.namePrefix?.(path) + '-' : ''}${kebabCase(
+          component.name,
+        )}`
+  }")
+class   ${
+    !component.name
+      ? ''
+      : `${path && options.namePrefix?.(path) ? options.namePrefix?.(path) + '-' : ''}${kebabCase(
+          component.name,
+        )}`
+  }(component.${
+    !component.name
+      ? ''
+      : `name: '${
+          path && options.namePrefix?.(path) ? options.namePrefix?.(path) + '-' : ''
+        }${kebabCase(component.name)}'`
+  }):
         }
 
         ${

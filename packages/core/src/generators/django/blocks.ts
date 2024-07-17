@@ -13,9 +13,9 @@ import { encodeQuotes } from './helpers';
 import { ToDjangoOptions } from './types';
 
 const SPECIAL_PROPERTIES = {
-  V_IF: 'v-if',
+  V_IF: 'if',
   V_FOR: 'v-for',
-  V_ELSE: 'v-else',
+  V_ELSE: 'else',
   V_ELSE_IF: 'v-else-if',
   V_ON: 'v-on',
   V_ON_AT: '@',
@@ -37,7 +37,7 @@ interface Scope {
 
 // TODO: Maybe in the future allow defining `string | function` as values
 const BINDING_MAPPERS: { [key: string]: string | undefined } = {
-  innerHTML: 'v-html',
+  innerHTML: '5v-html',
 };
 
 const NODE_MAPPERS: {
@@ -56,7 +56,8 @@ const NODE_MAPPERS: {
     const forValue = `(${json.scope.forName}, index) in ${json.bindings.each?.code}`;
 
     // TODO: tmk key goes on different element (parent vs child) based on Vue 2 vs Vue 3
-    return `<template :key="${encodeQuotes(keyValue?.code || 'index')}" v-for="${encodeQuotes(
+    //idk where this one even went
+    return `<12template :key="${encodeQuotes(keyValue?.code || 'index')}" v-for="${encodeQuotes(
       forValue,
     )}">
         ${json.children.map((item) => blockToDjango(item, options)).join('\n')}
@@ -64,19 +65,20 @@ const NODE_MAPPERS: {
   },
   Show(json, options, scope) {
     const ifValue = json.bindings.when?.code || '';
-
+    //this applied it to the inner template?
     const defaultShowTemplate = `
-    <template ${SPECIAL_PROPERTIES.V_IF}="${encodeQuotes(ifValue)}">
+    //if statement section
+    {%${SPECIAL_PROPERTIES.V_IF}="${encodeQuotes(ifValue)}"%}
       ${json.children.map((item) => blockToDjango(item, options)).join('\n')}
-    </template>
     ${
       isMitosisNode(json.meta.else)
         ? `
-        <template ${SPECIAL_PROPERTIES.V_ELSE}>
+        {%${SPECIAL_PROPERTIES.V_ELSE}>
           ${blockToDjango(json.meta.else, options)}
-        </template>`
+        %}`
         : ''
     }
+    {%endif%}
     `;
 
     return defaultShowTemplate;

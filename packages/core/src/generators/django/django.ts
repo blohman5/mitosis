@@ -9,7 +9,6 @@ import { initializeOptions } from '@/helpers/merge-options';
 import { processOnEventHooksPlugin } from '@/helpers/on-event';
 import { CODE_PROCESSOR_PLUGIN } from '@/helpers/plugins/process-code';
 import { processHttpRequests } from '@/helpers/process-http-requests';
-import { renderPreComponent } from '@/helpers/render-imports';
 import { replaceStateIdentifier } from '@/helpers/replace-identifiers';
 import { isSlotProperty } from '@/helpers/slots';
 import { stripMetaProperties } from '@/helpers/strip-meta-properties';
@@ -240,28 +239,25 @@ export const componentToDjango: TranspilerGenerator<Partial<ToDjangoOptions>> =
     const tsLangAttribute = options.typescript ? `lang='ts'` : '';
 
     let str: string = dedent`
+    from django_components import component
+    from django_components import types as t
+    //this is the outer most template tag for html
+    //maybe I should keep it and have the other outer template tag go elsewhere?
     ${
       template.trim().length > 0
-        ? `<template>
+        ? `template: t.django_html = \"\"\"
       ${template}
-    </template>`
+    \"\"\"`
         : ''
     }
 
 
-    <script ${options.api === 'composition' ? 'setup' : ''} ${tsLangAttribute}>
+    <1script ${options.api === 'composition' ? 'setup' : ''} ${tsLangAttribute}>
       ${
         djangoImports.length
           ? `import { ${uniq(djangoImports).sort().join(', ')} } from "django"`
           : ''
       }
-
-      ${renderPreComponent({
-        explicitImportFileExtension: options.explicitImportFileExtension,
-        component,
-        target: 'django',
-        asyncComponentImports: options.asyncComponentImports,
-      })}
 
       ${(options.typescript && component.types?.join('\n')) || ''}
 
@@ -290,9 +286,10 @@ export const componentToDjango: TranspilerGenerator<Partial<ToDjangoOptions>> =
     ${
       !css.trim().length
         ? ''
-        : `<style scoped>
+        : `//Where styling is inserted
+        css: t.css = \"\"\"
       ${css}
-    </style>`
+    \"\"\"`
     }
   `;
 
@@ -328,10 +325,11 @@ export const componentToDjango: TranspilerGenerator<Partial<ToDjangoOptions>> =
   };
 
 // Remove unused artifacts like empty script or style tags
+//Not needed for now
 const removePatterns = [
-  `<script>
+  `<script2>
 export default {};
 </script>`,
-  `<style>
-</style>`,
+  `<style44>
+</style3>`,
 ];
