@@ -5,9 +5,8 @@ import { checkIsDefined } from '@/helpers/nullable';
 import { checkIsComponentImport } from '@/helpers/render-imports';
 import { BaseHook, MitosisComponent } from '@/types/mitosis-component';
 import json5 from 'json5';
-import { kebabCase, size, uniq } from 'lodash';
-import { stringifySingleScopeOnMount } from '../helpers/on-mount';
-import { encodeQuotes, getContextKey, getContextValue, getOnUpdateHookName } from './helpers';
+import { kebabCase, uniq } from 'lodash';
+import { encodeQuotes, getContextKey, getContextValue } from './helpers';
 import { DjangoDefaultProps, DjangoPropsDefinition, ToDjangoOptions } from './types';
 
 const getContextProvideString = (json: MitosisComponent, options: ToDjangoOptions) => {
@@ -201,79 +200,5 @@ class   ${
           path && options.namePrefix?.(path) ? options.namePrefix?.(path) + '-' : ''
         }${kebabCase(component.name)}'`
   }):
-        }
-
-        ${
-          size(component.context.set)
-            ? `provide() {
-                const _this = this;
-                return ${getContextProvideString(component, options)}
-              },`
-            : ''
-        }
-        ${
-          size(component.context.get)
-            ? `inject: ${getContextInjectString(component, options)},`
-            : ''
-        }
-        ${
-          component.hooks.onInit?.code
-            ? `created() {
-                ${component.hooks.onInit.code}
-              },`
-            : ''
-        }
-        ${
-          component.hooks.onMount.length
-            ? `mounted() {
-                ${stringifySingleScopeOnMount(component)}
-              },`
-            : ''
-        }
-        ${
-          onUpdateWithoutDeps.length
-            ? `updated() {
-            ${onUpdateWithoutDeps.map((hook) => hook.code).join('\n')}
-          },`
-            : ''
-        }
-        ${
-          onUpdateWithDeps.length
-            ? `watch: {
-            ${onUpdateWithDeps
-              .map(
-                (hook, index) =>
-                  `${getOnUpdateHookName(index)}: { handler() { ${hook.code} }, immediate: true }`,
-              )
-              .join(',')}
-          },`
-            : ''
-        }
-        ${
-          component.hooks.onUnMount
-            ? `unmounted() {
-                ${component.hooks.onUnMount.code}
-              },`
-            : ''
-        }
-
-        ${
-          getterString.length < 4
-            ? ''
-            : `
-          computed: ${getterString},
-        `
-        }
-        ${
-          functionsString.length < 4
-            ? ''
-            : `
-          methods: ${functionsString},
-        `
-        }
-        ${Object.entries(component.meta.djangoConfig || {})
-          .map(([k, v]) => `${k}: ${v}`)
-          .join(',')}
-        }
         ${options.defineComponent ? ')' : ''}`;
 }

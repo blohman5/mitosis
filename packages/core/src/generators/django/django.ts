@@ -28,7 +28,6 @@ import {
 } from '../../modules/plugins';
 import { FUNCTION_HACK_PLUGIN } from '../helpers/functions';
 import { blockToDjango } from './blocks';
-import { generateCompositionApiScript } from './compositionApi';
 import { getOnUpdateHookName, processBinding, renameMitosisComponentsToKebabCase } from './helpers';
 import { generateOptionsApiScript } from './optionsApi';
 import { ToDjangoOptions } from './types';
@@ -246,27 +245,17 @@ from django_components import types as t
       ${(options.typescript && component.types?.join('\n')) || ''}
 
 //within this is the component register stuff
-      ${
-        options.api === 'composition'
-          ? generateCompositionApiScript(
-              component,
-              options,
-              template,
-              elementProps,
-              onUpdateWithDeps,
-              onUpdateWithoutDeps,
-            )
-          : generateOptionsApiScript(
-              component,
-              options,
-              path,
-              template,
-              elementProps,
-              onUpdateWithDeps,
-              onUpdateWithoutDeps,
-            )
-      }
-
+//note how both things are from different packages
+//For now I will remove one
+      ${generateOptionsApiScript(
+        component,
+        options,
+        path,
+        template,
+        elementProps,
+        onUpdateWithDeps,
+        onUpdateWithoutDeps,
+      )}
     ${
       template.trim().length > 0
         ? `template: t.django_html = \"\"\"
@@ -284,7 +273,6 @@ from django_components import types as t
     }
 
     ${`js: t.js = \"\"\"
-      ${css}
     \"\"\"`}
   `;
 
