@@ -16,7 +16,7 @@ import { collectCss } from '@/helpers/styles/collect-css';
 import { MitosisComponent } from '@/types/mitosis-component';
 import { TranspilerGenerator } from '@/types/transpiler';
 import { flow } from 'fp-ts/lib/function';
-import { pickBy, size, uniq } from 'lodash';
+import { pickBy, size } from 'lodash';
 import { format } from 'prettier/standalone';
 import traverse from 'traverse';
 import {
@@ -237,30 +237,15 @@ export const componentToDjango: TranspilerGenerator<Partial<ToDjangoOptions>> =
     }
 
     const tsLangAttribute = options.typescript ? `lang='ts'` : '';
+    //I question if this str is the main str everything is put into
 
     let str: string = dedent`
-    from django_components import component
-    from django_components import types as t
-    //this is the outer most template tag for html
-    //maybe I should keep it and have the other outer template tag go elsewhere?
-    ${
-      template.trim().length > 0
-        ? `template: t.django_html = \"\"\"
-      ${template}
-    \"\"\"`
-        : ''
-    }
-
-
-    <1script ${options.api === 'composition' ? 'setup' : ''} ${tsLangAttribute}>
-      ${
-        djangoImports.length
-          ? `import { ${uniq(djangoImports).sort().join(', ')} } from "django"`
-          : ''
-      }
+from django_components import component
+from django_components import types as t
 
       ${(options.typescript && component.types?.join('\n')) || ''}
 
+//within this is the component register stuff
       ${
         options.api === 'composition'
           ? generateCompositionApiScript(
@@ -281,16 +266,26 @@ export const componentToDjango: TranspilerGenerator<Partial<ToDjangoOptions>> =
               onUpdateWithoutDeps,
             )
       }
-    </script>
+
+    ${
+      template.trim().length > 0
+        ? `template: t.django_html = \"\"\"
+      ${template}
+    \"\"\"`
+        : ''
+    }
 
     ${
       !css.trim().length
         ? ''
-        : `//Where styling is inserted
-        css: t.css = \"\"\"
+        : `css: t.css = \"\"\"
       ${css}
     \"\"\"`
     }
+
+    ${`js: t.js = \"\"\"
+      ${css}
+    \"\"\"`}
   `;
 
     str = runPreCodePlugins({
