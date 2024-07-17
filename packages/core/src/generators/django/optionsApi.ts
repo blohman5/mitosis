@@ -187,18 +187,11 @@ export function generateOptionsApiScript(
           component.name,
         )}`
   }")
-class   ${
+class ${
     !component.name
       ? ''
       : `${path && options.namePrefix?.(path) ? options.namePrefix?.(path) + '-' : ''}${kebabCase(
           component.name,
         )}`
-  }(component.${
-    !component.name
-      ? ''
-      : `name: '${
-          path && options.namePrefix?.(path) ? options.namePrefix?.(path) + '-' : ''
-        }${kebabCase(component.name)}'`
-  }):
-        ${options.defineComponent ? ')' : ''}`;
+  }(component.Component):`;
 }

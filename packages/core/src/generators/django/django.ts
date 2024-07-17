@@ -237,16 +237,13 @@ export const componentToDjango: TranspilerGenerator<Partial<ToDjangoOptions>> =
 
     const tsLangAttribute = options.typescript ? `lang='ts'` : '';
     //I question if this str is the main str everything is put into
-
+    //within this is the component register stuff
+    //note how both things are from different packages
+    //For now I will remove one
     let str: string = dedent`
 from django_components import component
 from django_components import types as t
 
-      ${(options.typescript && component.types?.join('\n')) || ''}
-
-//within this is the component register stuff
-//note how both things are from different packages
-//For now I will remove one
       ${generateOptionsApiScript(
         component,
         options,
@@ -256,6 +253,9 @@ from django_components import types as t
         onUpdateWithDeps,
         onUpdateWithoutDeps,
       )}
+    def get_context_data(
+    ):
+
     ${
       template.trim().length > 0
         ? `template: t.django_html = \"\"\"
