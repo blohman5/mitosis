@@ -256,8 +256,6 @@ from django_components import types as t
         onUpdateWithDeps,
         onUpdateWithoutDeps,
       )}
-    def get_context_data(
-    ):
 
     ${
       template.trim().length > 0

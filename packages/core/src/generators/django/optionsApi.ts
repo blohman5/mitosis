@@ -146,24 +146,38 @@ export function generateOptionsApiScript(
     props: string[];
   }) => {
     const isTs = options.typescript;
-    let str = 'const props = ';
+    let str = '   def get_context_data(';
+    str += `${json5.stringify(props)}):`;
+    str += `
+          return {
+          }`;
 
-    if (component.defaultProps) {
-      const generic = isTs ? `<${component.propsTypeRef}>` : '';
-      const defalutPropsString = props
-        .map((prop) => {
-          const value = component.defaultProps!.hasOwnProperty(prop)
-            ? component.defaultProps![prop]?.code
-            : 'undefined';
-          return `${prop}: ${value}`;
-        })
-        .join(',');
-      str += `withDefaults(defineProps${generic}(), {${defalutPropsString}})`;
-    } else if (isTs && component.propsTypeRef && component.propsTypeRef !== 'any') {
-      str += `defineProps<${component.propsTypeRef}>()`;
-    } else {
-      str += `defineProps(${json5.stringify(props)})`;
-    }
+    // if (component.defaultProps) {
+    //   const generic = isTs ? `<${component.propsTypeRef}>` : '';
+    //   const defaultPropsString = props
+    //     .map((prop) => {
+    //       const value = component.defaultProps!.hasOwnProperty(prop)
+    //         ? component.defaultProps![prop]?.code
+    //         : 'undefined';
+    //       return `${prop}: ${value}`;
+    //     })
+    //     .join(',');
+    //   str += `withDefaults(defineProps${generic}(), {${defaultPropsString}})`;
+    // } else if (isTs && component.propsTypeRef && component.propsTypeRef !== 'any') {
+    //   str += `defineProps<${component.propsTypeRef}>()`;
+    // } else {
+    // str += `defineProps(${json5.stringify(props)})`;
+    // const generic = isTs ? `<${component.propsTypeRef}>` : '';
+    // const defaultPropsString = props
+    //   .map((prop) => {
+    //     const value = component.defaultProps!.hasOwnProperty(prop)
+    //       ? component.defaultProps![prop]?.code
+    //       : 'undefined';
+    //     return `${prop}: ${value}`;
+    //   })
+    //   .join(',');
+    // str += `withDefaults(defineProps${generic}(), {${defaultPropsString}})`;
+    // }
     return str;
   };
 
