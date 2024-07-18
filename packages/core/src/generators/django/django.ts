@@ -9,14 +9,13 @@ import { initializeOptions } from '@/helpers/merge-options';
 import { processOnEventHooksPlugin } from '@/helpers/on-event';
 import { CODE_PROCESSOR_PLUGIN } from '@/helpers/plugins/process-code';
 import { processHttpRequests } from '@/helpers/process-http-requests';
-import { replaceStateIdentifier } from '@/helpers/replace-identifiers';
 import { isSlotProperty } from '@/helpers/slots';
 import { stripMetaProperties } from '@/helpers/strip-meta-properties';
 import { collectCss } from '@/helpers/styles/collect-css';
 import { MitosisComponent } from '@/types/mitosis-component';
 import { TranspilerGenerator } from '@/types/transpiler';
 import { flow } from 'fp-ts/lib/function';
-import { pickBy, size } from 'lodash';
+import { pickBy } from 'lodash';
 import { format } from 'prettier/standalone';
 import traverse from 'traverse';
 import {
@@ -113,64 +112,37 @@ export const componentToDjango: TranspilerGenerator<Partial<ToDjangoOptions>> =
       userOptions: userOptions,
     });
 
-    if (options.api === 'composition') {
-      options.asyncComponentImports = false;
-    }
-
+    //my current theory is that some have a catch all but since some might not and neither options or composition are selected then you have major issues
     options.plugins.unshift(
       processOnEventHooksPlugin(),
-      ...(options.api === 'options' ? [onUpdatePlugin] : []),
+      ...(true ? [onUpdatePlugin] : []),
       ...(options.api === 'composition' ? [FUNCTION_HACK_PLUGIN] : []),
       CODE_PROCESSOR_PLUGIN((codeType) => {
-        if (options.api === 'composition') {
-          switch (codeType) {
-            case 'hooks':
-              return (code) => processBinding({ code, options, json: component });
-            case 'state':
-              return (code) => processBinding({ code, options, json: component });
-            case 'bindings':
-              return flow(
-                // Strip types from any JS code that ends up in the template, because Vue does not support TS code in templates.
-                convertTypeScriptToJS,
-                (code) => processBinding({ code, options, json: component, codeType }),
-              );
-            case 'context-set':
-              return (code) =>
-                processBinding({ code, options, json: component, preserveGetter: true });
-            case 'hooks-deps':
-              return replaceStateIdentifier(null);
-            case 'properties':
-            case 'dynamic-jsx-elements':
-            case 'types':
-              return (c) => c;
-          }
-        } else {
-          switch (codeType) {
-            case 'hooks':
-              return (code) => processBinding({ code, options, json: component });
-            case 'bindings':
-              return flow(
-                // Strip types from any JS code that ends up in the template, because Vue does not support TS code in templates.
-                convertTypeScriptToJS,
-                (code) => processBinding({ code, options, json: component, codeType }),
-              );
-            case 'properties':
-            case 'dynamic-jsx-elements':
-            case 'hooks-deps':
-            case 'types':
-              return (c) => c;
-            case 'state':
-              return (c) => processBinding({ code: c, options, json: component });
-            case 'context-set':
-              return (code) =>
-                processBinding({
-                  code,
-                  options,
-                  json: component,
-                  thisPrefix: '_this',
-                  preserveGetter: true,
-                });
-          }
+        switch (codeType) {
+          case 'hooks':
+            return (code) => processBinding({ code, options, json: component });
+          case 'bindings':
+            return flow(
+              // Strip types from any JS code that ends up in the template, because Vue does not support TS code in templates.
+              convertTypeScriptToJS,
+              (code) => processBinding({ code, options, json: component, codeType }),
+            );
+          case 'properties':
+          case 'dynamic-jsx-elements':
+          case 'hooks-deps':
+          case 'types':
+            return (c) => c;
+          case 'state':
+            return (c) => processBinding({ code: c, options, json: component });
+          case 'context-set':
+            return (code) =>
+              processBinding({
+                code,
+                options,
+                json: component,
+                thisPrefix: '_this',
+                preserveGetter: true,
+              });
         }
       }),
     );
@@ -181,9 +153,7 @@ export const componentToDjango: TranspilerGenerator<Partial<ToDjangoOptions>> =
 
     component = runPreJsonPlugins({ json: component, plugins: options.plugins });
 
-    if (options.api === 'options') {
-      mapRefs(component, (refName) => `this.$refs.${refName}`);
-    }
+    mapRefs(component, (refName) => `this.$refs.${refName}`);
 
     // need to run this before we process the component's code
     const props = Array.from(getProps(component));
@@ -215,38 +185,11 @@ export const componentToDjango: TranspilerGenerator<Partial<ToDjangoOptions>> =
 
     // import from vue
     let djangoImports: string[] = [];
-    if (options.asyncComponentImports) {
-      djangoImports.push('defineAsyncComponent');
-    }
-    if (options.api === 'options' && options.defineComponent) {
-      djangoImports.push('defineComponent');
-    }
-    if (options.api === 'composition') {
-      onUpdateWithDeps.length && djangoImports.push('watch');
-      component.hooks.onMount.length && djangoImports.push('onMounted');
-      component.hooks.onUnMount?.code && djangoImports.push('onUnmounted');
-      onUpdateWithoutDeps.length && djangoImports.push('onUpdated');
-      size(getterKeys) && djangoImports.push('computed');
-      size(component.context.set) && djangoImports.push('provide');
-      size(component.context.get) && djangoImports.push('inject');
-      size(
-        Object.keys(component.state).filter((key) => component.state[key]?.type === 'property'),
-      ) && djangoImports.push('ref');
-      size(slotsProps) && djangoImports.push('useSlots');
-    }
+    djangoImports.push('defineComponent');
 
-    const tsLangAttribute = options.typescript ? `lang='ts'` : '';
-
-    //note the computed stuff I need is located in their composition API
-
-    //I question if this str is the main str everything is put into
-    //within this is the component register stuff
-    //note how both things are from different packages
-    //For now I will remove one
     let str: string = dedent`
 from django_components import component
 from django_components import types as t
-
       ${generateOptionsApiScript(
         component,
         options,
@@ -256,7 +199,6 @@ from django_components import types as t
         onUpdateWithDeps,
         onUpdateWithoutDeps,
       )}
-
     ${
       template.trim().length > 0
         ? `template: t.django_html = \"\"\"
