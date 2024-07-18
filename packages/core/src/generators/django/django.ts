@@ -236,6 +236,9 @@ export const componentToDjango: TranspilerGenerator<Partial<ToDjangoOptions>> =
     }
 
     const tsLangAttribute = options.typescript ? `lang='ts'` : '';
+
+    //note the computed stuff I need is located in their composition API
+
     //I question if this str is the main str everything is put into
     //within this is the component register stuff
     //note how both things are from different packages
@@ -264,13 +267,9 @@ from django_components import types as t
         : ''
     }
 
-    ${
-      !css.trim().length
-        ? ''
-        : `css: t.css = \"\"\"
+    ${`css: t.css = \"\"\"
       ${css}
-    \"\"\"`
-    }
+    \"\"\"`}
 
     ${`js: t.js = \"\"\"
     \"\"\"`}

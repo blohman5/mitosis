@@ -136,6 +136,37 @@ export function generateOptionsApiScript(
     functionsString = functionsString.replace(/}\s*$/, `${localVarAsFunc.join(',')}}`);
   }
 
+  const getCompositionPropDefinition = ({
+    options,
+    component,
+    props,
+  }: {
+    options: ToDjangoOptions;
+    component: MitosisComponent;
+    props: string[];
+  }) => {
+    const isTs = options.typescript;
+    let str = 'const props = ';
+
+    if (component.defaultProps) {
+      const generic = isTs ? `<${component.propsTypeRef}>` : '';
+      const defalutPropsString = props
+        .map((prop) => {
+          const value = component.defaultProps!.hasOwnProperty(prop)
+            ? component.defaultProps![prop]?.code
+            : 'undefined';
+          return `${prop}: ${value}`;
+        })
+        .join(',');
+      str += `withDefaults(defineProps${generic}(), {${defalutPropsString}})`;
+    } else if (isTs && component.propsTypeRef && component.propsTypeRef !== 'any') {
+      str += `defineProps<${component.propsTypeRef}>()`;
+    } else {
+      str += `defineProps(${json5.stringify(props)})`;
+    }
+    return str;
+  };
+
   // Component references to include in `component: { YourComponent, ... }
   const componentsUsedInTemplate = Array.from(getComponentsUsed(component))
     .filter((name) => name.length && !name.includes('.') && name[0].toUpperCase() === name[0])
@@ -180,6 +211,13 @@ export function generateOptionsApiScript(
   };
 
   return `
+  ${
+    getterString.length < 4
+      ? ''
+      : `
+  computed: ${getterString},
+  `
+  }
   @component.register("${
     !component.name
       ? ''
@@ -193,5 +231,16 @@ class ${
       : `${path && options.namePrefix?.(path) ? options.namePrefix?.(path) + '-' : ''}${kebabCase(
           component.name,
         )}`
-  }(component.Component):`;
+  }(component.Component):
+  ${props.length ? getCompositionPropDefinition({ component, props, options }) : ''}
+`;
 }
+// ${
+//   dataString.length < 4
+//     ? ''
+//     : `
+// def get_context_data(
+// return ${dataString}
+// ):
+// `
+// }

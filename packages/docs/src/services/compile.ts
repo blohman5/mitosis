@@ -51,7 +51,7 @@ export const languageByFramework: Record<OutputFramework, string> = {
   solid: 'typescript',
   preact: 'typescript',
   stencil: 'typescript',
-  django: 'typescript',
+  django: 'python',
   reactNative: 'typescript',
   alpine: 'html',
 };
