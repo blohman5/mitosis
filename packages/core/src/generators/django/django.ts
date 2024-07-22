@@ -207,6 +207,14 @@ from django_components import types as t
         : ''
     }
 
+    ${
+      template.trim().length > 0
+        ? `<template>
+      ${template}
+    </template>`
+        : ''
+    }
+
     ${`css: t.css = \"\"\"
       ${css}
     \"\"\"`}

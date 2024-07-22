@@ -48,7 +48,7 @@ module.exports = {
     django: {
       transpiler: { format: 'esm' },
       asyncComponentImports: true,
-      api: 'composition',
+      api: 'options',
     },
     qwik: {},
     svelte: {},

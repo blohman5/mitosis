@@ -1,5 +1,6 @@
 import { BaseTranspilerOptions } from '@/types/transpiler';
 
+//types seem to be controlled here but how?
 export type DjangoApi = 'options' | 'composition';
 
 export interface ToDjangoOptions extends BaseTranspilerOptions {

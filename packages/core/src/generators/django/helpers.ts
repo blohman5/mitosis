@@ -193,31 +193,10 @@ export const processBinding = ({
     return pipe(
       code,
       replacePropsIdentifier((name) => {
-        switch (options.api) {
-          // keep pointing to `props.${value}`
-          case 'composition':
-            const slotPrefix = codeType === 'bindings' ? '$slots' : 'useSlots()';
-
-            if (name === 'children' || name.startsWith('children.')) {
-              return `${slotPrefix}.default`;
-            }
-            return isSlotProperty(name)
-              ? replaceSlotsInString(name, (x) => `${slotPrefix}.${x}`)
-              : codeType === 'bindings'
-              ? name
-              : `props.${name}`;
-
-          case 'options':
-            return optionsApiStateAndPropsReplace(name, thisPrefix, codeType);
-        }
+        return optionsApiStateAndPropsReplace(name, thisPrefix, codeType);
       }),
       replaceStateIdentifier((name) => {
-        switch (options.api) {
-          case 'composition':
-            return name;
-          case 'options':
-            return optionsApiStateAndPropsReplace(name, thisPrefix, codeType);
-        }
+        return optionsApiStateAndPropsReplace(name, thisPrefix, codeType);
       }),
       codeType === 'bindings'
         ? identity

@@ -71,7 +71,6 @@ const getOutputGenerator = async ({ output }: { output: OutputFramework }) => {
     componentToReactNative,
     componentToSolid,
     componentToStencil,
-    componentToDjango,
   } = await import('@builder.io/mitosis');
 
   const options = {};
@@ -102,7 +101,7 @@ const getOutputGenerator = async ({ output }: { output: OutputFramework }) => {
     case 'stencil':
       return componentToStencil();
     case 'django':
-      return componentToDjango();
+      return componentToVue({ api: 'composition' });
     case 'json':
       return ({ component }: { component: MitosisComponent }) => JSON.stringify(component, null, 2);
     case 'vue':

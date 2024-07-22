@@ -50,6 +50,8 @@ const mitosisCore = () => {
   return import('@builder.io/mitosis');
 };
 
+//Note: this is the file which controls the radio button options at the very top such as composition adn options api
+
 type Position = { row: number; column: number };
 
 const openTagRe = /(<[a-z]+[^>]*)/gi;
@@ -239,6 +241,8 @@ export default function Fiddle() {
       svelteStateType:
         localStorageGet('options.svelteStateType') || ('variables' as 'variables' | 'proxies'),
       vueApi: localStorageGet('options.vueApi') || ('composition' as 'options' | 'composition'),
+      djangoApi:
+        localStorageGet('options.djangoApi') || ('composition' as 'options' | 'composition'),
       alpineShorthandSyntax: localStorageGet('options.alpineShorthandSyntax') || 'false',
       alpineInline: localStorageGet('options.alpineInline') || 'false',
       angularStandalone: localStorageGet('options.angularStandalone') || 'false',
@@ -287,6 +291,8 @@ export default function Fiddle() {
               return { stateType: state.options.svelteStateType };
             case 'vue':
               return { api: state.options.vueApi };
+            case 'django':
+              return { api: state.options.djangoApi };
             default:
               return {};
           }
@@ -346,6 +352,10 @@ export default function Fiddle() {
   useReaction(
     () => state.options.vueApi,
     (type) => localStorageSet('options.vueApi', type),
+  );
+  useReaction(
+    () => state.options.djangoApi,
+    (type) => localStorageSet('options.djangoApi', type),
   );
   useReaction(
     () => state.code,
@@ -856,7 +866,15 @@ export default function Fiddle() {
                   value="solid"
                 />
                 <Tab label={<TabLabelWithIcon label="Stencil" />} value="stencil" />
-                <Tab label={<TabLabelWithIcon label="Django" />} value="django" />
+                <Tab
+                  label={
+                    <TabLabelWithIcon
+                      label="Django"
+                      icon="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fb7d34a76a77b40e2a981ef420d12d1c8"
+                    />
+                  }
+                  value="django"
+                />
                 <Tab label={<TabLabelWithIcon label="Marko" />} value="marko" />
                 <Tab label={<TabLabelWithIcon label="Preact" />} value="preact" />
                 <Tab label={<TabLabelWithIcon label="Lit" />} value="lit" />
@@ -970,6 +988,49 @@ export default function Fiddle() {
                   value={state.options.vueApi}
                   onChange={(e) => {
                     state.options.vueApi = e.target.value;
+                    state.updateOutput();
+                  }}
+                >
+                  <FormControlLabel
+                    value="options"
+                    control={<Radio color="primary" />}
+                    labelPlacement="start"
+                    label="Options API"
+                  />
+                  <FormControlLabel
+                    value="composition"
+                    labelPlacement="start"
+                    control={<Radio color="primary" />}
+                    label="Composition API"
+                  />
+                </RadioGroup>
+              </div>
+              <Divider css={{ opacity: 0.6 }} />
+            </Show>
+            <Show when={state.outputTab === 'django'}>
+              <div
+                css={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  backgroundColor: 'rgba(0, 0, 0, 0.03)',
+                }}
+              >
+                <Typography variant="body2" css={{ marginRight: 'auto', marginLeft: 10 }}>
+                  API:
+                </Typography>
+                <RadioGroup
+                  css={{
+                    flexDirection: 'row',
+                    marginRight: 10,
+                    '& .MuiFormControlLabel-label': {
+                      fontSize: 12,
+                    },
+                  }}
+                  aria-label="Django API"
+                  name="djangoApi"
+                  value={state.options.djangoApi}
+                  onChange={(e) => {
+                    state.options.djangoApi = e.target.value;
                     state.updateOutput();
                   }}
                 >
