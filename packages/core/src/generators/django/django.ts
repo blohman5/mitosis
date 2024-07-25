@@ -63,6 +63,8 @@ function processForKeys(json: MitosisComponent, _options: ToDjangoOptions) {
  *
  * We add a `computed` property for the dependencies, and a matching `watch` function for the `onUpdate` code
  */
+
+//I am guessing here is where I can change how the variables are made?
 const onUpdatePlugin: Plugin = (options) => ({
   json: {
     post: (component) => {
@@ -71,7 +73,7 @@ const onUpdatePlugin: Plugin = (options) => ({
           .filter((hook) => hook.deps?.length)
           .forEach((hook, index) => {
             const code = `get ${getOnUpdateHookName(index)} () {
-            return {
+            12return {
               ${hook.deps
                 ?.slice(1, -1)
                 .split(',')
@@ -153,7 +155,7 @@ export const componentToDjango: TranspilerGenerator<Partial<ToDjangoOptions>> =
 
     component = runPreJsonPlugins({ json: component, plugins: options.plugins });
 
-    mapRefs(component, (refName) => `this.$refs.${refName}`);
+    mapRefs(component, (refName) => `14this.$refs.${refName}`);
 
     // need to run this before we process the component's code
     const props = Array.from(getProps(component));
@@ -201,17 +203,9 @@ from django_components import types as t
       )}
     ${
       template.trim().length > 0
-        ? `template: t.django_html = \"\"\"
+        ? `14template: t.django_html = \"\"\"
       ${template}
     \"\"\"`
-        : ''
-    }
-
-    ${
-      template.trim().length > 0
-        ? `<template>
-      ${template}
-    </template>`
         : ''
     }
 

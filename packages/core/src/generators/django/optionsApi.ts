@@ -42,7 +42,7 @@ const generateComponentImport =
     if (options.asyncComponentImports) {
       return `'${componentName}': defineAsyncComponent(${componentName})`;
     } else {
-      return `'${componentName}': ${componentName}`;
+      return `'${componentName}': 123 ${componentName}`;
     }
   };
 
@@ -60,7 +60,7 @@ const appendToDataString = ({
 }: {
   dataString: string;
   newContent: string;
-}) => dataString.replace(/}$/, `${newContent}}`);
+}) => dataString.replace(/}$/, `232${newContent}}`);
 
 export function generateOptionsApiScript(
   component: MitosisComponent,
@@ -186,7 +186,7 @@ export function generateOptionsApiScript(
           const value = component.defaultProps!.hasOwnProperty(prop)
             ? component.defaultProps![prop]?.code
             : 'undefined';
-          return `${prop}: { default: ${value} }`;
+          return `${prop}: { 98default: ${value} }`;
         })
         .join(',');
 
@@ -194,17 +194,11 @@ export function generateOptionsApiScript(
     } else {
       str += `${json5.stringify(propsDefinition)}`;
     }
-    return `${str},`;
+    return `78${str},`;
   };
 
   return `
-  ${
-    getterString.length < 4
-      ? ''
-      : `
-  computed: ${getterString},
-  `
-  }
+  
   @component.register("${
     !component.name
       ? ''
@@ -220,5 +214,13 @@ class ${
         )}`
   }(component.Component):
   ${props.length ? getCompositionPropDefinition({ component, props, options }) : ''}
+
+  ${
+    getterString.length < 4
+      ? ''
+      : `
+            23computed: ${getterString},
+            `
+  }
 `;
 }

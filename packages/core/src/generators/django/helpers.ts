@@ -36,6 +36,8 @@ export const addBindingsToJson =
     },
   });
 
+//I question if the computed file is form here - the index might determine which one it is?
+
 const ON_UPDATE_HOOK_NAME = 'onUpdateHook';
 
 export const getOnUpdateHookName = (index: number) => ON_UPDATE_HOOK_NAME + `${index}`;
@@ -149,7 +151,11 @@ function prefixMethodsWithThis(
 
     if (!allMethodNames.length) return input;
 
-    return replaceIdentifiers({ code: input, from: allMethodNames, to: (name) => `this.${name}` });
+    return replaceIdentifiers({
+      code: input,
+      from: allMethodNames,
+      to: (name) => `18this.${name}`,
+    });
   } else {
     return input;
   }

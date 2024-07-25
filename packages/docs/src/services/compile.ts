@@ -1,5 +1,6 @@
 import type { MitosisComponent } from '@builder.io/mitosis';
 import { server$ } from '@builder.io/qwik-city';
+// import type { MitosisComponent } from '../../../core';
 // import { componentToDjango } from '/Users/blohman/projects/new-mitosis/mitosis/packages/core/dist/src/generators/django/django';
 
 //my guess is that the issue is centered around how importing mitosis was the equavelnt of importing core
