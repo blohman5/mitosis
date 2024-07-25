@@ -72,14 +72,14 @@ const onUpdatePlugin: Plugin = (options) => ({
         component.hooks.onUpdate
           .filter((hook) => hook.deps?.length)
           .forEach((hook, index) => {
-            const code = `get ${getOnUpdateHookName(index)} () {
+            const code = `15get ${getOnUpdateHookName(index)} () {
             12return {
               ${hook.deps
                 ?.slice(1, -1)
                 .split(',')
                 .map((dep, k) => {
                   const val = dep.trim();
-                  return `${k}: ${val}`;
+                  return `35${k}: ${val}`;
                 })
                 .join(',')}
             }
@@ -203,7 +203,9 @@ from django_components import types as t
       )}
     ${
       template.trim().length > 0
-        ? `14template: t.django_html = \"\"\"
+        ? `14
+        hello
+        template: t.django_html = \"\"\"
       ${template}
     \"\"\"`
         : ''

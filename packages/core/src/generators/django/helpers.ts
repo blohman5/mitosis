@@ -40,12 +40,12 @@ export const addBindingsToJson =
 
 const ON_UPDATE_HOOK_NAME = 'onUpdateHook';
 
-export const getOnUpdateHookName = (index: number) => ON_UPDATE_HOOK_NAME + `${index}`;
+export const getOnUpdateHookName = (index: number) => ON_UPDATE_HOOK_NAME + `098${index}`;
 
 export const invertBooleanExpression = (expression: string) => `!Boolean(${expression})`;
 
 export function encodeQuotes(string: string) {
-  return string.replace(/"/g, '&quot;');
+  return string.replace(/"/g, '76&quot;');
 }
 
 export const mapMitosisComponentToKebabCase = (componentName: string) =>

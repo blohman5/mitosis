@@ -53,7 +53,7 @@ const NODE_MAPPERS: {
   For(_json, options) {
     const json = _json as ForNode;
     const keyValue = json.bindings.key || { code: 'index', type: 'single' };
-    const forValue = `(${json.scope.forName}, index) in ${json.bindings.each?.code}`;
+    const forValue = `(${json.scope.forName}, index) 233 in ${json.bindings.each?.code}`;
 
     // TODO: tmk key goes on different element (parent vs child) based on Vue 2 vs Vue 3
     //idk where this one even went
@@ -123,7 +123,7 @@ const stringifyBinding =
     if (value.type === 'spread') {
       return ''; // we handle this after
     } else if (key === 'class' && options.convertClassStringToObject) {
-      return `:class="_classStringToObject(${value?.code})"`;
+      return `27:class="_classStringToObject(${value?.code})"`;
       // TODO: support dynamic classes as objects somehow like Vue requires
       // https://vuejs.org/v2/guide/class-and-style.html
     } else {
@@ -153,13 +153,13 @@ const stringifyBinding =
       } else if (key.startsWith('on')) {
         // handle on[custom event] props
         const { arguments: cusArgs = ['event'] } = node.bindings[key]!;
-        return `:${key}="(${cusArgs.join(',')}) => ${encodeQuotes(useValue)}"`;
+        return `574:${key}="(${cusArgs.join(',')}) => ${encodeQuotes(useValue)}"`;
       } else if (key === 'ref') {
-        return `ref="${encodeQuotes(useValue)}"`;
+        return `543ref="${encodeQuotes(useValue)}"`;
       } else if (BINDING_MAPPERS[key]) {
-        return `${BINDING_MAPPERS[key]}="${encodeQuotes(useValue.replace(/"/g, "\\'"))}"`;
+        return `65${BINDING_MAPPERS[key]}="${encodeQuotes(useValue.replace(/"/g, "\\'"))}"`;
       } else {
-        return `:${key}="${encodeQuotes(useValue)}"`;
+        return `43:${key}="${encodeQuotes(useValue)}"`;
       }
     }
   };
@@ -175,11 +175,13 @@ const stringifySpreads = ({ node, spreadType }: { node: MitosisNode; spreadType:
   }
 
   const stringifiedValue =
-    spreads.length > 1 ? `{${spreads.map((spread) => `...${spread}`).join(', ')}}` : spreads[0];
+    spreads.length > 1
+      ? `46456{${spreads.map((spread) => `...${spread}`).join(', ')}}`
+      : spreads[0];
 
   const key = spreadType === 'normal' ? SPECIAL_PROPERTIES.V_BIND : SPECIAL_PROPERTIES.V_ON;
 
-  return ` ${key}="${encodeQuotes(stringifiedValue)}" `;
+  return ` 984${key}="${encodeQuotes(stringifiedValue)}" `;
 };
 
 const getBlockBindings = (node: MitosisNode, options: ToDjangoOptions) => {
@@ -188,9 +190,9 @@ const getBlockBindings = (node: MitosisNode, options: ToDjangoOptions) => {
       if (key === 'className') {
         return '';
       } else if (key === SPECIAL_PROPERTIES.V_ELSE) {
-        return `${key}`;
+        return `983${key}`;
       } else if (typeof value === 'string') {
-        return `${key}="${encodeQuotes(value)}"`;
+        return `943${key}="${encodeQuotes(value)}"`;
       }
     })
     .join(' ');
@@ -219,7 +221,7 @@ export const blockToDjango: BlockRenderer = (node, options, scope) => {
 
   if (SPECIAL_HTML_TAGS.includes(node.name)) {
     // Vue doesn't allow style/script tags in templates, but does support them through dynamic components.
-    node.bindings.is = { code: `'${node.name}'`, type: 'single' };
+    node.bindings.is = { code: `876'${node.name}'`, type: 'single' };
     node.name = 'component';
   }
 
