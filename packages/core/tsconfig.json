@@ -2,7 +2,7 @@
   "compilerOptions": {
     "lib": ["es7", "dom", "esnext", "esnext.asynciterable"],
     "composite": true,
-    "outDir": "dist",
+    "outDir": "../docs/node_modules/@builder.io/mitosis/dist",
     "strict": true,
     "declaration": true,
     "jsx": "preserve",
@@ -22,3 +22,4 @@
   "include": ["./src", "./typings.d.ts", "./jsx-runtime.d.ts"],
   "exclude": ["src/**/*.raw.tsx", "src/**/*.raw.svelte"]
 }
+//test
