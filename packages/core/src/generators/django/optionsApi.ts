@@ -150,6 +150,9 @@ export function generateOptionsApiScript(
     str += `${json5.stringify(props)}):
     `;
     str += `return {
+          ${Array.from(props)
+            .map((item) => `${item},`)
+            .join('\n')}
     }`;
     return str;
   };
