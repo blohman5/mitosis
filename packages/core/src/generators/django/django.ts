@@ -214,6 +214,7 @@ from django_components import types as t
     \"\"\"`}
 
     ${`js: t.js = \"\"\"
+      
     \"\"\"`}
   `;
 

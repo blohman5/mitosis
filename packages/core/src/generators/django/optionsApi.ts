@@ -213,7 +213,7 @@ export function generateOptionsApiScript(
   }
 
   //there might be some overides I can mess with here?
-  let getterString = getStateObjectStringFromComponent(component, {
+  let getterString = getStateObjectStringFromComponent2(component, {
     data: false,
     getters: true,
     functions: false,
@@ -243,10 +243,16 @@ export function generateOptionsApiScript(
   });
   //there must be a better way to replace this stuff
   //maybe I can utlize some overrides?
+  //let me see how to reorder all of these
+  //maybe grab what is between = and ?
+  //these are more like a bandaid fix until I find how to properly change everything
+  //I need to figure out how to replace ${} but I am unsure of the equavalent
   getterString = getterString.replaceAll('\n', '');
   getterString = getterString.replaceAll('this.', '');
   getterString = getterString.replaceAll('() {  return ', ' = ');
-  getterString = getterString.replaceAll(';}, ', '\n');
+  getterString = getterString.replaceAll(';},', '\n\n');
+  getterString = getterString.replaceAll('$', '');
+  getterString = getterString.replaceAll('`', '"');
 
   // getterString = getterString.replaceAll('() {', '');
   // getterString = getterString.replaceAll('return this.type ===', ' = ');
@@ -285,7 +291,7 @@ export function generateOptionsApiScript(
     props: string[];
   }) => {
     const isTs = options.typescript;
-    let str = ` def get_context_data(self,`;
+    let str = `  def get_context_data(self,`;
     str += `${props}):
     `;
     // str += `return {
@@ -341,7 +347,7 @@ export function generateOptionsApiScript(
 
   return `
   
-  @component.register("${
+@component.register("${
     !component.name
       ? ''
       : `${path && options.namePrefix?.(path) ? options.namePrefix?.(path) + '-' : ''}${kebabCase(
@@ -356,12 +362,6 @@ class ${
         )}`
   }(component.Component):
   ${props.length ? getCompositionPropDefinition({ component, props, options }) : ''}
-  ${
-    getterString.length < 4
-      ? ''
-      : `
-    ${getterString}
-            `
-  }
+   ${getterString.length < 4 ? '' : `${getterString}`}
 `;
 }
