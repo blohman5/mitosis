@@ -250,15 +250,16 @@ export function generateOptionsApiScript(
   //I need to figure out how to replace ${} but I am unsure of the equavalent
 
   // getterString = getterString.replaceAll('{', '');
-
-  getterString = getterString.replaceAll('\n', '');
-  getterString = getterString.replaceAll('this.', '');
-  getterString = getterString.replaceAll('() {  return ', ' = ');
-  getterString = getterString.replaceAll(';} ', '\n\n');
-  getterString = getterString.replaceAll('$', '');
-  getterString = getterString.replaceAll('`', '"');
-  getterString = getterString.replaceAll(' ? ', ' if ');
-  getterString = getterString.replaceAll(' : ', ' else ');
+  //((?<= = )(.*)(?= \? )) ((?<= \? )(.*)(?= : ))
+  getterString = getterString
+    .replaceAll('\n', '')
+    .replaceAll('this.', '')
+    .replaceAll('() {  return ', ' = ')
+    .replaceAll(';}', '\n\n')
+    .replaceAll('$', '')
+    .replaceAll('`', '"')
+    .replaceAll('===', '==')
+    .replace(/((?<= = ).*(?= \? ))(.*)((?<= \? ).*(?= : ))/g, '$3$2$1');
 
   //I need to just remove that prefix stuff from the helper
 
