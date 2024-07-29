@@ -1,6 +1,7 @@
 import { getComponentsUsed } from '@/helpers/get-components-used';
 import { getCustomImports } from '@/helpers/get-custom-imports';
 import { getStateObjectStringFromComponent } from '@/helpers/get-state-object-string';
+
 import { checkIsDefined } from '@/helpers/nullable';
 import { checkIsComponentImport } from '@/helpers/render-imports';
 import { BaseHook, MitosisComponent } from '@/types/mitosis-component';
@@ -103,17 +104,20 @@ export function generateOptionsApiScript(
     dataString = appendToDataString({ dataString, newContent: localVarAsData.join(',') });
   }
 
-  const getterString = getStateObjectStringFromComponent(component, {
+  let getterString = getStateObjectStringFromComponent(component, {
     data: false,
     getters: true,
     functions: false,
   });
-
   let functionsString = getStateObjectStringFromComponent(component, {
     data: false,
     getters: false,
     functions: true,
   });
+  //there must be a better way to replace this stuff
+  getterString = getterString.replaceAll('() {', '');
+
+  getterString = getterString.replaceAll('return this.type ===', ' = ');
 
   const includeClassMapHelper = template.includes('_classStringToObject');
 
@@ -150,9 +154,9 @@ export function generateOptionsApiScript(
     str += `${json5.stringify(props)}):
     `;
     str += `return {
-          ${Array.from(props)
-            .map((item) => `${item},`)
-            .join('\n')}
+      ${Array.from(props)
+        .map((item) => `${item},`)
+        .join('\n      ')}
     }`;
     return str;
   };
@@ -222,7 +226,7 @@ class ${
     getterString.length < 4
       ? ''
       : `
-            23computed: ${getterString},
+            ${getterString}
             `
   }
 `;
