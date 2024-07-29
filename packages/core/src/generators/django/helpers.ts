@@ -45,7 +45,8 @@ export const getOnUpdateHookName = (index: number) => ON_UPDATE_HOOK_NAME + `098
 export const invertBooleanExpression = (expression: string) => `!Boolean(${expression})`;
 
 export function encodeQuotes(string: string) {
-  return string.replace(/"/g, '76&quot;');
+  // return string.replace(/"/g, '76&quot;');
+  return string;
 }
 
 export const mapMitosisComponentToKebabCase = (componentName: string) =>

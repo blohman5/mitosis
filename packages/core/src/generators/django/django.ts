@@ -15,7 +15,6 @@ import { collectCss } from '@/helpers/styles/collect-css';
 import { MitosisComponent } from '@/types/mitosis-component';
 import { TranspilerGenerator } from '@/types/transpiler';
 import { flow } from 'fp-ts/lib/function';
-import { pickBy } from 'lodash';
 import { format } from 'prettier/standalone';
 import traverse from 'traverse';
 import {
@@ -183,9 +182,6 @@ export const componentToDjango: TranspilerGenerator<Partial<ToDjangoOptions>> =
     const onUpdateWithoutDeps =
       component.hooks.onUpdate?.filter((hook) => !hook.deps?.length) || [];
 
-    const getterKeys = Object.keys(pickBy(component.state, (i) => i?.type === 'getter'));
-
-    // import from vue
     let djangoImports: string[] = [];
     djangoImports.push('defineComponent');
 
@@ -214,7 +210,7 @@ from django_components import types as t
     \"\"\"`}
 
     ${`js: t.js = \"\"\"
-      
+
     \"\"\"`}
   `;
 

@@ -68,17 +68,17 @@ const NODE_MAPPERS: {
     //this applied it to the inner template?
     const defaultShowTemplate = `
     //if statement section
-    {%${SPECIAL_PROPERTIES.V_IF}="${encodeQuotes(ifValue)}"%}
+    {% ${SPECIAL_PROPERTIES.V_IF} ${ifValue} %}
       ${json.children.map((item) => blockToDjango(item, options)).join('\n')}
     ${
       isMitosisNode(json.meta.else)
         ? `
-        {%${SPECIAL_PROPERTIES.V_ELSE}>
+        {% ${SPECIAL_PROPERTIES.V_ELSE}>
           ${blockToDjango(json.meta.else, options)}
         %}`
         : ''
     }
-    {%endif%}
+    {% endif %}
     `;
 
     return defaultShowTemplate;

@@ -4,130 +4,130 @@ import { getStateObjectStringFromComponent } from '@/helpers/get-state-object-st
 
 import { checkIsDefined } from '@/helpers/nullable';
 import { checkIsComponentImport } from '@/helpers/render-imports';
-import { BaseHook, MitosisComponent, StateValue } from '@/types/mitosis-component';
+import { BaseHook, MitosisComponent } from '@/types/mitosis-component';
 import json5 from 'json5';
 import { kebabCase, uniq } from 'lodash';
-import { encodeQuotes, getContextKey, getContextValue } from './helpers';
+import { encodeQuotes, getContextKey } from './helpers';
 import { DjangoDefaultProps, DjangoPropsDefinition, ToDjangoOptions } from './types';
 
-type ValueMapper = (
-  code: string,
-  type: 'data' | 'function' | 'getter',
-  typeParameter: string | undefined,
-  key: string | undefined,
-) => string;
+// type ValueMapper = (
+//   code: string,
+//   type: 'data' | 'function' | 'getter',
+//   typeParameter: string | undefined,
+//   key: string | undefined,
+// ) => string;
 
-interface GetStateObjectStringOptions {
-  data?: boolean;
-  functions?: boolean;
-  getters?: boolean;
-  valueMapper?: ValueMapper;
-  format?: 'object' | 'class' | 'variables';
-  keyPrefix?: string;
-}
+// interface GetStateObjectStringOptions {
+//   data?: boolean;
+//   functions?: boolean;
+//   getters?: boolean;
+//   valueMapper?: ValueMapper;
+//   format?: 'object' | 'class' | 'variables';
+//   keyPrefix?: string;
+// }
 
-type RequiredOptions = Required<GetStateObjectStringOptions>;
+// type RequiredOptions = Required<GetStateObjectStringOptions>;
 
-const DEFAULT_OPTIONS: RequiredOptions = {
-  format: 'object',
-  keyPrefix: '',
-  valueMapper: (val) => val,
-  data: true,
-  functions: true,
-  getters: true,
-};
+// const DEFAULT_OPTIONS: RequiredOptions = {
+//   format: 'object',
+//   keyPrefix: '',
+//   valueMapper: (val) => val,
+//   data: true,
+//   functions: true,
+//   getters: true,
+// };
 
-const convertStateMemberToString =
-  ({ data, format, functions, getters, keyPrefix, valueMapper }: RequiredOptions) =>
-  ([key, state]: [string, StateValue | undefined]): string | undefined => {
-    const keyValueDelimiter = format === 'object' ? ':test' : '=test5';
+// const convertStateMemberToString =
+//   ({ data, format, functions, getters, keyPrefix, valueMapper }: RequiredOptions) =>
+//   ([key, state]: [string, StateValue | undefined]): string | undefined => {
+//     const keyValueDelimiter = format === 'object' ? ':test' : '=test5';
 
-    if (!state) {
-      return undefined;
-    }
+//     if (!state) {
+//       return undefined;
+//     }
 
-    const { code, typeParameter } = state;
-    switch (state.type) {
-      case 'function': {
-        if (functions === false || typeof code !== 'string') {
-          return undefined;
-        }
-        return `${keyPrefix} ${key} ${keyValueDelimiter} ${valueMapper(
-          code,
-          'function',
-          typeParameter,
-          key,
-        )}`;
-      }
-      case 'method': {
-        if (functions === false || typeof code !== 'string') {
-          return undefined;
-        }
-        return `${keyPrefix} ${valueMapper(code, 'function', typeParameter, key)}`;
-      }
-      case 'getter': {
-        if (getters === false || typeof code !== 'string') {
-          return undefined;
-        }
+//     const { code, typeParameter } = state;
+//     switch (state.type) {
+//       case 'function': {
+//         if (functions === false || typeof code !== 'string') {
+//           return undefined;
+//         }
+//         return `${keyPrefix} ${key} ${keyValueDelimiter} ${valueMapper(
+//           code,
+//           'function',
+//           typeParameter,
+//           key,
+//         )}`;
+//       }
+//       case 'method': {
+//         if (functions === false || typeof code !== 'string') {
+//           return undefined;
+//         }
+//         return `${keyPrefix} ${valueMapper(code, 'function', typeParameter, key)}`;
+//       }
+//       case 'getter': {
+//         if (getters === false || typeof code !== 'string') {
+//           return undefined;
+//         }
 
-        return `${keyPrefix} ${valueMapper(code, 'getter', typeParameter, key)}`;
-      }
-      case 'property': {
-        if (data === false) {
-          return undefined;
-        }
-        return `${keyPrefix} ${key}${keyValueDelimiter} ${valueMapper(
-          code,
-          'data',
-          typeParameter,
-          key,
-        )}`;
-      }
-      default:
-        break;
-    }
-  };
+//         return `${keyPrefix} ${valueMapper(code, 'getter', typeParameter, key)}`;
+//       }
+//       case 'property': {
+//         if (data === false) {
+//           return undefined;
+//         }
+//         return `${keyPrefix} ${key}${keyValueDelimiter} ${valueMapper(
+//           code,
+//           'data',
+//           typeParameter,
+//           key,
+//         )}`;
+//       }
+//       default:
+//         break;
+//     }
+//   };
 
-export const getMemberObjectString2 = (
-  object: MitosisComponent['state'],
-  userOptions: GetStateObjectStringOptions = {},
-) => {
-  const options = { ...DEFAULT_OPTIONS, ...userOptions };
+// export const getMemberObjectString2 = (
+//   object: MitosisComponent['state'],
+//   userOptions: GetStateObjectStringOptions = {},
+// ) => {
+//   const options = { ...DEFAULT_OPTIONS, ...userOptions };
 
-  const lineItemDelimiter = options.format === 'object' ? ',' : '\n';
+//   const lineItemDelimiter = options.format === 'object' ? ',' : '\n';
 
-  const stringifiedProperties = Object.entries(object)
-    .map(convertStateMemberToString(options))
-    .filter((x) => x !== undefined)
-    .join(lineItemDelimiter);
+//   const stringifiedProperties = Object.entries(object)
+//     .map(convertStateMemberToString(options))
+//     .filter((x) => x !== undefined)
+//     .join(lineItemDelimiter);
 
-  const prefix = options.format === 'object' ? '{' : '';
-  const suffix = options.format === 'object' ? '}' : '';
+//   const prefix = options.format === 'object' ? '{' : '';
+//   const suffix = options.format === 'object' ? '}' : '';
 
-  // NOTE: we add a `lineItemDelimiter` at the very end because other functions will sometimes append more properties.
-  // If the delimiter is a comma and the format is `object`, then we need to make sure we have an extra comma at the end,
-  // or the object will become invalid JS.
-  // We also have to make sure that `stringifiedProperties` isn't empty, or we will get `{,}` which is invalid
-  const extraDelimiter = stringifiedProperties.length > 0 ? lineItemDelimiter : '';
+//   // NOTE: we add a `lineItemDelimiter` at the very end because other functions will sometimes append more properties.
+//   // If the delimiter is a comma and the format is `object`, then we need to make sure we have an extra comma at the end,
+//   // or the object will become invalid JS.
+//   // We also have to make sure that `stringifiedProperties` isn't empty, or we will get `{,}` which is invalid
+//   const extraDelimiter = stringifiedProperties.length > 0 ? lineItemDelimiter : '';
 
-  return `${stringifiedProperties}${extraDelimiter}`;
-};
+//   return `${stringifiedProperties}${extraDelimiter}`;
+// };
 
-const getStateObjectStringFromComponent2 = (
-  component: MitosisComponent,
-  options?: GetStateObjectStringOptions,
-) => getMemberObjectString2(component.state, options);
+// const getStateObjectStringFromComponent2 = (
+//   component: MitosisComponent,
+//   options?: GetStateObjectStringOptions,
+// ) => getMemberObjectString2(component.state, options);
 
-const getContextProvideString = (json: MitosisComponent, options: ToDjangoOptions) => {
-  return `{
-    ${Object.values(json.context.set)
-      .map((setVal) => {
-        const key = getContextKey(setVal);
-        return `[${key}]: ${getContextValue(setVal)}`;
-      })
-      .join(',')}
-  }`;
-};
+// const getContextProvideString = (json: MitosisComponent, options: ToDjangoOptions) => {
+//   return `{
+//     ${Object.values(json.context.set)
+//       .map((setVal) => {
+//         const key = getContextKey(setVal);
+//         return `[${key}]: ${getContextValue(setVal)}`;
+//       })
+//       .join(',')}
+//   }`;
+// };
 
 function getContextInjectString(component: MitosisComponent, options: ToDjangoOptions) {
   let str = '{';
@@ -213,7 +213,7 @@ export function generateOptionsApiScript(
   }
 
   //there might be some overides I can mess with here?
-  let getterString = getStateObjectStringFromComponent2(component, {
+  let getterString = getStateObjectStringFromComponent(component, {
     data: false,
     getters: true,
     functions: false,
@@ -248,11 +248,14 @@ export function generateOptionsApiScript(
   //these are more like a bandaid fix until I find how to properly change everything
   //I need to figure out how to replace ${} but I am unsure of the equavalent
   getterString = getterString.replaceAll('\n', '');
+  // getterString = getterString.replaceAll('{', '');
   getterString = getterString.replaceAll('this.', '');
   getterString = getterString.replaceAll('() {  return ', ' = ');
   getterString = getterString.replaceAll(';},', '\n\n');
   getterString = getterString.replaceAll('$', '');
   getterString = getterString.replaceAll('`', '"');
+  getterString = getterString.replaceAll('{ ', '');
+  getterString = getterString.replaceAll('}', '');
 
   // getterString = getterString.replaceAll('() {', '');
   // getterString = getterString.replaceAll('return this.type ===', ' = ');
@@ -291,7 +294,7 @@ export function generateOptionsApiScript(
     props: string[];
   }) => {
     const isTs = options.typescript;
-    let str = `  def get_context_data(self,`;
+    let str = ` def get_context_data(self,`;
     str += `${props}):
     `;
     // str += `return {
@@ -344,9 +347,8 @@ export function generateOptionsApiScript(
     }
     return `78${str},`;
   };
-
+  // let avr = getCompositionPropDefinition({ component, props, options })
   return `
-  
 @component.register("${
     !component.name
       ? ''
@@ -362,6 +364,13 @@ class ${
         )}`
   }(component.Component):
   ${props.length ? getCompositionPropDefinition({ component, props, options }) : ''}
-   ${getterString.length < 4 ? '' : `${getterString}`}
+          ${
+            component.hooks.onInit?.code
+              ? `
+    ${component.hooks.onInit.code.replaceAll(' {', ':\n').replaceAll('}', '')}
+  `
+              : ''
+          }
+    ${getterString.length < 4 ? '' : `${getterString}`}
 `;
 }

@@ -110,7 +110,7 @@ const getOutputGenerator = async ({ output }: { output: OutputFramework }) => {
     case 'json':
       return ({ component }: { component: MitosisComponent }) => JSON.stringify(component, null, 2);
     case 'vue':
-      return componentToVue({ api: 'composition' });
+      return componentToVue({ api: 'options' });
     default:
       throw new Error('unexpected Output ' + output);
   }
