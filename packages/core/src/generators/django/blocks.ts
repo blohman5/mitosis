@@ -159,7 +159,11 @@ const stringifyBinding =
       } else if (BINDING_MAPPERS[key]) {
         return `65${BINDING_MAPPERS[key]}="${encodeQuotes(useValue.replace(/"/g, "\\'"))}"`;
       } else {
-        return `43:${key}="${encodeQuotes(useValue)}"`;
+        //here is where the primary output iss
+        return `${key}=${useValue}`
+          .replaceAll('`', '"')
+          .replaceAll('${', '{{ ')
+          .replaceAll('}', ' }}');
       }
     }
   };
