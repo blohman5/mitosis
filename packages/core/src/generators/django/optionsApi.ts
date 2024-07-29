@@ -1,14 +1,124 @@
+import { babelTransformCode } from '@/helpers/babel-transform';
 import { getComponentsUsed } from '@/helpers/get-components-used';
 import { getCustomImports } from '@/helpers/get-custom-imports';
 import { getStateObjectStringFromComponent } from '@/helpers/get-state-object-string';
+import { pipe } from 'fp-ts/lib/function';
 
 import { checkIsDefined } from '@/helpers/nullable';
 import { checkIsComponentImport } from '@/helpers/render-imports';
-import { BaseHook, MitosisComponent } from '@/types/mitosis-component';
+import { BaseHook, MitosisComponent, StateValue } from '@/types/mitosis-component';
 import json5 from 'json5';
 import { kebabCase, uniq } from 'lodash';
 import { encodeQuotes, getContextKey, getContextValue } from './helpers';
 import { DjangoDefaultProps, DjangoPropsDefinition, ToDjangoOptions } from './types';
+
+type ValueMapper = (
+  code: string,
+  type: 'data' | 'function' | 'getter',
+  typeParameter: string | undefined,
+  key: string | undefined,
+) => string;
+
+interface GetStateObjectStringOptions {
+  data?: boolean;
+  functions?: boolean;
+  getters?: boolean;
+  valueMapper?: ValueMapper;
+  format?: 'object' | 'class' | 'variables';
+  keyPrefix?: string;
+}
+
+type RequiredOptions = Required<GetStateObjectStringOptions>;
+
+const DEFAULT_OPTIONS: RequiredOptions = {
+  format: 'object',
+  keyPrefix: '',
+  valueMapper: (val) => val,
+  data: true,
+  functions: true,
+  getters: true,
+};
+
+const convertStateMemberToString =
+  ({ data, format, functions, getters, keyPrefix, valueMapper }: RequiredOptions) =>
+  ([key, state]: [string, StateValue | undefined]): string | undefined => {
+    const keyValueDelimiter = format === 'object' ? ':test' : '=test5';
+
+    if (!state) {
+      return undefined;
+    }
+
+    const { code, typeParameter } = state;
+    switch (state.type) {
+      case 'function': {
+        if (functions === false || typeof code !== 'string') {
+          return undefined;
+        }
+        return `${keyPrefix} ${key} ${keyValueDelimiter} ${valueMapper(
+          code,
+          'function',
+          typeParameter,
+          key,
+        )}`;
+      }
+      case 'method': {
+        if (functions === false || typeof code !== 'string') {
+          return undefined;
+        }
+        return `${keyPrefix} ${valueMapper(code, 'function', typeParameter, key)}`;
+      }
+      case 'getter': {
+        if (getters === false || typeof code !== 'string') {
+          return undefined;
+        }
+
+        return `${keyPrefix} ${valueMapper(code, 'getter', typeParameter, key)}`;
+      }
+      case 'property': {
+        if (data === false) {
+          return undefined;
+        }
+        return `${keyPrefix} ${key}${keyValueDelimiter} ${valueMapper(
+          code,
+          'data',
+          typeParameter,
+          key,
+        )}`;
+      }
+      default:
+        break;
+    }
+  };
+
+export const getMemberObjectString2 = (
+  object: MitosisComponent['state'],
+  userOptions: GetStateObjectStringOptions = {},
+) => {
+  const options = { ...DEFAULT_OPTIONS, ...userOptions };
+
+  const lineItemDelimiter = options.format === 'object' ? ',' : '\n';
+
+  const stringifiedProperties = Object.entries(object)
+    .map(convertStateMemberToString(options))
+    .filter((x) => x !== undefined)
+    .join(lineItemDelimiter);
+
+  const prefix = options.format === 'object' ? '{' : '';
+  const suffix = options.format === 'object' ? '}' : '';
+
+  // NOTE: we add a `lineItemDelimiter` at the very end because other functions will sometimes append more properties.
+  // If the delimiter is a comma and the format is `object`, then we need to make sure we have an extra comma at the end,
+  // or the object will become invalid JS.
+  // We also have to make sure that `stringifiedProperties` isn't empty, or we will get `{,}` which is invalid
+  const extraDelimiter = stringifiedProperties.length > 0 ? lineItemDelimiter : '';
+
+  return `${stringifiedProperties}${extraDelimiter}`;
+};
+
+const getStateObjectStringFromComponent2 = (
+  component: MitosisComponent,
+  options?: GetStateObjectStringOptions,
+) => getMemberObjectString2(component.state, options);
 
 const getContextProvideString = (json: MitosisComponent, options: ToDjangoOptions) => {
   return `{
@@ -104,20 +214,40 @@ export function generateOptionsApiScript(
     dataString = appendToDataString({ dataString, newContent: localVarAsData.join(',') });
   }
 
-  let getterString = getStateObjectStringFromComponent(component, {
-    data: false,
-    getters: true,
-    functions: false,
-  });
+  // let getterString = getStateObjectStringFromComponent2(component, {
+  //   data: false,
+  //   getters: true,
+  //   functions: false,
+  // });
+
+  const getterString = pipe(
+    getStateObjectStringFromComponent(component, {
+      data: false,
+      getters: true,
+      functions: false,
+      format: 'variables',
+      keyPrefix: '$: ',
+      valueMapper: (code) => {
+        return code
+          .trim()
+          .replace(/^([a-zA-Z_\$0-9]+)/, '$1 = ')
+          .replace(/\)/, ') => ');
+      },
+    }),
+    babelTransformCode,
+  );
+
   let functionsString = getStateObjectStringFromComponent(component, {
     data: false,
     getters: false,
     functions: true,
   });
   //there must be a better way to replace this stuff
-  getterString = getterString.replaceAll('() {', '');
-
-  getterString = getterString.replaceAll('return this.type ===', ' = ');
+  // getterString = getterString.replaceAll('() {', '');
+  // getterString = getterString.replaceAll('return this.type ===', ' = ');
+  // getterString = getterString.replaceAll(',', '');
+  // getterString = getterString.replaceAll('{', '');
+  // getterString = getterString.replaceAll('}', '');
 
   const includeClassMapHelper = template.includes('_classStringToObject');
 
