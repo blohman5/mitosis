@@ -214,6 +214,7 @@ export function generateOptionsApiScript(
 
   //there might be some overides I can mess with here?
   let getterString = getStateObjectStringFromComponent(component, {
+    format: 'variables',
     data: false,
     getters: true,
     functions: false,
@@ -247,21 +248,19 @@ export function generateOptionsApiScript(
   //maybe grab what is between = and ?
   //these are more like a bandaid fix until I find how to properly change everything
   //I need to figure out how to replace ${} but I am unsure of the equavalent
-  getterString = getterString.replaceAll('\n', '');
+
   // getterString = getterString.replaceAll('{', '');
+
+  getterString = getterString.replaceAll('\n', '');
   getterString = getterString.replaceAll('this.', '');
   getterString = getterString.replaceAll('() {  return ', ' = ');
-  getterString = getterString.replaceAll(';},', '\n\n');
+  getterString = getterString.replaceAll(';} ', '\n\n');
   getterString = getterString.replaceAll('$', '');
   getterString = getterString.replaceAll('`', '"');
-  getterString = getterString.replaceAll('{ ', '');
-  getterString = getterString.replaceAll('}', '');
+  getterString = getterString.replaceAll(' ? ', ' if ');
+  getterString = getterString.replaceAll(' : ', ' else ');
 
-  // getterString = getterString.replaceAll('() {', '');
-  // getterString = getterString.replaceAll('return this.type ===', ' = ');
-  // getterString = getterString.replaceAll('() {  ', '');
-  // getterString = getterString.replaceAll('{', '');
-  // getterString = getterString.replaceAll('}', '');
+  //I need to just remove that prefix stuff from the helper
 
   const includeClassMapHelper = template.includes('_classStringToObject');
 

@@ -196,7 +196,7 @@ const getBlockBindings = (node: MitosisNode, options: ToDjangoOptions) => {
       } else if (key === SPECIAL_PROPERTIES.V_ELSE) {
         return `983${key}`;
       } else if (typeof value === 'string') {
-        return `943${key}="${encodeQuotes(value)}"`;
+        return `${key}="${encodeQuotes(value)}"`;
       }
     })
     .join(' ');
