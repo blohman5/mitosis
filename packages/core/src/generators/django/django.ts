@@ -203,9 +203,7 @@ from django_components import types as t
       )}
     ${
       template.trim().length > 0
-        ? `14
-        hello
-        template: t.django_html = \"\"\"
+        ? `template: t.django_html = \"\"\"
       ${template}
     \"\"\"`
         : ''

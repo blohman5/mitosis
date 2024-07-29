@@ -1,8 +1,6 @@
-import { babelTransformCode } from '@/helpers/babel-transform';
 import { getComponentsUsed } from '@/helpers/get-components-used';
 import { getCustomImports } from '@/helpers/get-custom-imports';
 import { getStateObjectStringFromComponent } from '@/helpers/get-state-object-string';
-import { pipe } from 'fp-ts/lib/function';
 
 import { checkIsDefined } from '@/helpers/nullable';
 import { checkIsComponentImport } from '@/helpers/render-imports';
@@ -214,28 +212,29 @@ export function generateOptionsApiScript(
     dataString = appendToDataString({ dataString, newContent: localVarAsData.join(',') });
   }
 
-  // let getterString = getStateObjectStringFromComponent2(component, {
-  //   data: false,
-  //   getters: true,
-  //   functions: false,
-  // });
+  //there might be some overides I can mess with here?
+  let getterString = getStateObjectStringFromComponent(component, {
+    data: false,
+    getters: true,
+    functions: false,
+  });
 
-  const getterString = pipe(
-    getStateObjectStringFromComponent(component, {
-      data: false,
-      getters: true,
-      functions: false,
-      format: 'variables',
-      keyPrefix: '$: ',
-      valueMapper: (code) => {
-        return code
-          .trim()
-          .replace(/^([a-zA-Z_\$0-9]+)/, '$1 = ')
-          .replace(/\)/, ') => ');
-      },
-    }),
-    babelTransformCode,
-  );
+  // const getterString = pipe(
+  //   getStateObjectStringFromComponent(component, {
+  //     data: false,
+  //     getters: true,
+  //     functions: false,
+  //     format: 'variables',
+  //     keyPrefix: '$: ',
+  //     valueMapper: (code) => {
+  //       return code
+  //         .trim()
+  //         .replace(/^([a-zA-Z_\$0-9]+)/, '$1 = ')
+  //         .replace(/\)/, ') => ');
+  //     },
+  //   }),
+  //   babelTransformCode,
+  // );
 
   let functionsString = getStateObjectStringFromComponent(component, {
     data: false,
@@ -243,9 +242,15 @@ export function generateOptionsApiScript(
     functions: true,
   });
   //there must be a better way to replace this stuff
+  //maybe I can utlize some overrides?
+  getterString = getterString.replaceAll('\n', '');
+  getterString = getterString.replaceAll('this.', '');
+  getterString = getterString.replaceAll('() {  return ', ' = ');
+  getterString = getterString.replaceAll(';}, ', '\n');
+
   // getterString = getterString.replaceAll('() {', '');
   // getterString = getterString.replaceAll('return this.type ===', ' = ');
-  // getterString = getterString.replaceAll(',', '');
+  // getterString = getterString.replaceAll('() {  ', '');
   // getterString = getterString.replaceAll('{', '');
   // getterString = getterString.replaceAll('}', '');
 
@@ -280,14 +285,14 @@ export function generateOptionsApiScript(
     props: string[];
   }) => {
     const isTs = options.typescript;
-    let str = ` def get_context_data(`;
-    str += `${json5.stringify(props)}):
+    let str = ` def get_context_data(self,`;
+    str += `${props}):
     `;
-    str += `return {
-      ${Array.from(props)
-        .map((item) => `${item},`)
-        .join('\n      ')}
-    }`;
+    // str += `return {
+    //   ${Array.from(props)
+    //     .map((item) => `${item},`)
+    //     .join('\n      ')}
+    // }`;
     return str;
   };
 
@@ -351,12 +356,11 @@ class ${
         )}`
   }(component.Component):
   ${props.length ? getCompositionPropDefinition({ component, props, options }) : ''}
-
   ${
     getterString.length < 4
       ? ''
       : `
-            ${getterString}
+    ${getterString}
             `
   }
 `;
