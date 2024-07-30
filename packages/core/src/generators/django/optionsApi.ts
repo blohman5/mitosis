@@ -260,7 +260,9 @@ export function generateOptionsApiScript(
     .replaceAll('`', '"')
     .replaceAll('===', '==')
     .replace(/((?<= = ).*(?= \? ))(.*)((?<= \? ).*(?= : ))/g, '$3$2$1');
-
+  //this regex reorders the ternary so that it is in the python format
+  getterString = getterString.replaceAll(' ? ', ' if ').replaceAll(' : ', ' else ');
+  //I wonder if isBooleanObject can be sued first
   //I need to just remove that prefix stuff from the helper
 
   const includeClassMapHelper = template.includes('_classStringToObject');
