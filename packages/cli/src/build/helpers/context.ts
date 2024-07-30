@@ -3,6 +3,7 @@ import {
   Target,
   checkShouldOutputTypeScript,
   contextToAngular,
+  contextToDjango,
   contextToQwik,
   contextToReact,
   contextToSolid,
@@ -33,6 +34,8 @@ export const generateContextFile = async ({
         return contextToSvelte(options.options.svelte || {})({ context });
       case 'vue':
         return contextToVue(options.options[target] || {})({ context });
+      case 'django':
+        return contextToDjango(options.options[target] || {})({ context });
       case 'solid':
         return contextToSolid()({ context });
       case 'preact':

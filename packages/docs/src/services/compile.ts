@@ -1,5 +1,9 @@
 import type { MitosisComponent } from '@builder.io/mitosis';
 import { server$ } from '@builder.io/qwik-city';
+// import type { MitosisComponent } from '../../../core';
+// import { componentToDjango } from '/Users/blohman/projects/new-mitosis/mitosis/packages/core/dist/src/generators/django/django';
+
+//my guess is that the issue is centered around how importing mitosis was the equavelnt of importing core
 
 export type OutputFramework =
   | 'react'
@@ -51,7 +55,7 @@ export const languageByFramework: Record<OutputFramework, string> = {
   solid: 'typescript',
   preact: 'typescript',
   stencil: 'typescript',
-  django: 'typescript',
+  django: 'python',
   reactNative: 'typescript',
   alpine: 'html',
 };
@@ -71,7 +75,7 @@ const getOutputGenerator = async ({ output }: { output: OutputFramework }) => {
     componentToReactNative,
     componentToSolid,
     componentToStencil,
-    componentToDjango,
+    componentToDjango
   } = await import('@builder.io/mitosis');
 
   const options = {};
@@ -106,7 +110,7 @@ const getOutputGenerator = async ({ output }: { output: OutputFramework }) => {
     case 'json':
       return ({ component }: { component: MitosisComponent }) => JSON.stringify(component, null, 2);
     case 'vue':
-      return componentToVue({ api: 'composition' });
+      return componentToVue({ api: 'options' });
     default:
       throw new Error('unexpected Output ' + output);
   }

@@ -12,6 +12,7 @@ export const targets: { packageName: PackageName; port: number }[] = (
     { packageName: 'e2e-react' },
     { packageName: 'e2e-solid' },
     { packageName: 'e2e-svelte' },
+    { packageName: 'e2e-django' },
     { packageName: 'e2e-vue3' },
   ] as const
 ).map(({ packageName }, i) => {

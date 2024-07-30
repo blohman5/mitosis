@@ -7,6 +7,7 @@ export * from './generators/alpine';
 export * from './generators/angular';
 export * from './generators/builder';
 export * from './generators/context/angular';
+export * from './generators/context/django';
 export * from './generators/context/qwik';
 export * from './generators/context/react';
 export * from './generators/context/rsc';
@@ -37,7 +38,7 @@ export {
   getComponentFileExtensionForTarget,
   renameComponentFile,
   renameComponentImport,
-  renameImport
+  renameImport,
 } from './helpers/component-file-extensions';
 export { createMitosisNode } from './helpers/create-mitosis-node';
 export * from './helpers/is-mitosis-node';

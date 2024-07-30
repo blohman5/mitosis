@@ -2,6 +2,7 @@ import {
   builderContentToMitosisComponent,
   compileAwayBuilderComponents,
   componentToBuilder,
+  componentToDjango,
   componentToMitosis,
   componentToQwik,
   componentToReact,
@@ -372,7 +373,7 @@ type EditorRefArgs = Parameters<NonNullable<EditorProps['onMount']>>;
 type Editor = EditorRefArgs[0];
 
 const hasBothTsAndJsSupport = (outputTab: string) => {
-  return ['svelte', 'vue'].includes(outputTab);
+  return ['svelte', 'vue', 'django'].includes(outputTab);
 };
 
 // TODO: Build this Fiddle app with Mitosis :)
@@ -389,7 +390,7 @@ export default function Fiddle() {
     showInput: true,
     jsonExample: 'ON_MOUNT' as keyof typeof JSON_CODE_EXAMPLES,
     inputCode: defaultInputCode,
-    output: { react: '', vue: '', svelte: '', qwik: '', solid: '' },
+    output: { react: '', vue: '', svelte: '', qwik: '', solid: '', django: '' },
     outputTab: getQueryParam('outputTab') || 'vue',
     pendingBuilderChange: null as any,
     builderData: {} as any,
@@ -496,6 +497,11 @@ export default function Fiddle() {
             ...commonOptions,
           })({ component: json, path: '' }),
 
+          django: componentToDjango({
+            plugins,
+            api: 'composition',
+            ...commonOptions,
+          })({ component: json, path: '' }),
           svelte: componentToSvelte({
             stateType: 'variables',
             plugins,
@@ -767,7 +773,7 @@ export default function Fiddle() {
         >
           {(
             [
-              ['vue', 'svelte'],
+              ['vue', 'svelte', 'django'],
               ['solid', 'qwik'],
             ] as const
           ).map((outputArr) => (

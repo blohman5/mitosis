@@ -10511,6 +10511,9 @@ exports[`Parse JSX > Javascript > useTarget 1`] = `
       "stencil": {
         "code": "'st'",
       },
+            "django": {
+        "code": "'dj'",
+      },
       "svelte": {
         "code": "'s'",
       },
@@ -21855,6 +21858,9 @@ exports[`Parse JSX > Typescript > useTarget 1`] = `
       },
       "stencil": {
         "code": "'st'",
+      },
+            "django": {
+        "code": "'dj'",
       },
       "svelte": {
         "code": "'s'",

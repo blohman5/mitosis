@@ -5,4 +5,5 @@ export type PackageName =
   | 'e2e-react'
   | 'e2e-solid'
   | 'e2e-svelte'
+  | 'e2e-django'
   | 'e2e-vue3';

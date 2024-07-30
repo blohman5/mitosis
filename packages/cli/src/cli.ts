@@ -40,6 +40,7 @@ OPTIONS
                 - rsc
                 - solid
                 - stencil
+				- django
                 - svelte
                 - swift
                 - template

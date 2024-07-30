@@ -22,6 +22,7 @@ export const generateCode = async ({
     componentToQwik,
     componentToReact,
     componentToStencil,
+    componentToDjango,
     componentToMarko,
     componentToSwift,
     componentToReactNative,
@@ -67,6 +68,8 @@ export const generateCode = async ({
       return componentToReact(allOptions);
     case 'stencil':
       return componentToStencil(allOptions);
+    case 'django':
+      return componentToDjango(allOptions);
     case 'marko':
       return componentToMarko(allOptions);
     case 'swift':
