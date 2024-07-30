@@ -19,6 +19,7 @@ const TARGETS: Record<Target, null> = {
   webcomponent: null,
   vue: null,
   stencil: null,
+  django: null,
   qwik: null,
   marko: null,
   preact: null,
